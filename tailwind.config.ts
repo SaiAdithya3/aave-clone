@@ -7,6 +7,11 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      regola: ['var(--font-regola)'],
+      inter: ['var(--font-inter)'],
+      roboto: ['var(--font-roboto)']
+    },
     extend: {
       colors: {
         background: "var(--background)",
