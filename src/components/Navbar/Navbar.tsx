@@ -3,6 +3,7 @@ import Aavelogo from "@/assets/logos/aavelogo";
 import { useState, useEffect } from "react";
 import NavItem from "./NavItem";
 import ProductsCard from "./NavItems/Products";
+import ResourcesCard from "./NavItems/ResourcesCard";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,8 +59,8 @@ export default function Navbar() {
   return (
     <div className="w-full fixed top-0 z-50">
       <nav
-        className={`flex mx-auto items-center px-6 md:px-12 py-1 justify-between bg-white w-full max-w-[1082px] transition-all duration-300 ${
-          isScrolled ? "border-b border-[#00000010] shadow-sm" : "md:pt-6"
+        className={`flex mx-auto items-center px-6 md:px-12  justify-between bg-white w-full max-w-[1082px] transition-all duration-300 ${
+          isScrolled ? "border-b border-[#00000010]" : "md:pt-6"
         }`}
       >
         <div className="w-1/2 py-5">
@@ -67,7 +68,7 @@ export default function Navbar() {
         </div>
         <div className="w-1/2 flex gap-2 items-center px-2">
           <NavItem title="Products" content={<ProductsCard />} />
-          <NavItem title="Resources" content={resourcesContent} />
+          <NavItem title="Resources" content={<ResourcesCard />} />
           <NavItem title="Developers" content={developersContent} />
           <div className="button">
             <button className="font-inter px-4 py-[9px] whitespace-nowrap text-sm font-[500] leading-[105%] text-white bg-[#221d1d] hover:bg-[#3d3b3b] rounded-[50px] cursor-default">
