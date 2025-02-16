@@ -71,12 +71,12 @@ export default function Navbar() {
           <NavItem title="Resources" content={<ResourcesCard />} />
           <NavItem title="Developers" content={developersContent} />
           <div className="button">
-            <button className="font-inter px-4 py-[9px] whitespace-nowrap text-sm font-[500] leading-[105%] text-white bg-[#221d1d] hover:bg-[#3d3b3b] rounded-[50px] cursor-default">
+            <button className="font-inter px-4 py-[9px] whitespace-nowrap text-sm font-[500] leading-[105%] text-white bg-[#221d1d] hover:bg-[#3d3b3b] rounded-[50px] cursor-pointer">
               Open App
             </button>
           </div>
           <div className="button mx-2">
-            <button className="font-inter p-[8px] font-[500] leading-[105%] text-white bg-[#221d1d] hover:bg-[#3d3b3b] rounded-[50px] cursor-default">
+            <button className="font-inter p-[8px] font-[500] leading-[105%] text-white bg-[#221d1d] hover:bg-[#3d3b3b] rounded-[50px] cursor-pointer">
               <SearchIcon />
             </button>
           </div>

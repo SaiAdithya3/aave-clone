@@ -5,7 +5,7 @@ export const AnimatedText = () => {
   const words = text.split(" ");
 
   return (
-    <div className="font-regola font-semibold text-5xl flex flex-wrap gap-2">
+    <div className="font-regola font-[600] tracking-[-1.44px] leading-[55px] text-[48px] flex flex-wrap gap-2">
       {words.map((word, i) => (
         <motion.span
           key={i}

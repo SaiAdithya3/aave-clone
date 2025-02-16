@@ -1,4 +1,62 @@
-/* Add this to your globals.css */
+/* Add these styles to your globals.css */
+@keyframes gradient-rotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.gradient-border {
+  position: relative;
+  background: white;
+  z-index: 1;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    #ff0000,
+    #ffa500,
+    #ffff00,
+    #008000,
+    #0000ff,
+    #4b0082,
+    #ee82ee,
+    #ff0000
+  );
+  background-size: 200% 200%;
+  border-radius: 9999px;
+  animation: gradient-rotate 3s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gradient-border:hover::before {
+  opacity: 1;
+}
+
+.gradient-button {
+  background: linear-gradient(
+    90deg,
+    #00bc20,
+    #4CAF50,
+    #8BC34A,
+    #CDDC39,
+    #00bc20
+  );
+  background-size: 400% 400%;
+}
+
+.gradient-button:hover {
+  animation: gradient-rotate 3s ease infinite;
+}
+
 @keyframes spin-slow {
   from {
     transform: rotate(0deg);
