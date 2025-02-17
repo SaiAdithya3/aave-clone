@@ -7,9 +7,9 @@ export default function HeroSection() {
   const circleIn = {
     initial: { r: 3.5, fill: "#9896FF" },
     active: {
-      r: [3.5, 6.5, 7.5, 8],
+      r: [3.5, 6.5, 10, 12, 14],
       fill: ["#9896FF", "#B4B2FF", "#D0CFFF", "#E2E0FF"],
-      opacity: [1, 0.8, 0.6, 0],
+      opacity: [1, 0.6, 0.4, 0],
       transition: {
         duration: 1.5,
         ease: "easeInOut",

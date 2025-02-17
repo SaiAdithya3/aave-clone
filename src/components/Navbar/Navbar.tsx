@@ -17,32 +17,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const productsContent = (
-    <div className="grid grid-cols-2 gap-4 p-4">
-      <div>
-        <h3 className="font-semibold mb-2">Lending</h3>
-        <p className="text-sm text-gray-600">Supply or borrow assets</p>
-      </div>
-      <div>
-        <h3 className="font-semibold mb-2">Staking</h3>
-        <p className="text-sm text-gray-600">Stake AAVE tokens</p>
-      </div>
-    </div>
-  );
-
-  const resourcesContent = (
-    <div className="grid grid-cols-2 gap-4 p-4">
-      <div>
-        <h3 className="font-semibold mb-2">Documentation</h3>
-        <p className="text-sm text-gray-600">Learn about AAVE</p>
-      </div>
-      <div>
-        <h3 className="font-semibold mb-2">Security</h3>
-        <p className="text-sm text-gray-600">Security reports and audits</p>
-      </div>
-    </div>
-  );
-
   const developersContent = (
     <div className="grid grid-cols-2 gap-4 p-4">
       <div>

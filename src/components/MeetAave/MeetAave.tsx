@@ -63,8 +63,8 @@ export default function MeetAave() {
   };
 
   return (
-    <div className="w-full flex items-start h-screen py-32 justify-center">
-      <div className="w-full max-w-[1024px] flex-col flex items-center">
+    <div className="w-full flex items-center flex-col ">
+      <div className="w-full max-w-[1024px] flex-col flex pt-[150px] pb-[100px] pl-[48px] pr-[48px] items-center">
         <h1 className="text-[40px] text-center  font-[600] leading-[135%] tracking-[-0.8px] text-[#211d1d] w-full font-regola">
           Meet Aave.
         </h1>
@@ -74,8 +74,8 @@ export default function MeetAave() {
         <div className="mt-[48px]">
           <MeetAaveBalls />
         </div>
-        <div className="mt-[48px] w-full h-auto">
-          <div className="w-full flex gap-[24px] pl-[24px] pr-[24px]">
+        <div className="mt-[48px] w-full h-auto ">
+          <div className="w-full flex gap-[24px] ">
             <motion.div
               className="left cursor-pointer flex items-start gap-[16px] flex-col"
               onClick={() => setActiveState("supply")}
@@ -145,6 +145,7 @@ export default function MeetAave() {
           </div>
         </div>
       </div>
+      <div className="h-[1px] w-full max-w-[1024px] bg-zinc-100"></div>
     </div>
   );
 }
