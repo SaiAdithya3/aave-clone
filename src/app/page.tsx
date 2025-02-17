@@ -1,6 +1,7 @@
 'use client';
 
 import HeroSection from "@/components/HeroSection/HeroSection";
+import MeetAave from "@/components/MeetAave/MeetAave";
 import Navbar from "@/components/Navbar/Navbar";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <div className="">
         <Navbar />
         <HeroSection />
+        <MeetAave />
       </div>
   )
 }

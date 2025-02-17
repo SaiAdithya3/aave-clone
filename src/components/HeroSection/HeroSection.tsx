@@ -19,7 +19,7 @@ export default function HeroSection() {
     },
   };
   return (
-    <div className="relative w-full h-[80vh] flex flex-col items-center mt-36 justify-start">
+    <div className="relative w-full h-[95vh] md:h-[80vh] flex flex-col items-center mt-20 md:mt-36 p-4 md:p-0 justify-start">
       <div className="w-full max-w-[1024px] flex flex-col items-start gap-5 px-4">
         <motion.div
           initial={{ opacity: 0, y: 25, transform: "translateY(25%)" }}
@@ -122,7 +122,7 @@ export default function HeroSection() {
           of liquidity currently supplied in Aave.
         </motion.div>
       </div>
-      <div className="absolute bottom-5 w-full max-w-[1024px] flex items-center gap-5">
+      <div className="absolute bottom-5 w-[90%] md:w-full max-w-[1024px] flex items-center gap-5">
         <HeroRings />
       </div>
     </div>

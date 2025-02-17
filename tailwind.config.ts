@@ -13,6 +13,9 @@ export default {
       roboto: ['var(--font-roboto)']
     },
     extend: {
+      backgroundImage: {
+        'hero-rings-line': 'linear-gradient(0deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), linear-gradient(90deg, #39d1f9 10.43%, #ffb400 27.01%, #00827c 44.64%, #008aff 56.05%, #ff3200 73.58%, #9896ff 90.51%)',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

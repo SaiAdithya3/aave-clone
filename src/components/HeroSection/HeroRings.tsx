@@ -1,40 +1,51 @@
+import { motion } from "framer-motion";
+
 const HeroRings = () => {
-    return (
-        <svg
+  const open = {
+    hidden: { width: "0%", opacity: 0 },
+    open: {
+      width: "100%",
+      opacity: [0, 100],
+      transition: {
+        duration: 0.75,
+        ease: "easeInOut",
+        once: true,
+      },
+    },
+  };
+  return (
+    <div className="w-full">
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         width="985"
         height="438"
         fill="none"
         viewBox="0 0 985 438"
-        // style="pointer-events: auto;"
-        style={{width: '100%', pointerEvents: 'auto'}}
+        style={{ width: "100%", pointerEvents: "auto" }}
       >
         <g clip-path="url(#hero-animation-mask)">
           <g transform="scale(1.08)">
             <g opacity="1">
               <g
                 opacity="1"
-                // style="transform: translateY(220px); transform-origin: 75px 227.25px;"
                 style={{
-                  transform: 'translateY(220px)',
-                  transformOrigin: '75px 227.25px'
+                  transform: "translateY(220px)",
+                  transformOrigin: "75px 227.25px",
                 }}
-                transform-origin="75px 227.25px"
+                // transform-origin="75px 227.25px"
               >
                 <g transform="scale(1.5)">
                   <path
                     d="M50 50L50 303"
                     stroke="#D9F7FF"
-                    // style="stroke:color(display-p3 0.8739 0.9653 1)"
                     style={{
-                      stroke: 'color(display-p3 0.8739 0.9653 1)',
+                      stroke: "#D9F7FF",
                     }}
                     strokeWidth="100"
                     strokeLinecap="round"
                   ></path>
                   <mask
                     id="mask0_4272_2676"
-                    // style="mask-type:alpha"
                     maskUnits="userSpaceOnUse"
                     x="0"
                     y="0"
@@ -46,19 +57,17 @@ const HeroRings = () => {
                   <g mask="url(#mask0_4272_2676)">
                     <g>
                       <g
-                        // style="transform: rotate(-5deg); transform-origin: 50px 50px;"
                         style={{
-                          transform: 'rotate(-5deg)',
-                          transformOrigin: '50px 50px',
+                          transform: "rotate(-5deg)",
+                          transformOrigin: "50px 50px",
                         }}
-                        transform-origin="50px 50px"
+                        // transform-origin="50px 50px"
                       >
                         <rect
                           width="100"
                           height="100"
                           fill="#39D1F9"
                           // style="fill:color(display-p3 0.4196 0.8078 0.9608);fill-opacity:1"
-                          
                         ></rect>
                         <rect
                           width="50"
@@ -109,10 +118,10 @@ const HeroRings = () => {
                 opacity="1"
                 // style="transform: translateX(152px) translateY(210px); transform-origin: 75px 227.25px;"
                 style={{
-                  transform: 'translateX(152px) translateY(210px)',
-                  transformOrigin: '75px 227.25px',
+                  transform: "translateX(152px) translateY(210px)",
+                  transformOrigin: "75px 227.25px",
                 }}
-                transform-origin="75px 227.25px"
+                // transform-origin="75px 227.25px"
               >
                 <g transform="scale(1.5)">
                   <path
@@ -138,10 +147,10 @@ const HeroRings = () => {
                       <g
                         // style="transform: rotate(-14deg); transform-origin: 50px 50px;"
                         style={{
-                          transform: 'rotate(-14deg)',
-                          transformOrigin: '50px 50px',
+                          transform: "rotate(-14deg)",
+                          transformOrigin: "50px 50px",
                         }}
-                        transform-origin="50px 50px"
+                        // transform-origin="50px 50px"
                       >
                         <rect
                           width="100"
@@ -199,10 +208,10 @@ const HeroRings = () => {
                 opacity="1"
                 // style="transform: translateX(304px) translateY(190px); transform-origin: 75px 227.25px;"
                 style={{
-                  transform: 'translateX(304px) translateY(190px)',
-                  transformOrigin: '75px 227.25px',
+                  transform: "translateX(304px) translateY(190px)",
+                  transformOrigin: "75px 227.25px",
                 }}
-                transform-origin="75px 227.25px"
+                // transform-origin="75px 227.25px"
               >
                 <g transform="scale(1.5)">
                   <path
@@ -228,10 +237,10 @@ const HeroRings = () => {
                       <g
                         // style="transform: rotate(-18deg); transform-origin: 50px 50px;"
                         style={{
-                          transform: 'rotate(-18deg)',
-                          transformOrigin: '50px 50px',
+                          transform: "rotate(-18deg)",
+                          transformOrigin: "50px 50px",
                         }}
-                        transform-origin="50px 50px"
+                        // transform-origin="50px 50px"
                       >
                         <rect
                           width="100"
@@ -288,8 +297,8 @@ const HeroRings = () => {
                 opacity="1"
                 // style="transform: translateX(456px) translateY(170px); transform-origin: 75px 227.25px;"
                 style={{
-                  transform: 'translateX(456px) translateY(170px)',
-                  transformOrigin: '75px 227.25px',
+                  transform: "translateX(456px) translateY(170px)",
+                  transformOrigin: "75px 227.25px",
                 }}
                 // transformOrigin="75px 227.25px"
               >
@@ -317,8 +326,8 @@ const HeroRings = () => {
                       <g
                         // style="transform: rotate(-11deg); transform-origin: 50px 50px;"
                         style={{
-                          transform: 'rotate(-11deg)',
-                          transformOrigin: '50px 50px',
+                          transform: "rotate(-11deg)",
+                          transformOrigin: "50px 50px",
                         }}
                         // transformOrigin="50px 50px"
                       >
@@ -377,10 +386,10 @@ const HeroRings = () => {
                 opacity="1"
                 // style="transform: translateX(608px) translateY(120px); transform-origin: 75px 227.25px;"
                 style={{
-                  transform: 'translateX(608px) translateY(120px)',
-                  transformOrigin: '75px 227.25px',
+                  transform: "translateX(608px) translateY(120px)",
+                  transformOrigin: "75px 227.25px",
                 }}
-                transform-origin="75px 227.25px"
+                // transform-origin="75px 227.25px"
               >
                 <g transform="scale(1.5)">
                   <path
@@ -405,7 +414,11 @@ const HeroRings = () => {
                     <g>
                       <g
                         // style="transform: none; transform-origin: 50px 50px;"
-                        transform-origin="50px 50px"
+                        style={{
+                          transform: "none",
+                          transformOrigin: "50px 50px",
+                        }}
+                        // transform-origin="50px 50px"
                       >
                         <rect
                           width="100"
@@ -462,10 +475,10 @@ const HeroRings = () => {
                 opacity="1"
                 // style="transform: translateX(760px) translateY(60px); transform-origin: 75px 227.25px;"
                 style={{
-                  transform: 'translateX(760px) translateY(60px)',
-                  transformOrigin: '75px 227.25px',
+                  transform: "translateX(760px) translateY(60px)",
+                  transformOrigin: "75px 227.25px",
                 }}
-                transform-origin="75px 227.25px"
+                // transform-origin="75px 227.25px"
               >
                 <g transform="scale(1.5)">
                   <path
@@ -490,7 +503,11 @@ const HeroRings = () => {
                     <g>
                       <g
                         // style="transform: none; transform-origin: 50px 50px;"
-                        transform-origin="50px 50px"
+                        style={{
+                          transform: "none",
+                          transformOrigin: "50px 50px",
+                        }}
+                        // transform-origin="50px 50px"
                       >
                         <rect
                           width="100"
@@ -556,7 +573,16 @@ const HeroRings = () => {
           ></rect>
         </clipPath>
       </svg>
-    )
-}
+      <div className="w-full h-1 flex items-center justify-center">
+        <motion.div
+          initial="hidden"
+          animate="open"
+          variants={open}
+          className="bg-hero-rings-line w-full max-w-[1082px] h-1 rounded-full"
+        ></motion.div>
+      </div>
+    </div>
+  );
+};
 
-export default HeroRings
+export default HeroRings;
