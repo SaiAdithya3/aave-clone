@@ -10,6 +10,7 @@ export default function Home() {
         <Navbar />
         <HeroSection />
         <MeetAave />
+        <div className="mt-48 p-60">bankai</div>
       </div>
   )
 }
