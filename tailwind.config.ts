@@ -27,7 +27,8 @@ export default {
         }
       },
       animation: {
-        dropdown: 'dropdown 0.2s ease-out forwards'
+        dropdown: 'dropdown 0.2s ease-out forwards',
+        'spin-slow': 'spin 8s linear infinite',
       }
     }
   },

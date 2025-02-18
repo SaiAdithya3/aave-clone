@@ -42,7 +42,7 @@ export default function Navbar() {
         </div>
         <div className="w-1/2 flex gap-2 items-center px-2">
           <NavItem title="Products" content={<ProductsCard />} />
-          <NavItem title="Resources" content={<ResourcesCard />} />
+          <NavItem title="Resources" content={<ResourcesCard />}/>
           <NavItem title="Developers" content={developersContent} />
           <div className="button">
             <button className="font-inter px-4 py-[9px] whitespace-nowrap text-sm font-[500] leading-[105%] text-white bg-[#221d1d] hover:bg-[#3d3b3b] rounded-[50px] cursor-pointer">

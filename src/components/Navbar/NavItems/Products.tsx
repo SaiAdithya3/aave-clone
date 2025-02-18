@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const ProductsCard = () => {
+const ProductsCard = (  ) => {
   const [hoveredCard, setHoveredCard] = useState<null | 'app' | 'gho'>(null);
 
   return (
