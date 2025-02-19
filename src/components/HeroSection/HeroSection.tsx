@@ -63,7 +63,7 @@ export default function HeroSection() {
           </motion.span>
         </motion.div>
         <h1 className="font-regola mt-1 font-[500] text-5xl">
-          <AnimatedText />
+          <AnimatedText text="Access the full power of DeFi."/>
         </h1>
         <motion.p
           className="font-inter mt-1 flex text-[20px] leading-[150%] tracking-[-.47px] flex-col text-[#636161] items-start font-[500] text-lg"
