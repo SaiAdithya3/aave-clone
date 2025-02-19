@@ -32,7 +32,7 @@ const HeroRings = () => {
                   transform: "translateY(220px)",
                   transformOrigin: "75px 227.25px",
                 }}
-                // // transform-origin="75px 227.25px"
+                // // transformOrigin="75px 227.25px"
               >
                 <g transform="scale(1.5)">
                   <path
@@ -61,7 +61,7 @@ const HeroRings = () => {
                           transform: "rotate(-5deg)",
                           transformOrigin: "50px 50px",
                         }}
-                        // // transform-origin="50px 50px"
+                        // // transformOrigin="50px 50px"
                       >
                         <rect
                           width="100"
@@ -116,12 +116,12 @@ const HeroRings = () => {
               </g>
               <g
                 opacity="1"
-                // style="transform: translateX(152px) translateY(210px); // transform-origin: 75px 227.25px;"
+                // style="transform: translateX(152px) translateY(210px); // transformOrigin: 75px 227.25px;"
                 style={{
                   transform: "translateX(152px) translateY(210px)",
                   transformOrigin: "75px 227.25px",
                 }}
-                // // transform-origin="75px 227.25px"
+                // // transformOrigin="75px 227.25px"
               >
                 <g transform="scale(1.5)">
                   <path
@@ -145,12 +145,12 @@ const HeroRings = () => {
                   <g mask="url(#mask0_4272_2676)">
                     <g>
                       <g
-                        // style="transform: rotate(-14deg); // transform-origin: 50px 50px;"
+                        // style="transform: rotate(-14deg); // transformOrigin: 50px 50px;"
                         style={{
                           transform: "rotate(-14deg)",
                           transformOrigin: "50px 50px",
                         }}
-                        // // transform-origin="50px 50px"
+                        // // transformOrigin="50px 50px"
                       >
                         <rect
                           width="100"
@@ -206,12 +206,12 @@ const HeroRings = () => {
               </g>
               <g
                 opacity="1"
-                // style="transform: translateX(304px) translateY(190px); // transform-origin: 75px 227.25px;"
+                // style="transform: translateX(304px) translateY(190px); // transformOrigin: 75px 227.25px;"
                 style={{
                   transform: "translateX(304px) translateY(190px)",
                   transformOrigin: "75px 227.25px",
                 }}
-                // // transform-origin="75px 227.25px"
+                // // transformOrigin="75px 227.25px"
               >
                 <g transform="scale(1.5)">
                   <path
@@ -235,12 +235,12 @@ const HeroRings = () => {
                   <g mask="url(#mask0_4272_2676)">
                     <g>
                       <g
-                        // style="transform: rotate(-18deg); // transform-origin: 50px 50px;"
+                        // style="transform: rotate(-18deg); // transformOrigin: 50px 50px;"
                         style={{
                           transform: "rotate(-18deg)",
                           transformOrigin: "50px 50px",
                         }}
-                        // // transform-origin="50px 50px"
+                        // // transformOrigin="50px 50px"
                       >
                         <rect
                           width="100"
@@ -295,7 +295,7 @@ const HeroRings = () => {
               </g>
               <g
                 opacity="1"
-                // style="transform: translateX(456px) translateY(170px); // transform-origin: 75px 227.25px;"
+                // style="transform: translateX(456px) translateY(170px); // transformOrigin: 75px 227.25px;"
                 style={{
                   transform: "translateX(456px) translateY(170px)",
                   transformOrigin: "75px 227.25px",
@@ -324,7 +324,7 @@ const HeroRings = () => {
                   <g mask="url(#mask0_4272_2676)">
                     <g>
                       <g
-                        // style="transform: rotate(-11deg); // transform-origin: 50px 50px;"
+                        // style="transform: rotate(-11deg); // transformOrigin: 50px 50px;"
                         style={{
                           transform: "rotate(-11deg)",
                           transformOrigin: "50px 50px",
@@ -384,12 +384,12 @@ const HeroRings = () => {
               </g>
               <g
                 opacity="1"
-                // style="transform: translateX(608px) translateY(120px); // transform-origin: 75px 227.25px;"
+                // style="transform: translateX(608px) translateY(120px); // transformOrigin: 75px 227.25px;"
                 style={{
                   transform: "translateX(608px) translateY(120px)",
                   transformOrigin: "75px 227.25px",
                 }}
-                // // transform-origin="75px 227.25px"
+                // // transformOrigin="75px 227.25px"
               >
                 <g transform="scale(1.5)">
                   <path
@@ -413,12 +413,12 @@ const HeroRings = () => {
                   <g mask="url(#mask0_4272_2676)">
                     <g>
                       <g
-                        // style="transform: none; // transform-origin: 50px 50px;"
+                        // style="transform: none; // transformOrigin: 50px 50px;"
                         style={{
                           transform: "none",
                           transformOrigin: "50px 50px",
                         }}
-                        // // transform-origin="50px 50px"
+                        // // transformOrigin="50px 50px"
                       >
                         <rect
                           width="100"
@@ -473,12 +473,12 @@ const HeroRings = () => {
               </g>
               <g
                 opacity="1"
-                // style="transform: translateX(760px) translateY(60px); // transform-origin: 75px 227.25px;"
+                // style="transform: translateX(760px) translateY(60px); // transformOrigin: 75px 227.25px;"
                 style={{
                   transform: "translateX(760px) translateY(60px)",
                   transformOrigin: "75px 227.25px",
                 }}
-                // // transform-origin="75px 227.25px"
+                // // transformOrigin="75px 227.25px"
               >
                 <g transform="scale(1.5)">
                   <path
@@ -502,12 +502,12 @@ const HeroRings = () => {
                   <g mask="url(#mask0_4272_2676)">
                     <g>
                       <g
-                        // style="transform: none; // transform-origin: 50px 50px;"
+                        // style="transform: none; // transformOrigin: 50px 50px;"
                         style={{
                           transform: "none",
                           transformOrigin: "50px 50px",
                         }}
-                        // // transform-origin="50px 50px"
+                        // // transformOrigin="50px 50px"
                       >
                         <rect
                           width="100"

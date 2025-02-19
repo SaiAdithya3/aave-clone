@@ -25,22 +25,22 @@ const NetDeposits = () => {
             //   style="fill:color(display-p3 0.7391 0.7337 1.0000)"
             ></rect>
             <g
-            //   style="transform: translateY(-4.82059px); // transform-origin: 229px 186px;"
+            //   style="transform: translateY(-4.82059px); // transformOrigin: 229px 186px;"
               style={{
                 transform: "translateY(-4.82059px)",
                 transformOrigin: "229px 186px",
               }}
-              // transform-origin="229px 186px"
+              // transformOrigin="229px 186px"
             >
               <g
                 clipPath="url(#clip1_2915_1498)"
                 id="1"
-                // style="transform: none; // transform-origin: 229px 186px;"
+                // style="transform: none; // transformOrigin: 229px 186px;"
                 style={{
                   transform: "none",
                   transformOrigin: "229px 186px",
                 }}
-                // transform-origin="229px 186px"
+                // transformOrigin="229px 186px"
               >
                 <g>
                   <rect
@@ -74,21 +74,21 @@ const NetDeposits = () => {
               </g>
             </g>
             <g
-            //   style="transform: translateY(-3.89848px); // transform-origin: 165px 250px;"
+            //   style="transform: translateY(-3.89848px); // transformOrigin: 165px 250px;"
               style={{
                 transform: "translateY(-3.89848px)",
                 transformOrigin: "165px 250px",
               }}
-              // transform-origin="165px 250px"
+              // transformOrigin="165px 250px"
             >
               <g
                 id="2"
-                // style="transform: none; // transform-origin: 165px 250px;"
+                // style="transform: none; // transformOrigin: 165px 250px;"
                 style={{
                     transform: "none",
                     transformOrigin: "165px 250px",
                 }}
-                // transform-origin="165px 250px"
+                // transformOrigin="165px 250px"
               >
                 <g clipPath="url(#clip2_2915_1498)">
                   <rect
@@ -122,21 +122,21 @@ const NetDeposits = () => {
               </g>
             </g>
             <g
-            //   style="transform: translateY(-2.70944px); // transform-origin: 101px 314px;"
+            //   style="transform: translateY(-2.70944px); // transformOrigin: 101px 314px;"
               style={{
                 transform: "translateY(-2.70944px)",
                 transformOrigin: "101px 314px",
               }}
-              // transform-origin="101px 314px"
+              // transformOrigin="101px 314px"
             >
               <g
                 id="4"
-                // style="transform: none; // transform-origin: 101px 314px;"
+                // style="transform: none; // transformOrigin: 101px 314px;"
                 style={{
                     transform: "none",
                     transformOrigin: "101px 314px",
                 }}
-                // transform-origin="101px 314px"
+                // transformOrigin="101px 314px"
               >
                 <g clipPath="url(#clip3_2915_1498)">
                   <rect
@@ -170,21 +170,21 @@ const NetDeposits = () => {
               </g>
             </g>
             <g
-            //   style="transform: translateY(-1.69353px); // transform-origin: 293px 250px;"
+            //   style="transform: translateY(-1.69353px); // transformOrigin: 293px 250px;"
               style={{
                 transform: "translateY(-1.69353px)",
                 transformOrigin: "293px 250px",
               }}
-              // transform-origin="293px 250px"
+              // transformOrigin="293px 250px"
             >
               <g
                 id="3"
-                // style="transform: none; // transform-origin: 293px 250px;"
+                // style="transform: none; // transformOrigin: 293px 250px;"
                 style={{
                   transform: "none",
                   transformOrigin: "293px 250px",
                 }}
-                // transform-origin="293px 250px"
+                // transformOrigin="293px 250px"
               >
                 <g clipPath="url(#clip4_2915_1498)">
                   <rect
@@ -218,21 +218,21 @@ const NetDeposits = () => {
               </g>
             </g>
             <g
-            //   style="transform: translateY(-0.907285px); // transform-origin: 357px 314px;"
+            //   style="transform: translateY(-0.907285px); // transformOrigin: 357px 314px;"
               style={{
                 transform: "translateY(-0.907285px)",
                 transformOrigin: "357px 314px",
               }}
-              // transform-origin="357px 314px"
+              // transformOrigin="357px 314px"
             >
               <g
                 id="6"
-                // style="transform: none; // transform-origin: 357px 314px;"
+                // style="transform: none; // transformOrigin: 357px 314px;"
                 style={{
                   transform: "none",
                   transformOrigin: "357px 314px",
                 }}
-                // transform-origin="357px 314px"
+                // transformOrigin="357px 314px"
               >
                 <g clipPath="url(#clip5_2915_1498)">
                   <rect
@@ -266,21 +266,21 @@ const NetDeposits = () => {
               </g>
             </g>
             <g
-            //   style="transform: translateY(-0.366273px); // transform-origin: 229px 314px;"
+            //   style="transform: translateY(-0.366273px); // transformOrigin: 229px 314px;"
               style={{
                 transform: "translateY(-0.366273px)",
                 transformOrigin: "229px 314px",
               }}
-              // transform-origin="229px 314px"
+              // transformOrigin="229px 314px"
             >
               <g
                 id="5"
-                // style="transform: none; // transform-origin: 229px 314px;"
+                // style="transform: none; // transformOrigin: 229px 314px;"
                 style={{
                   transform: "none",
                   transformOrigin: "229px 314px",
                 }}
-                // transform-origin="229px 314px"
+                // transformOrigin="229px 314px"
               >
                 <g clipPath="url(#clip6_2915_1498)">
                   <rect

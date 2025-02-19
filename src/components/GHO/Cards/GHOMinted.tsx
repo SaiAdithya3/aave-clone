@@ -20,7 +20,7 @@ const GHOMinted = () => {
         strokeWidth="8"
         opacity={0.37309999999993115}
         style={{ transform: 'scale(1.2225)', transformOrigin: '414.5px 2px' }}
-        transform-origin="414.4999990463257px 2px"
+        // transformOrigin="414.4999990463257px 2px"
       />
       <path
         stroke="#000000"
@@ -46,7 +46,7 @@ const GHOMinted = () => {
       <g
         opacity={1}
         style={{ transform: 'none', transformOrigin: '414.5px 2px' }}
-        transform-origin="414.5px 2px"
+        // transformOrigin="414.5px 2px"
       >
         <circle
           cx="414.5"
@@ -56,7 +56,7 @@ const GHOMinted = () => {
           stroke="#FCFCFB"
           strokeWidth="3"
           style={{ transform: 'scale(1.08335)', transformOrigin: '414.5px 2px' }}
-          transform-origin="414.5px 2px"
+        //   transformOrigin="414.5px 2px"
         ></circle>
       </g>
     </svg>

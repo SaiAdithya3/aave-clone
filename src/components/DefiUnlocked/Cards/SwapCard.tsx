@@ -10,21 +10,21 @@ const SwapCard = () => {
     >
       <g transform="translate(0 -150)">
         <g
-          // style="mix-blend-mode: multiply; transform: none; transform-origin: 323px 150px;"
+          // style="mix-blend-mode: multiply; transform: none; transformOrigin: 323px 150px;"
           style={{
             mixBlendMode: "multiply",
             transform: "none",
             transformOrigin: "323px 149.9999847411891px",
           }}
-          // transform-origin="323px 149.9999847411891px"
+          // transformOrigin="323px 149.9999847411891px"
         >
           <g
-            // style="transform: translateY(-4.69537px); transform-origin: 323px 150px;"
+            // style="transform: translateY(-4.69537px); transformOrigin: 323px 150px;"
             style={{
               transform: "translateY(-4.69537px)",
               transformOrigin: "323px 149.9999847411891px",
             }}
-            // transform-origin="323px 149.9999847411891px"
+            // transformOrigin="323px 149.9999847411891px"
           >
             <g id="Ellipse 3341">
               <path
@@ -43,21 +43,21 @@ const SwapCard = () => {
           </g>
         </g>
         <g
-          // style="mix-blend-mode: multiply; transform: none; transform-origin: 473px 150px;"
+          // style="mix-blend-mode: multiply; transform: none; transformOrigin: 473px 150px;"
           style={{
             mixBlendMode: "multiply",
             transform: "none",
             transformOrigin: "473px 149.9999847411891px",
           }}
-          // transform-origin="473px 149.9999847411891px"
+          // transformOrigin="473px 149.9999847411891px"
         >
           <g
-            // style="transform: translateY(-0.850993px); transform-origin: 473px 150px;"
+            // style="transform: translateY(-0.850993px); transformOrigin: 473px 150px;"
             style={{
               transform: "translateY(-0.850993px)",
               transformOrigin: "473px 149.9999847411891px",
             }}
-            // transform-origin="473px 149.9999847411891px"
+            // transformOrigin="473px 149.9999847411891px"
           >
             <g id="Ellipse 3341_2">
               <path

@@ -24,20 +24,20 @@ const HealthFactorCard = () => {
           ></circle>
         </g>
         <g
-        //   style="transform: none; transform-origin: 198.25px 201px;"
+        //   style="transform: none; transformOrigin: 198.25px 201px;"
           style={{
             transform: "none",
             transformOrigin: "198.25px 201px",
           }}
-        //   transform-origin="198.25px 201px"
+        //   transformOrigin="198.25px 201px"
         >
           <g
-            // style="transform: rotate(7.37157deg); transform-origin: 198.25px 201px;"
+            // style="transform: rotate(7.37157deg); transformOrigin: 198.25px 201px;"
             style={{
               transform: "rotate(7.37157deg)",
               transformOrigin: "198.25px 201px",
             }}
-            // transform-origin="198.25px 201px"
+            // transformOrigin="198.25px 201px"
           >
             <circle
               cx="201"

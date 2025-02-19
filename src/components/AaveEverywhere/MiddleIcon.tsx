@@ -11,12 +11,12 @@ const MiddleIcon = () => {
       className="invert"
     >
       <g
-        // style="transform: none; transform-origin: 161.415px 180.84px;"
+        // style="transform: none; transformOrigin: 161.415px 180.84px;"
         style={{
           transform: "none",
           transformOrigin: "161.415px 180.84px",
         }}
-        // transform-origin="161.41549682617188px 180.8395004272461px"
+        // transformOrigin="161.41549682617188px 180.8395004272461px"
       >
         <path
           d="M136.871 201.968C148.54 200.074 156.464 189.079 154.57 177.41C152.675 165.741 141.68 157.817 130.011 159.711C118.342 161.605 110.418 172.6 112.312 184.269C114.207 195.938 125.202 203.862 136.871 201.968Z"

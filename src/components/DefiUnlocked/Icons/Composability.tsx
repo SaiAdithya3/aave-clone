@@ -22,12 +22,12 @@ const Composability = () => {
         rx="4"
         fill="#1F807B"
         fillOpacity="0.4"
-        // style="fill: color(display-p3 0.121 0.5025 0.4806); transform: rotate(45deg); transform-origin: 12px 16px;"
+        // style="fill: color(display-p3 0.121 0.5025 0.4806); transform: rotate(45deg); transformOrigin: 12px 16px;"
         style={{
             transform: "rotate(45deg)",
             transformOrigin: "12px 16px",
         }}
-        // transform-origin="11.999999761581421px 16px"
+        // transformOrigin="11.999999761581421px 16px"
         opacity="1"
       ></rect>
       <rect
@@ -38,12 +38,12 @@ const Composability = () => {
         height="20px"
         rx="5"
         fill="#F7F6F6"
-        // style="fill: color(display-p3 0.99 0.99 0.99); transform: rotate(45deg); transform-origin: 23px 16px;"
+        // style="fill: color(display-p3 0.99 0.99 0.99); transform: rotate(45deg); transformOrigin: 23px 16px;"
         style={{
             transform: "rotate(45deg)",
             transformOrigin: "23px 16px",
         }}
-        // transform-origin="23px 15.999999523162842px"
+        // transformOrigin="23px 15.999999523162842px"
         fillOpacity="1"
       ></rect>
       <rect
@@ -54,12 +54,12 @@ const Composability = () => {
         height="14px"
         rx="3"
         fill="#1F807B"
-        // style="fill: color(display-p3 0.121 0.5025 0.4806); transform: rotate(45deg); transform-origin: 23px 16px;"
+        // style="fill: color(display-p3 0.121 0.5025 0.4806); transform: rotate(45deg); transformOrigin: 23px 16px;"
         style={{
             transform: "rotate(45deg)",
             transformOrigin: "23px 16px",
         }}
-        // transform-origin="23px 16px"
+        // transformOrigin="23px 16px"
         fillOpacity="1"
       ></rect>
       <rect
@@ -71,12 +71,12 @@ const Composability = () => {
         rx="5"
         fill="#F7F6F6"
         opacity="0"
-        // style="fill: color(display-p3 0.99 0.99 0.99); transform: translateX(14px) scale(0) rotate(45deg); transform-origin: 23px 16px;"
+        // style="fill: color(display-p3 0.99 0.99 0.99); transform: translateX(14px) scale(0) rotate(45deg); transformOrigin: 23px 16px;"
         style={{
             transform: "translateX(14px) scale(0) rotate(45deg)",
             transformOrigin: "23px 16px",
         }}
-        // transform-origin="23px 15.999999523162842px"
+        // transformOrigin="23px 15.999999523162842px"
       ></rect>
       <rect
         className="square-3"
@@ -87,12 +87,12 @@ const Composability = () => {
         rx="3"
         fill="#1F807B"
         opacity="0"
-        // style="fill: color(display-p3 0.121 0.5025 0.4806); transform: translateX(14px) scale(0) rotate(45deg); transform-origin: 23px 16px;"
+        // style="fill: color(display-p3 0.121 0.5025 0.4806); transform: translateX(14px) scale(0) rotate(45deg); transformOrigin: 23px 16px;"
         style={{
             transform: "translateX(14px) scale(0) rotate(45deg)",
             transformOrigin: "23px 16px",
         }}
-        // transform-origin="23px 16px"
+        // transformOrigin="23px 16px"
       ></rect>
     </svg>
   );

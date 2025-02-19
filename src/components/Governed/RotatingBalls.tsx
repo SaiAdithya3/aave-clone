@@ -12,13 +12,13 @@ const RotatingBalls = () => {
     >
       <g
         opacity="1"
-        style="transform: none; transform-origin: 492.822px 457.155px;"
-        transform-origin="492.82183837890625px 457.1546936035156px"
+        style="transform: none; transformOrigin: 492.822px 457.155px;"
+        transformOrigin="492.82183837890625px 457.1546936035156px"
       >
         <g transform="translate(-493, -457) scale(2)">
           <g
-            style="transform: rotate(174.589deg); transform-origin: 492.911px 457.077px;"
-            transform-origin="492.9109191894531px 457.07735127210617px"
+            style="transform: rotate(174.589deg); transformOrigin: 492.911px 457.077px;"
+            transformOrigin="492.9109191894531px 457.07735127210617px"
           >
             <circle
               cx="24.3086"
@@ -676,13 +676,13 @@ const RotatingBalls = () => {
       </g>
       <g
         opacity="1"
-        style="transform: none; transform-origin: 492.798px 457.176px;"
-        transform-origin="492.7977294921875px 457.17559814453125px"
+        style="transform: none; transformOrigin: 492.798px 457.176px;"
+        transformOrigin="492.7977294921875px 457.17559814453125px"
       >
         <g transform="translate(-626.11, -580.39) scale(2.27)">
           <g
-            style="transform: rotate(-67.6714deg); transform-origin: 492.911px 457.077px;"
-            transform-origin="492.9109191894531px 457.07735127210617px"
+            style="transform: rotate(-67.6714deg); transformOrigin: 492.911px 457.077px;"
+            transformOrigin="492.9109191894531px 457.07735127210617px"
           >
             <circle
               cx="24.3086"

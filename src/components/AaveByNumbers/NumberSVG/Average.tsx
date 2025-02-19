@@ -20,20 +20,20 @@ const Average = () => {
         //   style="fill:color(display-p3 0.7098 0.9059 0.9804)"
         ></rect>
         <g
-        //   style="transform: rotate(20.4099deg); // transform-origin: 228.5px 250px;"
+        //   style="transform: rotate(20.4099deg); // transformOrigin: 228.5px 250px;"
           style={{
             transform: "rotate(20.4099deg)",
             transformOrigin: "228.5px 250px",
           }}
-          // transform-origin="228.5px 250px"
+          // transformOrigin="228.5px 250px"
         >
           <g
-            // style="transform: none; // transform-origin: 228.5px 250px;"
+            // style="transform: none; // transformOrigin: 228.5px 250px;"
             style={{
               transform: "none",
               transformOrigin: "228.5px 250px",
             }}
-            // transform-origin="228.5px 250px"
+            // transformOrigin="228.5px 250px"
           >
             <circle
               mask="url(#supply-circle-outer-mask-1)"
@@ -70,12 +70,12 @@ const Average = () => {
               ></rect>
             </mask>
             <g
-            //   style="transform: none; // transform-origin: 228.684px 250px;"
+            //   style="transform: none; // transformOrigin: 228.684px 250px;"
               style={{
                 transform: "none",
                 transformOrigin: "228.684px 250px",
               }}
-              // transform-origin="228.68401336669922px 250px"
+              // transformOrigin="228.68401336669922px 250px"
             >
               <circle
                 mask="url(#supply-circle-inner-mask-1)"

@@ -11,20 +11,20 @@ const MultinetworkCard = () => {
       className="styles_cardIllustration__rMiSa absolute top-0 right-0 z-[-1]"
     >
       <g
-        // style="transform: none; transform-origin: 65px 57.0001px;"
+        // style="transform: none; transformOrigin: 65px 57.0001px;"
         style={{
             transform: "none",
             transformOrigin: "65px 57.00005912780762px",
         }}
-        // transform-origin="65px 57.00005912780762px"
+        // transformOrigin="65px 57.00005912780762px"
       >
         <g
-        //   style="transform: translateX(0.0231546px); transform-origin: 65px 57.0001px;"
+        //   style="transform: translateX(0.0231546px); transformOrigin: 65px 57.0001px;"
           style={{
               transform: "translateX(0.0231546px)",
               transformOrigin: "65px 57.00005912780762px",
           }}
-        //   transform-origin="65px 57.00005912780762px"
+        //   transformOrigin="65px 57.00005912780762px"
         >
           <path
             d="M65 122C29.1015 122 8.98209e-06 92.8986 1.52588e-05 57.0001L130 57.0001C130 92.8986 100.899 122 65 122Z"
@@ -39,20 +39,20 @@ const MultinetworkCard = () => {
         </g>
       </g>
       <g
-        // style="transform: none; transform-origin: 158.286px 56.9998px;"
+        // style="transform: none; transformOrigin: 158.286px 56.9998px;"
         style={{
             transform: "none",
             transformOrigin: "158.2863540649414px 56.999794006347656px",
         }}
-        // transform-origin="158.2863540649414px 56.999794006347656px"
+        // transformOrigin="158.2863540649414px 56.999794006347656px"
       >
         <g
-        //   style="transform: translateX(1.00207px); transform-origin: 158.286px 56.9998px;"
+        //   style="transform: translateX(1.00207px); transformOrigin: 158.286px 56.9998px;"
           style={{
               transform: "translateX(1.00207px)",
               transformOrigin: "158.2863540649414px 56.999794006347656px",
           }}
-        //   transform-origin="158.2863540649414px 56.999794006347656px"
+        //   transformOrigin="158.2863540649414px 56.999794006347656px"
         >
           <path
             d="M158.286 -35.8574C107.003 -35.8573 65.4289 5.71631 65.4289 57L251.144 57C251.144 5.7163 209.57 -35.8574 158.286 -35.8574Z"
@@ -67,20 +67,20 @@ const MultinetworkCard = () => {
         </g>
       </g>
       <g
-        // style="transform: none; transform-origin: 251px 57.0001px;"
+        // style="transform: none; transformOrigin: 251px 57.0001px;"
         style={{
             transform: "none",
             transformOrigin: "251px 57.00005340576172px",
         }}
-        // transform-origin="251px 57.00005340576172px"
+        // transformOrigin="251px 57.00005340576172px"
       >
         <g
-        //   style="transform: translateX(3.52382px); transform-origin: 251px 57.0001px;"
+        //   style="transform: translateX(3.52382px); transformOrigin: 251px 57.0001px;"
           style={{
               transform: "translateX(3.52382px)",
               transformOrigin: "251px 57.00005340576172px",
           }}
-        //   transform-origin="251px 57.00005340576172px"
+        //   transformOrigin="251px 57.00005340576172px"
         >
           <path
             d="M251 169C312.856 169 363 118.856 363 57.0001L139 57.0001C139 118.856 189.144 169 251 169Z"

@@ -11,28 +11,28 @@ const StakeCard = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        // style="transform: none; transform-origin: 147px 0px;"
+        // style="transform: none; transformOrigin: 147px 0px;"
         style={{
             transform: "none",
             transformOrigin: "147px 0px",
         }}
-        // transform-origin="147px 0px"
+        // transformOrigin="147px 0px"
       >
         <g
-        //   style="transform: none; transform-origin: 147px 0px;"
+        //   style="transform: none; transformOrigin: 147px 0px;"
           style={{
               transform: "none",
               transformOrigin: "147px 0px",
           }}
-        //   transform-origin="147px 0px"
+        //   transformOrigin="147px 0px"
         >
           <g
-            // style="transform: scale(0.900033); transform-origin: 147px 0px;"
+            // style="transform: scale(0.900033); transformOrigin: 147px 0px;"
             style={{
                 transform: "scale(0.900033)",
                 transformOrigin: "147px 0px",
             }}
-            // transform-origin="147px 0px"
+            // transformOrigin="147px 0px"
           >
             <circle
               mask="url(#defi-stake-circle-mask-1)"
@@ -51,20 +51,20 @@ const StakeCard = () => {
           </g>
         </g>
         <g
-        //   style="transform: none; transform-origin: 147px 0px;"
+        //   style="transform: none; transformOrigin: 147px 0px;"
           style={{
               transform: "none",
               transformOrigin: "147px 0px",
           }}
-        //   transform-origin="147px 0px"
+        //   transformOrigin="147px 0px"
         >
           <g
-            // style="transform: scale(0.905359); transform-origin: 147px 0px;"
+            // style="transform: scale(0.905359); transformOrigin: 147px 0px;"
             style={{
                 transform: "scale(0.905359)",
                 transformOrigin: "147px 0px",
             }}
-            // transform-origin="147px 0px"
+            // transformOrigin="147px 0px"
           >
             <circle
               mask="url(#defi-stake-circle-mask-1)"
@@ -83,20 +83,20 @@ const StakeCard = () => {
           </g>
         </g>
         <g
-        //   style="transform: none; transform-origin: 147px 0px;"
+        //   style="transform: none; transformOrigin: 147px 0px;"
           style={{
               transform: "none",
               transformOrigin: "147px 0px",
           }}
-        //   transform-origin="147px 0px"
+        //   transformOrigin="147px 0px"
         >
           <g
-            // style="transform: scale(0.927491); transform-origin: 147px 0px;"
+            // style="transform: scale(0.927491); transformOrigin: 147px 0px;"
             style={{
                 transform: "scale(0.927491)",
                 transformOrigin: "147px 0px",
             }}
-            // transform-origin="147px 0px"
+            // transformOrigin="147px 0px"
           >
             <circle
               mask="url(#defi-stake-circle-mask-1)"

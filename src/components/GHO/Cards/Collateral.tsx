@@ -54,20 +54,20 @@ const Collateral = () => {
             ></path>
           </g>
           <g
-            // style="transform: rotate(35deg); transform-origin: 160px 160px;"
+            // style="transform: rotate(35deg); transformOrigin: 160px 160px;"
             style={{
               transform: "rotate(35deg)",
               transformOrigin: "160px 160px",
             }}
-            // transform-origin="160px 160.00000678168362px"
+            // transformOrigin="160px 160.00000678168362px"
           >
             <g
-              // style="transform: rotate(0.0766013deg); transform-origin: 160px 160px;"
+              // style="transform: rotate(0.0766013deg); transformOrigin: 160px 160px;"
               style={{
                 transform: "rotate(0.0766013deg)",
                 transformOrigin: "160px 160px",
               }}
-              // transform-origin="160px 160.00000678168362px"
+              // transformOrigin="160px 160.00000678168362px"
             >
               <rect
                 width="320"

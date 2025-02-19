@@ -17,12 +17,12 @@ const Community = () => {
         className="roof"
         d="M13.551 4.24983C14.823 3.4813 16.4161 3.4813 17.6881 4.24983L26.56 9.61025C28.7267 10.9194 27.7986 14.25 25.2671 14.25H5.97197C3.44046 14.25 2.51241 10.9194 4.67912 9.61025L13.551 4.24983Z"
         fill="color(display-p3 0.1098 0.2824 0.5255)"
-        // style="transform: none; transform-origin: 15.6195px 8.96172px;"
+        // style="transform: none; transformOrigin: 15.6195px 8.96172px;"
         style={{
           transform: "none",
           transformOrigin: "15.6195px 8.96172px",
         }}
-        // transform-origin="15.619547128677368px 8.961716175079346px"
+        // transformOrigin="15.619547128677368px 8.961716175079346px"
       ></path>
       <rect
         className="pillar"
@@ -32,12 +32,12 @@ const Community = () => {
         height="11px"
         rx="2"
         fill="color(display-p3 0.3804 0.5333 0.7529)"
-        // style="transform: none; transform-origin: 7.5px 22.5px;"
+        // style="transform: none; transformOrigin: 7.5px 22.5px;"
         style={{
           transform: "none",
           transformOrigin: "7.5px 22.5px",
         }}
-        // transform-origin="7.5px 22.5px"
+        // transformOrigin="7.5px 22.5px"
       ></rect>
       <rect
         className="pillar"
@@ -47,12 +47,12 @@ const Community = () => {
         height="11px"
         rx="2"
         fill="color(display-p3 0.3804 0.5333 0.7529)"
-        // style="transform: none; transform-origin: 15.5px 22.5px;"
+        // style="transform: none; transformOrigin: 15.5px 22.5px;"
         style={{
           transform: "none",
           transformOrigin: "15.5px 22.5px",
         }}
-        // transform-origin="15.5px 22.5px"
+        // transformOrigin="15.5px 22.5px"
       ></rect>
       <rect
         className="pillar"
@@ -62,12 +62,12 @@ const Community = () => {
         height="11px"
         rx="2"
         fill="color(display-p3 0.3804 0.5333 0.7529)"
-        // style="transform: none; transform-origin: 23.5px 22.5px;"
+        // style="transform: none; transformOrigin: 23.5px 22.5px;"
         style={{
           transform: "none",
           transformOrigin: "23.5px 22.5px",
         }}
-        // transform-origin="23.5px 22.5px"
+        // transformOrigin="23.5px 22.5px"
       ></rect>
     </svg>
   );

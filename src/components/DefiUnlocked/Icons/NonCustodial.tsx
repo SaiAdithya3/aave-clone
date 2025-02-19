@@ -15,12 +15,12 @@ const NonCustodial = () => {
     >
       <g
         className="group"
-        // style="transform: none; transform-origin: 6px 16px;"
+        // style="transform: none; transformOrigin: 6px 16px;"
         style={{
           transform: "none",
           transformOrigin: "6px 16px",
         }}
-        // transform-origin="6px 16px"
+        // transformOrigin="6px 16px"
       >
         <rect width="32" height="32"></rect>
         <path
