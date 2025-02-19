@@ -1,6 +1,8 @@
 import { AnimatedText } from "../utils/AnimatedText";
 import { CustomLink } from "../utils/CustomLink";
+import Collateral from "./Cards/Collateral";
 import GHObubbles from "./Cards/GHObubbles";
+import GHOMinted from "./Cards/GHOMinted";
 
 export default function GHO() {
   return (
@@ -25,9 +27,52 @@ export default function GHO() {
               </span>
               %
             </p>
+            <p>
+              <span className="font-inter text-[16px] leading-[135%] tracking-[-0.09px] text-[#636161] ">
+                Collateralisation
+              </span>
+              <svg
+                className="styles_gridCardDot__Zmfvh inline-block mx-[8px] align-middle"
+                xmlns="http://www.w3.org/2000/svg"
+                width="4"
+                height="4"
+                viewBox="0 0 4 4"
+                fill="none"
+              >
+                <circle cx="1.83325" cy="2" r="1.5" fill="#BCBBBB"></circle>
+              </svg>
+              <span className="font-inter text-[16px] leading-[135%] tracking-[-0.09px] text-[#8f8e8e] align-middle">
+                30 Day Avg
+              </span>
+            </p>
+            <Collateral />
           </div>
           <div className="p-[32px] overflow-hidden bg-[#f7f6f6] rounded-[16px] relative">
-            nice
+            <p className="mb-[8px] font-inter text-[24px] font-[600] leading-[105%] tracking-[-0.48px] text-[#221d1d]  text-nowrap">
+              +&nbsp;
+              <span className="inline-flex justify-end w-[135px]">
+                <span>163,544,600</span>
+              </span>
+            </p>
+            <p>
+              <span className="font-inter text-[16px] leading-[135%] tracking-[-0.09px] text-[#636161] ">
+                GHO Minted
+              </span>
+              <svg
+                className="styles_gridCardDot__Zmfvh inline-block mx-[8px] align-middle"
+                xmlns="http://www.w3.org/2000/svg"
+                width="4"
+                height="4"
+                viewBox="0 0 4 4"
+                fill="none"
+              >
+                <circle cx="1.83325" cy="2" r="1.5" fill="#BCBBBB"></circle>
+              </svg>
+              <span className="font-inter text-[16px] leading-[135%] tracking-[-0.09px] text-[#8f8e8e] align-middle">
+                1 Yr
+              </span>
+            </p>
+            <GHOMinted />
           </div>
         </div>
       </div>

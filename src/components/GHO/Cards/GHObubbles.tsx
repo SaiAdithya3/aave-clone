@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const GHObubbles = () => {
   return (
     <svg
-      className="styles_gridIllustration__kM_06"
+      className="w-full h-full"
       viewBox="0 0 650 500"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
