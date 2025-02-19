@@ -18,20 +18,20 @@ const AverageTwo = () => {
 
         ></rect>
         <g
-        //   style="transform: rotate(-29.9579deg); transform-origin: 228.5px 0px;"
+        //   style="transform: rotate(-29.9579deg); // transform-origin: 228.5px 0px;"
           style={{
             transform: "rotate(-29.9579deg)",
             transformOrigin: "228.5px 0px",
           }}
-          transform-origin="228.5px 0px"
+          // transform-origin="228.5px 0px"
         >
           <g
-            // style="transform: none; transform-origin: 228.5px 0px;"
+            // style="transform: none; // transform-origin: 228.5px 0px;"
             style={{
               transform: "none",
               transformOrigin: "228.5px 0px",
             }}
-            transform-origin="228.5px 0px"
+            // transform-origin="228.5px 0px"
           >
             <circle
               mask="url(#borrow-circle-outer-mask-1)"
@@ -66,12 +66,12 @@ const AverageTwo = () => {
               ></rect>
             </mask>
             <g
-            //   style="transform: none; transform-origin: 228.5px 0px;"
+            //   style="transform: none; // transform-origin: 228.5px 0px;"
               style={{
                 transform: "none",
                 transformOrigin: "228.5px 0px",
               }}
-              transform-origin="228.5px 0px"
+              // transform-origin="228.5px 0px"
             >
               <circle
                 mask="url(#borrow-circle-inner-mask-1)"

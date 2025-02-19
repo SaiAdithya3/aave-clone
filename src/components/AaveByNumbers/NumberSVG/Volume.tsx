@@ -54,12 +54,12 @@ const Volume = () => {
         ></rect>
         <g
           id="bottom"
-        //   style="transform: none; transform-origin: 770.75px 62.5px;"
+        //   style="transform: none; // transform-origin: 770.75px 62.5px;"
         style={{
             transform: "none",
             transformOrigin: "770.75px 62.5px",
         }}
-          transform-origin="770.75px 62.5000114440918px"
+          // transform-origin="770.75px 62.5000114440918px"
         >
           <motion.g
           variants={topVariants}
@@ -146,24 +146,24 @@ const Volume = () => {
         </g>
         <g
           id="bottom"
-        //   style="transform: none; transform-origin: 771.25px 187.5px;"
+        //   style="transform: none; // transform-origin: 771.25px 187.5px;"
           style={{
             transform: "none",
             transformOrigin: "771.25px 187.5px"
           }}
-          transform-origin="771.25px 187.5px"
+          // transform-origin="771.25px 187.5px"
         >
           <motion.g
             id="bottom"
             initial="initial"
             animate="animate"
             variants={bottomVariants}
-            // style="transform: translateX(-345.117px); transform-origin: 771.25px 187.5px;"
+            // style="transform: translateX(-345.117px); // transform-origin: 771.25px 187.5px;"
             style={{
                 transform: "none",
                 transformOrigin: "771.25px 187.5px"
             }}
-            transform-origin="771.25px 187.5px"
+            // transform-origin="771.25px 187.5px"
           >
             <rect
               id="Rectangle 22446"

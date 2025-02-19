@@ -23,7 +23,7 @@ const HeroRings = () => {
         viewBox="0 0 985 438"
         style={{ width: "100%", pointerEvents: "auto" }}
       >
-        <g clip-path="url(#hero-animation-mask)">
+        <g clipPath="url(#hero-animation-mask)">
           <g transform="scale(1.08)">
             <g opacity="1">
               <g
@@ -32,7 +32,7 @@ const HeroRings = () => {
                   transform: "translateY(220px)",
                   transformOrigin: "75px 227.25px",
                 }}
-                // transform-origin="75px 227.25px"
+                // // transform-origin="75px 227.25px"
               >
                 <g transform="scale(1.5)">
                   <path
@@ -61,19 +61,19 @@ const HeroRings = () => {
                           transform: "rotate(-5deg)",
                           transformOrigin: "50px 50px",
                         }}
-                        // transform-origin="50px 50px"
+                        // // transform-origin="50px 50px"
                       >
                         <rect
                           width="100"
                           height="100"
                           fill="#39D1F9"
-                          // style="fill:color(display-p3 0.4196 0.8078 0.9608);fill-opacity:1"
+                          // style="fill:color(display-p3 0.4196 0.8078 0.9608);fillOpacity:1"
                         ></rect>
                         <rect
                           width="50"
                           height="100"
                           fill="#A7E9FD"
-                          // style="fill:color(display-p3 0.7098 0.9059 0.9804);fill-opacity:1"
+                          // style="fill:color(display-p3 0.7098 0.9059 0.9804);fillOpacity:1"
                         ></rect>
                         <mask
                           id="mask1_4272_2676"
@@ -98,7 +98,7 @@ const HeroRings = () => {
                             width="50"
                             height="50"
                             fill="#39D1F9"
-                            // style="fill:color(display-p3 0.4196 0.8078 0.9608);fill-opacity:1"
+                            // style="fill:color(display-p3 0.4196 0.8078 0.9608);fillOpacity:1"
                           ></rect>
                           <rect
                             x="50"
@@ -106,7 +106,7 @@ const HeroRings = () => {
                             width="25"
                             height="50"
                             fill="#A7E9FD"
-                            // style="fill:color(display-p3 0.7098 0.9059 0.9804);fill-opacity:1"
+                            // style="fill:color(display-p3 0.7098 0.9059 0.9804);fillOpacity:1"
                           ></rect>
                         </g>
                       </g>
@@ -116,12 +116,12 @@ const HeroRings = () => {
               </g>
               <g
                 opacity="1"
-                // style="transform: translateX(152px) translateY(210px); transform-origin: 75px 227.25px;"
+                // style="transform: translateX(152px) translateY(210px); // transform-origin: 75px 227.25px;"
                 style={{
                   transform: "translateX(152px) translateY(210px)",
                   transformOrigin: "75px 227.25px",
                 }}
-                // transform-origin="75px 227.25px"
+                // // transform-origin="75px 227.25px"
               >
                 <g transform="scale(1.5)">
                   <path
@@ -145,24 +145,24 @@ const HeroRings = () => {
                   <g mask="url(#mask0_4272_2676)">
                     <g>
                       <g
-                        // style="transform: rotate(-14deg); transform-origin: 50px 50px;"
+                        // style="transform: rotate(-14deg); // transform-origin: 50px 50px;"
                         style={{
                           transform: "rotate(-14deg)",
                           transformOrigin: "50px 50px",
                         }}
-                        // transform-origin="50px 50px"
+                        // // transform-origin="50px 50px"
                       >
                         <rect
                           width="100"
                           height="100"
                           fill="#FFB000"
-                          // style="fill:color(display-p3 1 0.72 0);fill-opacity:1"
+                          // style="fill:color(display-p3 1 0.72 0);fillOpacity:1"
                         ></rect>
                         <rect
                           width="50"
                           height="100"
                           fill="#FFD400"
-                          // style="fill:color(display-p3 1 0.8392 0.1922);fill-opacity:1"
+                          // style="fill:color(display-p3 1 0.8392 0.1922);fillOpacity:1"
                         ></rect>
                         <mask
                           id="mask1_4272_2676"
@@ -187,7 +187,7 @@ const HeroRings = () => {
                             width="50"
                             height="50"
                             fill="#FFB000"
-                            // style="fill:color(display-p3 1 0.72 0);fill-opacity:1"
+                            // style="fill:color(display-p3 1 0.72 0);fillOpacity:1"
                             // style={{ fill: "rgb(255, 176, 0)"}}
                           ></rect>
                           <rect
@@ -196,7 +196,7 @@ const HeroRings = () => {
                             width="25"
                             height="50"
                             fill="#FFD400"
-                            // style="fill:color(display-p3 1 0.8392 0.1922);fill-opacity:1"
+                            // style="fill:color(display-p3 1 0.8392 0.1922);fillOpacity:1"
                           ></rect>
                         </g>
                       </g>
@@ -206,12 +206,12 @@ const HeroRings = () => {
               </g>
               <g
                 opacity="1"
-                // style="transform: translateX(304px) translateY(190px); transform-origin: 75px 227.25px;"
+                // style="transform: translateX(304px) translateY(190px); // transform-origin: 75px 227.25px;"
                 style={{
                   transform: "translateX(304px) translateY(190px)",
                   transformOrigin: "75px 227.25px",
                 }}
-                // transform-origin="75px 227.25px"
+                // // transform-origin="75px 227.25px"
               >
                 <g transform="scale(1.5)">
                   <path
@@ -235,24 +235,24 @@ const HeroRings = () => {
                   <g mask="url(#mask0_4272_2676)">
                     <g>
                       <g
-                        // style="transform: rotate(-18deg); transform-origin: 50px 50px;"
+                        // style="transform: rotate(-18deg); // transform-origin: 50px 50px;"
                         style={{
                           transform: "rotate(-18deg)",
                           transformOrigin: "50px 50px",
                         }}
-                        // transform-origin="50px 50px"
+                        // // transform-origin="50px 50px"
                       >
                         <rect
                           width="100"
                           height="100"
                           fill="#00827B"
-                          // style="fill:color(display-p3 0.121 0.5025 0.4806);fill-opacity:1"
+                          // style="fill:color(display-p3 0.121 0.5025 0.4806);fillOpacity:1"
                         ></rect>
                         <rect
                           width="50"
                           height="100"
                           fill="#39BEB7"
-                          // style="fill:color(display-p3 0.3882 0.7333 0.7137);fill-opacity:1"
+                          // style="fill:color(display-p3 0.3882 0.7333 0.7137);fillOpacity:1"
                         ></rect>
                         <mask
                           id="mask1_4272_2676"
@@ -277,7 +277,7 @@ const HeroRings = () => {
                             width="50"
                             height="50"
                             fill="#00827B"
-                            // style="fill:color(display-p3 0.121 0.5025 0.4806);fill-opacity:1"
+                            // style="fill:color(display-p3 0.121 0.5025 0.4806);fillOpacity:1"
                           ></rect>
                           <rect
                             x="50"
@@ -285,7 +285,7 @@ const HeroRings = () => {
                             width="25"
                             height="50"
                             fill="#39BEB7"
-                            // style="fill:color(display-p3 0.3882 0.7333 0.7137);fill-opacity:1"
+                            // style="fill:color(display-p3 0.3882 0.7333 0.7137);fillOpacity:1"
                           ></rect>
                         </g>
                       </g>
@@ -295,7 +295,7 @@ const HeroRings = () => {
               </g>
               <g
                 opacity="1"
-                // style="transform: translateX(456px) translateY(170px); transform-origin: 75px 227.25px;"
+                // style="transform: translateX(456px) translateY(170px); // transform-origin: 75px 227.25px;"
                 style={{
                   transform: "translateX(456px) translateY(170px)",
                   transformOrigin: "75px 227.25px",
@@ -324,7 +324,7 @@ const HeroRings = () => {
                   <g mask="url(#mask0_4272_2676)">
                     <g>
                       <g
-                        // style="transform: rotate(-11deg); transform-origin: 50px 50px;"
+                        // style="transform: rotate(-11deg); // transform-origin: 50px 50px;"
                         style={{
                           transform: "rotate(-11deg)",
                           transformOrigin: "50px 50px",
@@ -335,13 +335,13 @@ const HeroRings = () => {
                           width="100"
                           height="100"
                           fill="#008AFF"
-                          // style="fill:color(display-p3 0.102 0.5333 0.9725);fill-opacity:1"
+                          // style="fill:color(display-p3 0.102 0.5333 0.9725);fillOpacity:1"
                         ></rect>
                         <rect
                           width="50"
                           height="100"
                           fill="#00AEFF"
-                          // style="fill:color(display-p3 0.2824 0.6706 1);fill-opacity:1"
+                          // style="fill:color(display-p3 0.2824 0.6706 1);fillOpacity:1"
                         ></rect>
                         <mask
                           id="mask1_4272_2676"
@@ -366,7 +366,7 @@ const HeroRings = () => {
                             width="50"
                             height="50"
                             fill="#008AFF"
-                            // style="fill:color(display-p3 0.102 0.5333 0.9725);fill-opacity:1"
+                            // style="fill:color(display-p3 0.102 0.5333 0.9725);fillOpacity:1"
                           ></rect>
                           <rect
                             x="50"
@@ -374,7 +374,7 @@ const HeroRings = () => {
                             width="25"
                             height="50"
                             fill="#00AEFF"
-                            // style="fill:color(display-p3 0.2824 0.6706 1);fill-opacity:1"
+                            // style="fill:color(display-p3 0.2824 0.6706 1);fillOpacity:1"
                           ></rect>
                         </g>
                       </g>
@@ -384,12 +384,12 @@ const HeroRings = () => {
               </g>
               <g
                 opacity="1"
-                // style="transform: translateX(608px) translateY(120px); transform-origin: 75px 227.25px;"
+                // style="transform: translateX(608px) translateY(120px); // transform-origin: 75px 227.25px;"
                 style={{
                   transform: "translateX(608px) translateY(120px)",
                   transformOrigin: "75px 227.25px",
                 }}
-                // transform-origin="75px 227.25px"
+                // // transform-origin="75px 227.25px"
               >
                 <g transform="scale(1.5)">
                   <path
@@ -413,24 +413,24 @@ const HeroRings = () => {
                   <g mask="url(#mask0_4272_2676)">
                     <g>
                       <g
-                        // style="transform: none; transform-origin: 50px 50px;"
+                        // style="transform: none; // transform-origin: 50px 50px;"
                         style={{
                           transform: "none",
                           transformOrigin: "50px 50px",
                         }}
-                        // transform-origin="50px 50px"
+                        // // transform-origin="50px 50px"
                       >
                         <rect
                           width="100"
                           height="100"
                           fill="#F24900"
-                          // style="fill:color(display-p3 0.9490 0.2863 0.0000);fill-opacity:1"
+                          // style="fill:color(display-p3 0.9490 0.2863 0.0000);fillOpacity:1"
                         ></rect>
                         <rect
                           width="50"
                           height="100"
                           fill="#FF8947"
-                          // style="fill:color(display-p3 1.0000 0.5373 0.2784);fill-opacity:1"
+                          // style="fill:color(display-p3 1.0000 0.5373 0.2784);fillOpacity:1"
                         ></rect>
                         <mask
                           id="mask1_4272_2676"
@@ -455,7 +455,7 @@ const HeroRings = () => {
                             width="50"
                             height="50"
                             fill="#F24900"
-                            // style="fill:color(display-p3 0.9490 0.2863 0.0000);fill-opacity:1"
+                            // style="fill:color(display-p3 0.9490 0.2863 0.0000);fillOpacity:1"
                           ></rect>
                           <rect
                             x="50"
@@ -463,7 +463,7 @@ const HeroRings = () => {
                             width="25"
                             height="50"
                             fill="#FF8947"
-                            // style="fill:color(display-p3 1.0000 0.5373 0.2784);fill-opacity:1"
+                            // style="fill:color(display-p3 1.0000 0.5373 0.2784);fillOpacity:1"
                           ></rect>
                         </g>
                       </g>
@@ -473,12 +473,12 @@ const HeroRings = () => {
               </g>
               <g
                 opacity="1"
-                // style="transform: translateX(760px) translateY(60px); transform-origin: 75px 227.25px;"
+                // style="transform: translateX(760px) translateY(60px); // transform-origin: 75px 227.25px;"
                 style={{
                   transform: "translateX(760px) translateY(60px)",
                   transformOrigin: "75px 227.25px",
                 }}
-                // transform-origin="75px 227.25px"
+                // // transform-origin="75px 227.25px"
               >
                 <g transform="scale(1.5)">
                   <path
@@ -502,24 +502,24 @@ const HeroRings = () => {
                   <g mask="url(#mask0_4272_2676)">
                     <g>
                       <g
-                        // style="transform: none; transform-origin: 50px 50px;"
+                        // style="transform: none; // transform-origin: 50px 50px;"
                         style={{
                           transform: "none",
                           transformOrigin: "50px 50px",
                         }}
-                        // transform-origin="50px 50px"
+                        // // transform-origin="50px 50px"
                       >
                         <rect
                           width="100"
                           height="100"
                           fill="#9896FF"
-                          // style="fill:color(display-p3 0.5951 0.587 1);fill-opacity:1"
+                          // style="fill:color(display-p3 0.5951 0.587 1);fillOpacity:1"
                         ></rect>
                         <rect
                           width="50"
                           height="100"
                           fill="#BDBBFF"
-                          // style="fill:color(display-p3 0.7391 0.7337 1);fill-opacity:1"
+                          // style="fill:color(display-p3 0.7391 0.7337 1);fillOpacity:1"
                         ></rect>
                         <mask
                           id="mask1_4272_2676"
@@ -544,7 +544,7 @@ const HeroRings = () => {
                             width="50"
                             height="50"
                             fill="#9896FF"
-                            // style="fill:color(display-p3 0.5951 0.587 1);fill-opacity:1"
+                            // style="fill:color(display-p3 0.5951 0.587 1);fillOpacity:1"
                           ></rect>
                           <rect
                             x="50"
@@ -552,7 +552,7 @@ const HeroRings = () => {
                             width="25"
                             height="50"
                             fill="#BDBBFF"
-                            // style="fill:color(display-p3 0.7391 0.7337 1);fill-opacity:1"
+                            // style="fill:color(display-p3 0.7391 0.7337 1);fillOpacity:1"
                           ></rect>
                         </g>
                       </g>

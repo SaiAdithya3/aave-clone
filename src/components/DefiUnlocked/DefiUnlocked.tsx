@@ -1,4 +1,58 @@
 import { AnimatedText } from "@/components/utils/AnimatedText";
+import SwapCard from "./Cards/SwapCard";
+import StakeCard from "./Cards/StakeCard";
+import HealthFactorCard from "./Cards/HealthFactorCard";
+import MultinetworkCard from "./Cards/MultinetworkCard";
+import NonCustodial from "./Icons/NonCustodial";
+import Transparent from "./Icons/Transparent";
+import Community from "./Icons/Community";
+import Composability from "./Icons/Composability";
+
+const cardData = [
+  {
+    title: "Swap",
+    description: "Swap any ERC-20, even those borrowed or supplied.",
+    svg: <SwapCard />,
+  },
+  {
+    title: "Stake",
+    description: "Earn rewards for securing the protocol.",
+    svg: <StakeCard />,
+  },
+  {
+    title: "Health Factor",
+    description: "Easily track the risk level of your borrow positions.",
+    svg: <HealthFactorCard />,
+  },
+  {
+    title: "Multi-Network",
+    description: "Deployable on any EVM compatible network.",
+    svg: <MultinetworkCard />,
+  },
+];
+
+const TableData = [
+  {
+    title: "Non-Custodial",
+    description: "Users maintain control over their own funds throughout the supplying and borrowing process.",
+    svg: <NonCustodial />,
+  },
+  {
+    title: "Transparent",
+    description: "The Aave Protocol is open source and transactions are visible to anyone.",
+    svg: <Transparent />,
+  },
+  {
+    title: "Community Governed",
+    description: "AAVE token holders decide which assets are listed and steer protocol development.",
+    svg: <Community />,
+  },
+  {
+    title: "Composability",
+    description: "Integrating Aave's liquidity pools and interest rate mechanisms enables the creation of diverse products and applications.",
+    svg: <Composability />,
+  },
+];
 
 export default function DefiUnlocked() {
   return (
@@ -7,34 +61,45 @@ export default function DefiUnlocked() {
         <h2 className="px-[24px] text-[40px] leading-[135%] tracking-[-0.8px] font-[600] text-[#221d1d]">
           <AnimatedText text="DeFi, unlocked." />
         </h2>
-        <div className="w-full mt-[48px] grid grid-cols-2">
-            <div className="flex justify-end flex-col z-0 overflow-hidden bg-[#f7f6f6] px-[40px] py-[32px] relative">
-              one
+        <div className="w-full mt-[48px] grid grid-cols-2 gap-x-[40px] gap-y-[48px]">
+          {cardData.map((card, index) => (
+            <div
+              key={index}
+              className="h-[300px] flex justify-end flex-col z-0 overflow-hidden bg-[#f7f6f6] rounded-[16px] px-[40px] py-[32px] relative"
+            >
+              <h3 className="mb-[16px] font-inter text-[24px] tracking-[-0.48px] font-[600] leading-[135%] text-[#221d1d]">
+                {card.title}
+              </h3>
+              <p className="text-[16px] font-inter font-[400] leading-[150%] tracking-[-0.18px] text-[#636161]">
+                {card.description}
+              </p>
+              {card.svg}
             </div>
-            <div className="flex justify-end flex-col z-0 overflow-hidden bg-[#f7f6f6] px-[40px] py-[32px] relative">
-              one
-            </div>
-            <div className="flex justify-end flex-col z-0 overflow-hidden bg-[#f7f6f6] px-[40px] py-[32px] relative">
-              one
-            </div>
-            <div className="flex justify-end flex-col z-0 overflow-hidden bg-[#f7f6f6] px-[40px] py-[32px] relative">
-              one
-            </div>
+          ))}
+        </div>
+
+        <div className="w-full mt-[48px]">
+          {TableData.map
+            ((card, index) => (
+              <div
+                key={index}
+                className={`w-full p-[32px] rounded-[16px] grid grid-cols-2 gap-x-[40px] gap-y-[40px]
+                    ${index % 2 === 1 ? "bg-[#fbfbfb]" : ""}
+                  `}
+              >
+                <div className="flex items-center gap-[16px]">
+                {card.svg}
+                <h3 className="font-inter text-[16px] tracking-[-0.33px] font-[600] leading-[135%] text-[#221d1d]">
+                  {card.title}
+                </h3>
+                </div>
+                <p className="text-[16px] font-inter font-[400] tracking-[-0.18px] text-[#636161]">
+                  {card.description}
+                </p>
+              </div>
+            ))}
         </div>
       </div>
     </div>
   );
 }
-
-// styles_cardsContainer__JdqID {
-//   display: grid
-// ;
-//   grid-template-columns: 1fr 1fr;
-//   grid-template-rows: 300px 300px;
-//   grid-gap: 48px 40px;
-//   gap: 48px 40px;
-//   margin-top: 48px;
-
-
-
-// register 
