@@ -1,3 +1,5 @@
+import RotatingBalls from "./RotatingBalls";
+
 export default function Governed() {
   return (
     <div className="w-full flex items-center flex-col pt-[100px] pb-[100px] px-[48px]">
@@ -29,6 +31,7 @@ export default function Governed() {
             />
           </svg>
         </button>
+        <RotatingBalls />
       </div>
     </div>
   );
