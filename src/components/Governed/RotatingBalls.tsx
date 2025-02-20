@@ -45,7 +45,7 @@ const RotatingBalls = () => {
       viewBox="0 0 986 914"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute z-[-1] h-full"
+      className="hidden md:flex absolute z-[-1] h-full"
     >
       <motion.g
         opacity="1"

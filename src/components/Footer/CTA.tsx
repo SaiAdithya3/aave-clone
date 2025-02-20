@@ -1,9 +1,9 @@
 export default function CTA() {
     return (
-      <div className="flex flex-col items-center py-[100px] px-[48px]">
+      <div className="flex flex-col items-center py-[100px] px-5 md:px-[48px]">
         <div className="relative w-full max-w-[986px]">
-          <div className="flex w-full rounded-[12px] overflow-hidden">
-            <div className="flex flex-col relative w-1/3 bg-[#fcfcfb] p-[48px] gap-[12px]">
+          <div className="flex md:flex-row flex-col w-full rounded-[12px] overflow-hidden">
+            <div className="flex flex-col relative w-full md:w-1/3 bg-[#fcfcfb] p-[48px] gap-[12px]">
               <h2 className="font-regola text-[24px] font-[600] tracking-[-0.48px] leading-[135%]">
                 Stay Updated
               </h2>
@@ -11,7 +11,7 @@ export default function CTA() {
                 Be the first to hear Aave protocol news.
               </p>
             </div>
-            <div className="flex relative w-2/3 bg-[#f7f7f6] p-[48px] gap-[4px]">
+            <div className="flex relative w-full md:w-2/3 bg-[#f7f7f6] p-[48px] gap-[4px]">
               <div className="flex flex-col w-full gap-[8px]">
                 <label htmlFor="email" className="flex w-full justify-between items-center h-[32px]">
                   <div className="flex items-center gap-[6px]">
