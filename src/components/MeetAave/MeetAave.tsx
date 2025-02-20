@@ -1,10 +1,13 @@
 "use client";
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useRef, useState } from "react";
+import { motion, AnimatePresence, useInView } from "framer-motion";
 import MeetAaveBalls from "./MeetAaveBalls";
+import { AnimatedText } from "../utils/AnimatedText";
 
 export default function MeetAave() {
   const [activeState, setActiveState] = useState("supply");
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.4 });
 
   const tabVariants = {
     inactive: {
@@ -63,11 +66,11 @@ export default function MeetAave() {
   };
 
   return (
-    <div className="w-full flex items-center flex-col ">
+    <div ref={ref} className="w-full flex items-center flex-col ">
       <div className="w-full max-w-[1024px] flex-col flex pt-[150px] pb-[100px] pl-[48px] pr-[48px] items-center">
-        <h1 className="text-[40px] text-center  font-[600] leading-[135%] tracking-[-0.8px] text-[#211d1d] w-full font-regola">
-          Meet Aave.
-        </h1>
+        {/* <h1 className="text-[40px] text-center font-[600] leading-[135%] tracking-[-0.8px] text-[#211d1d] w-full font-regola"> */}
+          <AnimatedText text="Meet Aave." isInView={isInView} />
+        {/* </h1> */}
         <p className="font-inter text-[20px] mt-[12px] font-[500] tracking-[-0.33px] text-[#636161]">
           Earn interest and borrow assets.
         </p>

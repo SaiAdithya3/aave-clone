@@ -122,7 +122,7 @@ export default function HeroSection() {
           of liquidity currently supplied in Aave.
         </motion.div>
       </div>
-      <div className="absolute bottom-5 -z-[10] w-[90%] md:w-full max-w-[1024px] flex items-center gap-5">
+      <div className="block mt-[-110px] -z-[10] w-[90%] md:w-full max-w-[1024px] items-center gap-5">
         <HeroRings />
       </div>
     </div>

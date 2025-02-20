@@ -4,6 +4,7 @@ import AaveByNumbers from "@/components/AaveByNumbers/AaveByNumbers";
 import AaveEverywhere from "@/components/AaveEverywhere/AaveEverywhere";
 import DefiUnlocked from "@/components/DefiUnlocked/DefiUnlocked";
 import FAQ from "@/components/Faq/FAQ";
+import CTA from "@/components/Footer/CTA";
 import Footer from "@/components/Footer/Footer";
 import GHO from "@/components/GHO/GHO";
 import Governed from "@/components/Governed/Governed";
@@ -27,6 +28,7 @@ export default function Home() {
         <Governed />
         <Security />
         <FAQ />
+        <CTA />
         <Footer />
       </div>
   )

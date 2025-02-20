@@ -7,6 +7,8 @@ import NonCustodial from "./Icons/NonCustodial";
 import Transparent from "./Icons/Transparent";
 import Community from "./Icons/Community";
 import Composability from "./Icons/Composability";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 const cardData = [
   {
@@ -55,11 +57,13 @@ const TableData = [
 ];
 
 export default function DefiUnlocked() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.2 });
   return (
-    <div className="w-full flex flex-col items-center justify-center pt-[100px] px-[48px] ">
+    <div ref={ref} className="w-full flex flex-col items-center justify-center pt-[100px] px-[48px] ">
       <div className="w-full max-w-[986px] gap-[72px] items-start pb-[100px]">
         <h2 className="px-[24px] text-[40px] leading-[135%] tracking-[-0.8px] font-[600] text-[#221d1d]">
-          <AnimatedText text="DeFi, unlocked." />
+          <AnimatedText text="DeFi, unlocked." isInView={isInView}/>
         </h2>
         <div className="w-full mt-[48px] grid grid-cols-2 gap-x-[40px] gap-y-[48px]">
           {cardData.map((card, index) => (

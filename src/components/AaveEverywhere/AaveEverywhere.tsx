@@ -1,14 +1,18 @@
+import { useRef } from "react";
 import { AnimatedText } from "../utils/AnimatedText";
 import { Logo } from "./Logo";
 import MiddleIcon from "./MiddleIcon";
 import { logos } from "./data/logos";
+import { useInView } from "framer-motion";
 
 export default function AaveEverywhere() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.2 });
   return (
-    <div className="w-full pt-[100px] pb-[100px] px-[48px] flex items-center flex-col">
+    <div ref={ref} className="w-full pt-[100px] pb-[100px] px-[48px] flex items-center flex-col">
       <div className="w-full max-w-[986px]">
         <div className="w-full pl-[24px] pr-[24px]">
-          <AnimatedText text="Aave everywhere." />
+          <AnimatedText text="Aave everywhere." isInView={isInView}/>
           <p className="mt-[12px] text-[20px] max-w-[24em] font-[500] tracking-[-0.33px] leading-[135%] font-inter text-[#636161]">
             Join Aave's growing constellation of builders.
           </p>

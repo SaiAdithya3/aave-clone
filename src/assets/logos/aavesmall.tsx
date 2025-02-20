@@ -3,7 +3,8 @@ import React from "react";
 const Aavesmall = () => {
   return (
     <svg
-      className="flex-shrink-0 h-4 fill-secondaryParagraph"
+      className="flex-shrink-0 h-4"
+      fill="#8f8e8e"
       viewBox="0 0 3518 602"
       xmlns="http://www.w3.org/2000/svg"
     >

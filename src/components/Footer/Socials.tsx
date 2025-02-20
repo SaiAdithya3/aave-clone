@@ -5,8 +5,9 @@ const Socials = () => {
     <div className="flex items-center gap-x-6 mt-[104px]">
       <a href="https://x.com/aave" className="flex">
         <svg
-          className="h-[22px] overflow-visible fill-secondaryParagraph hover:fill-primaryHeadingGray transition-all ease-in-out duration-100"
+          className="h-[22px] overflow-visible fill-[#8f8e8e] hover:fill-black transition-all ease-in-out duration-100"
           viewBox="0 0 16 20"
+          // fill="#8f8e8e"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M12.6009 2.94141H15.0544L9.69434 8.9215L16 17.0591H11.0627L7.19566 12.1237L2.77087 17.0591H0.31595L6.04904 10.6627L0 2.94141H5.06262L8.55811 7.45254L12.6009 2.94141ZM11.7399 15.6256H13.0993L4.32392 4.2996H2.86506L11.7399 15.6256Z"></path>
@@ -14,7 +15,7 @@ const Socials = () => {
       </a>
       <a href="https://discord.com/invite/aave" className="flex">
         <svg
-          className="h-[22px] overflow-visible fill-secondaryParagraph hover:fill-primaryHeadingGray transition-all ease-in-out duration-100"
+          className="h-[22px] overflow-visible fill-[#8f8e8e] hover:fill-black transition-all ease-in-out duration-100"
           viewBox="0 0 19 20"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -23,7 +24,7 @@ const Socials = () => {
       </a>
       <a href="https://hey.xyz/u/aave" className="flex">
         <svg
-          className="h-[22px] overflow-visible fill-secondaryParagraph hover:fill-primaryHeadingGray transition-all ease-in-out duration-100"
+          className="h-[22px] overflow-visible fill-[#8f8e8e] hover:fill-black transition-all ease-in-out duration-100"
           viewBox="0 0 18 20"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -36,7 +37,7 @@ const Socials = () => {
       </a>
       <a href="https://github.com/aave" className="flex">
         <svg
-          className="h-[22px] overflow-visible fill-secondaryParagraph hover:fill-primaryHeadingGray transition-all ease-in-out duration-100"
+          className="h-[22px] overflow-visible fill-[#8f8e8e] hover:fill-black transition-all ease-in-out duration-100"
           viewBox="0 0 18 20"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -45,7 +46,7 @@ const Socials = () => {
       </a>
       <a href="https://dune.com/aavelabs" className="flex">
         <svg
-          className="h-[22px] overflow-visible fill-secondaryParagraph hover:fill-primaryHeadingGray transition-all ease-in-out duration-100"
+          className="h-[22px] overflow-visible fill-[#8f8e8e] hover:fill-black transition-all ease-in-out duration-100"
           width="18"
           height="18"
           viewBox="0 0.5 16 16"

@@ -1,17 +1,21 @@
+import { useRef } from "react";
 import { AnimatedText } from "../utils/AnimatedText";
 import NumberCards from "./NumberCards";
 import Average from "./NumberSVG/Average";
 import AverageTwo from "./NumberSVG/AverageTwo";
 import NetDeposits from "./NumberSVG/NetDeposits";
 import Volume from "./NumberSVG/Volume";
+import { useInView } from "framer-motion";
 
 export default function AaveByNumbers() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.2 });
   return (
-    <div className="w-full flex flex-col items-center justify-center pt-[100px] ">
+    <div ref={ref} className="w-full flex flex-col items-center justify-center pt-[100px] ">
       <div className="w-full max-w-[986px] flex gap-[72px] items-start pb-[100px]">
         <div className="w-1/2 sticky top-[150px] ml-[24px] pb-[17px]">
           {/* <h1 className="text-[#221d1d] font-inter text-[40px] font-[600] tracking-[-0.8px] leading-[135%]">Aave By Numbers</h1> */}
-          <AnimatedText text="Aave by the numbers." />
+          <AnimatedText text="Aave by the numbers." isInView={isInView} />
           <p className="mt-[12px] text-[20px] font-[500] font-inter leading-[135%] tracking-[-0.33px] text-[#636161]">
           Aave is one of the largest DeFi protocols with billions of dollars in weekly volume across Ethereum and 12+ networks.
           </p>
