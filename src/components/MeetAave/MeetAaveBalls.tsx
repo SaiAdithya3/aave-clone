@@ -8,7 +8,7 @@ const MeetAaveBalls = () => {
           viewBox="0 0 986 450"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="styles_illustration__GwP6W rounded-[16px]"
+          className="w-full rounded-[16px]"
         >
           <g id="2">
             <rect width="986" height="450" fill="#F7F6F6"></rect>

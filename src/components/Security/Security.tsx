@@ -41,7 +41,7 @@ export default function Security() {
               </span>
             </div>
           </div>
-          <div className="md:grid md:grid-cols-2 md:grid-rows-[257px] flex flex-col rounded-2xl bg-[#fcfcfb] overflow-hidden">
+          <div className="md:grid md:grid-cols-2 md:grid-rows-[257px] flex flex-col-reverse md:flex-col rounded-2xl bg-[#fcfcfb] overflow-hidden">
             <div className="flex flex-col gap-y-6 md:py-10 md:px-12 p-8">
               <h3 className="font-regola text-2xl leading-[135%] -tracking-[.48px] ">
                 Bug Bounty
@@ -77,7 +77,7 @@ export default function Security() {
               </span>
             </div>
           </div>
-          <div className="md:grid md:grid-cols-2 md:grid-rows-[257px] flex flex-col rounded-2xl bg-[#fcfcfb] overflow-hidden">
+          <div className="md:grid md:grid-cols-2 md:grid-rows-[257px] flex flex-col-reverse md:flex-col  rounded-2xl bg-[#fcfcfb] overflow-hidden">
             <div className="flex flex-col gap-y-6 md:py-10 md:px-12 p-8">
               <h3 className="font-regola text-2xl leading-[135%] -tracking-[.48px] ">
                 5 Years Strong

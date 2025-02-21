@@ -10,17 +10,17 @@ export default function GHO() {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.2 });
   return (
-    <div ref={ref} className="w-full flex items-center flex-col pt-[100px] pb-[100px] px-[48px]">
+    <div ref={ref} className="w-full flex items-center flex-col pt-[100px] pb-[100px] px-5 md:px-[48px]">
       <div className="relative w-full max-w-[986px]">
-        <div className="w-full pl-[24px] pr-[24px]">
+        <div className="w-full px-2 md:p-[24px]">
           <AnimatedText text="GHO" isInView={isInView}/>
-          <p className="mt-[12px] text-[20px] max-w-[24em] font-[500] tracking-[-0.33px] leading-[135%] font-inter text-[#636161]">
+          <p className="mt-[12px] text-[14px] md:text-[20px] mb-8 md:mb-0  max-w-[24em] font-[500] tracking-[-0.33px] leading-[135%] font-inter text-[#636161]">
             GHO is the only decentralised, overcollateralised stablecoin native
             to the Aave Protocol.
           </p>
-          <CustomLink href="/">Learn More</CustomLink>
+          <CustomLink href="/" title="Learn more">Learn More</CustomLink>
         </div>
-        <div className="mt-[72px] grid grid-cols-[10fr_6fr] grid-rows-2 gap-[24px]">
+        <div className="mt-[72px] grid md:grid-cols-[10fr_6fr] grid-rows-2 gap-[24px]">
           <div className="relative overflow-hidden row-span-2 rounded-[16px] bg-[#f7f6f6]">
             <GHObubbles />
           </div>

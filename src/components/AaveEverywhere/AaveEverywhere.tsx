@@ -17,13 +17,13 @@ export default function AaveEverywhere() {
             Join Aave's growing constellation of builders.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-[9px] mt-[72px]">
+        <div className="grid md:grid-cols-3 gap-[9px] mt-[72px]">
           <div className="grid grid-cols-3 gap-[9px]">
             {logos.slice(0, 9).map((logo) => (
               <Logo key={logo.id} logo={logo} />
             ))}
           </div>
-          <div className="rounded-[1em] bg-[#9896FF]">
+          <div className="w-full flex items-center justify-center rounded-[1em] bg-[#9896FF]">
             <MiddleIcon />
           </div>
           <div className="grid grid-cols-3 gap-[9px]">

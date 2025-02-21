@@ -67,17 +67,17 @@ export default function MeetAave() {
 
   return (
     <div ref={ref} className="w-full flex items-center flex-col ">
-      <div className="w-full max-w-[1024px] flex-col flex pt-[150px] pb-[100px] pl-[48px] pr-[48px] items-center">
+      <div className="w-full max-w-[1024px] flex-col flex pt-[150px] pb-[100px] px-5 md:px-[48px] items-center">
         {/* <h1 className="text-[40px] text-center font-[600] leading-[135%] tracking-[-0.8px] text-[#211d1d] w-full font-regola"> */}
           <AnimatedText text="Meet Aave." isInView={isInView} />
         {/* </h1> */}
         <p className="font-inter text-[20px] mt-[12px] font-[500] tracking-[-0.33px] text-[#636161]">
           Earn interest and borrow assets.
         </p>
-        <div className="mt-[48px]">
+        <div className="relative overflow-hidden rounded-[16px]  md:mt-[48px]">
           <MeetAaveBalls />
         </div>
-        <div className="mt-[48px] w-full h-auto ">
+        <div className="md:mt-[48px] w-full h-auto ">
           <div className="w-full flex gap-[24px] ">
             <motion.div
               className="left cursor-pointer flex items-start gap-[16px] flex-col"

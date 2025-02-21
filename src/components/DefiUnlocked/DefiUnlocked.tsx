@@ -36,22 +36,26 @@ const cardData = [
 const TableData = [
   {
     title: "Non-Custodial",
-    description: "Users maintain control over their own funds throughout the supplying and borrowing process.",
+    description:
+      "Users maintain control over their own funds throughout the supplying and borrowing process.",
     svg: <NonCustodial />,
   },
   {
     title: "Transparent",
-    description: "The Aave Protocol is open source and transactions are visible to anyone.",
+    description:
+      "The Aave Protocol is open source and transactions are visible to anyone.",
     svg: <Transparent />,
   },
   {
     title: "Community Governed",
-    description: "AAVE token holders decide which assets are listed and steer protocol development.",
+    description:
+      "AAVE token holders decide which assets are listed and steer protocol development.",
     svg: <Community />,
   },
   {
     title: "Composability",
-    description: "Integrating Aave's liquidity pools and interest rate mechanisms enables the creation of diverse products and applications.",
+    description:
+      "Integrating Aave's liquidity pools and interest rate mechanisms enables the creation of diverse products and applications.",
     svg: <Composability />,
   },
 ];
@@ -60,12 +64,15 @@ export default function DefiUnlocked() {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.2 });
   return (
-    <div ref={ref} className="w-full flex flex-col items-center justify-center pt-[100px] px-[48px] ">
+    <div
+      ref={ref}
+      className="w-full flex flex-col items-center justify-center pt-[100px] px-5 md:px-[48px] "
+    >
       <div className="w-full max-w-[986px] gap-[72px] items-start pb-[100px]">
         <h2 className="px-[24px] text-[40px] leading-[135%] tracking-[-0.8px] font-[600] text-[#221d1d]">
-          <AnimatedText text="DeFi, unlocked." isInView={isInView}/>
+          <AnimatedText text="DeFi, unlocked." isInView={isInView} />
         </h2>
-        <div className="w-full mt-[48px] grid grid-cols-2 gap-x-[40px] gap-y-[48px]">
+        <div className="w-full mt-[48px] grid md:grid-cols-2 gap-x-[40px] gap-y-[48px]">
           {cardData.map((card, index) => (
             <div
               key={index}
@@ -83,25 +90,24 @@ export default function DefiUnlocked() {
         </div>
 
         <div className="w-full mt-[48px]">
-          {TableData.map
-            ((card, index) => (
-              <div
-                key={index}
-                className={`w-full p-[32px] rounded-[16px] grid grid-cols-2 gap-x-[40px] gap-y-[40px]
+          {TableData.map((card, index) => (
+            <div
+              key={index}
+              className={`w-full p-[32px] rounded-[16px] grid md:grid-cols-2 gap-x-[40px] gap-y-[10px] md:gap-y-[40px]
                     ${index % 2 === 1 ? "bg-[#fbfbfb]" : ""}
                   `}
-              >
-                <div className="flex items-center gap-[16px]">
+            >
+              <div className="flex items-center gap-[16px]">
                 {card.svg}
                 <h3 className="font-inter text-[16px] tracking-[-0.33px] font-[600] leading-[135%] text-[#221d1d]">
                   {card.title}
                 </h3>
-                </div>
-                <p className="text-[16px] font-inter font-[400] tracking-[-0.18px] text-[#636161]">
-                  {card.description}
-                </p>
               </div>
-            ))}
+              <p className="text-[16px] font-inter font-[400] tracking-[-0.18px] text-[#636161]">
+                {card.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
