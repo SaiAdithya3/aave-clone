@@ -103,7 +103,7 @@ export default function FAQ() {
                 </div>
               ))}
               <div className="w-full flex items-start my-[32px]">
-                <CustomLink />
+                <CustomLink title="See More" color="#1a88f8"/>
               </div>
             </div>
           </div>
