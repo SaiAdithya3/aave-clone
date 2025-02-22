@@ -1,63 +1,101 @@
 // Create a separate component for the illustration
-export const ResourceIllustration = () => (
-  <svg
-    className="styles_menuIllustration__Hpkz7"
-    style={{
-      overflow: "hidden",
-      width: "256px",
-      height: "256px"
-    }}
-    viewBox="0 0 256 256"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <rect rx="8" width="256" height="256" fill="#9896FF" />
-    <path
-      d="M128 100C49.5757 100 -13.9999 36.4244 -13.9999 -42L270 -42C270 36.4244 206.424 100 128 100Z"
-      fill="#BCBBFF"
-      style={{ transform: "none", transformOrigin: "128px 29px" }}
-    />
-    <path
-      d="M128 29C88.7878 29 57 -2.78779 57 -42L199 -42C199 -2.78777 167.212 29 128 29Z"
-      fill="#9896FF"
-      style={{ transform: "none", transformOrigin: "128px -6.5px" }}
-    />
-    <path
-      d="M128 156C206.424 156 270 219.576 270 298L-14 298C-14 219.576 49.5756 156 128 156Z"
-      fill="#E2E0FF"
-      style={{ transform: "none", transformOrigin: "128px 227px" }}
-    />
-    <path
-      d="M128 227C167.212 227 199 258.788 199 298L57 298C57 258.788 88.7878 227 128 227Z"
-      fill="#BCBBFF"
-      style={{ transform: "none", transformOrigin: "128px 262.5px" }}
-    />
-    <g className="animate-spin-slow">
-      <g
-        style={{
-          transform: "translateX(156px) translateY(-78px)",
-          transformOrigin: "240px -25.9986px"
+import { motion } from "framer-motion";
+
+type ResourceIllustrationProps = {
+  colors?: string[];
+  defaultColors?: string[];
+};
+
+export const ResourceIllustration = ({ 
+  colors = ["#9896ff", "#bdbbff"],
+  defaultColors = ["#636161", "#8F8E8E"]
+}: ResourceIllustrationProps) => {
+  const primaryColor = colors[0];
+  const secondaryColor = colors[1];
+  const lightColor = `${primaryColor}33`; // 20% opacity version
+
+  return (
+    <svg
+      className="w-full h-full"
+      style={{
+        overflow: "hidden",
+        borderRadius: "8px",
+      }}
+      viewBox="0 0 256 256"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect rx="8" width="256" height="256" fill={lightColor} />
+      
+      {/* Top waves */}
+      <motion.g
+        initial={{ y: -10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        <path
+          d="M128 100C49.5757 100 -13.9999 36.4244 -13.9999 -42L270 -42C270 36.4244 206.424 100 128 100Z"
+          fill={secondaryColor}
+        />
+        <path
+          d="M128 29C88.7878 29 57 -2.78779 57 -42L199 -42C199 -2.78777 167.212 29 128 29Z"
+          fill={primaryColor}
+        />
+      </motion.g>
+
+      {/* Bottom waves */}
+      <motion.g
+        initial={{ y: 10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+      >
+        <path
+          d="M128 156C206.424 156 270 219.576 270 298L-14 298C-14 219.576 49.5756 156 128 156Z"
+          fill={lightColor}
+        />
+        <path
+          d="M128 227C167.212 227 199 258.788 199 298L57 298C57 258.788 88.7878 227 128 227Z"
+          fill={secondaryColor}
+        />
+      </motion.g>
+
+      {/* Spinning elements */}
+      <motion.g
+        animate={{ 
+          rotate: 360 
         }}
+        transition={{
+          duration: 20,
+          repeat: Infinity,
+          ease: "linear"
+        }}
+        style={{ transformOrigin: "128px 128px" }}
       >
         <g
           style={{
-            transform: "rotate(45deg)",
-            transformOrigin: "240px -25.9986px"
+            transform: "translateX(156px) translateY(-78px)",
+            transformOrigin: "240px -25.9986px",
           }}
         >
-          <path
-            d="M361.244 44.0013C322.584 110.962 236.961 133.905 170 95.2448L310 -147.242C376.961 -108.582 399.904 -22.9596 361.244 44.0013Z"
-            fill="#9DEBE7"
-          />
-          <path
-            d="M118.756 -95.9987C157.416 -162.96 243.038 -185.902 309.999 -147.242L169.999 95.2448C103.038 56.5848 80.096 -29.0378 118.756 -95.9987Z"
-            fill="#63BBB6"
-          />
-        </g>
+          <g
+            style={{
+              transform: "rotate(45deg)",
+              transformOrigin: "240px -25.9986px",
+            }}
+          >
+            <path
+              d="M361.244 44.0013C322.584 110.962 236.961 133.905 170 95.2448L310 -147.242C376.961 -108.582 399.904 -22.9596 361.244 44.0013Z"
+              fill={primaryColor}
+            />
+            <path
+              d="M118.756 -95.9987C157.416 -162.96 243.038 -185.902 309.999 -147.242L169.999 95.2448C103.038 56.5848 80.096 -29.0378 118.756 -95.9987Z"
+              fill={secondaryColor}
+            />
+          </g>
         <g
           style={{
             transform: "rotate(-90deg)",
-            transformOrigin: "239.999px -25.9993px"
+            transformOrigin: "239.999px -25.9993px",
           }}
         >
           <path
@@ -73,13 +111,13 @@ export const ResourceIllustration = () => (
       <g
         style={{
           transform: "translateX(-156px) translateY(78px)",
-          transformOrigin: "16.0017px 281.997px"
+          transformOrigin: "16.0017px 281.997px",
         }}
       >
         <g
           style={{
             transform: "rotate(45deg)",
-            transformOrigin: "16.0017px 281.997px"
+            transformOrigin: "16.0017px 281.997px",
           }}
         >
           <path
@@ -94,7 +132,7 @@ export const ResourceIllustration = () => (
         <g
           style={{
             transform: "rotate(-90deg)",
-            transformOrigin: "16.0013px 281.997px"
+            transformOrigin: "16.0013px 281.997px",
           }}
         >
           <path
@@ -107,12 +145,12 @@ export const ResourceIllustration = () => (
           />
         </g>
       </g>
-    </g>
+    </motion.g>
     <g
       style={{
         transform: "scale(0.5) rotate(-135deg)",
         transformOrigin: "128px 128px",
-        opacity: 0
+        opacity: 0,
       }}
     >
       <path
@@ -127,13 +165,13 @@ export const ResourceIllustration = () => (
     <g
       style={{
         transform: "translateY(216px)",
-        transformOrigin: "127px 168px"
+        transformOrigin: "127px 168px",
       }}
     >
       <g
         style={{
           transform: "rotate(-180deg)",
-          transformOrigin: "127px 104px"
+          transformOrigin: "127px 104px",
         }}
       >
         <path
@@ -148,7 +186,7 @@ export const ResourceIllustration = () => (
       <g
         style={{
           transform: "rotate(180deg)",
-          transformOrigin: "127px 232px"
+          transformOrigin: "127px 232px",
         }}
       >
         <path
@@ -164,7 +202,7 @@ export const ResourceIllustration = () => (
     <g
       style={{
         transform: "translateY(192px)",
-        transformOrigin: "127.5px 191px"
+        transformOrigin: "127.5px 191px",
       }}
     >
       <circle cx="255" cy="255" r="64" fill="#C6DFFF" />
@@ -174,3 +212,4 @@ export const ResourceIllustration = () => (
     </g>
   </svg>
 );
+}
