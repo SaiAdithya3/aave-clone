@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 export default function Trusted() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.2 });
+  const isInView = useInView(ref, { amount: 0.2, once: true });
   const infinite = {
     animate: {
       x: [0, "-50%"],

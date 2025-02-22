@@ -11,7 +11,7 @@ const BugBounty = ({ isInView = true }: BugBountyProps) => {
     { y: 215, count: 4, duration: 12, delay: 1, size: 21 },
     { y: 175, count: 3, duration: 8, delay: 2, size: 21 },
     { y: 135, count: 2, duration: 15, delay: 3, size: 21 },
-    { y: 85, count: 1, duration: 10, delay: 4, size: 28 }
+    { y: 88, count: 1, duration: 10, delay: 4, size: 28 }
   ];
 
   const createCircle = (x: number, y: number, size: number) => (

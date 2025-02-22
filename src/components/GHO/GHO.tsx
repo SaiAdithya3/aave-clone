@@ -5,10 +5,11 @@ import Collateral from "./Cards/Collateral";
 import GHObubbles from "./Cards/GHObubbles";
 import GHOMinted from "./Cards/GHOMinted";
 import { useInView } from "framer-motion";
+import { NumberTicker } from "../utils/NumberTicker";
 
 export default function GHO() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.2 });
+  const isInView = useInView(ref, { amount: 0.2 , once: true});
   return (
     <div ref={ref} className="w-full flex items-center flex-col pt-[100px] pb-[100px] px-5 md:px-[48px]">
       <div className="relative w-full max-w-[986px]">
@@ -21,13 +22,13 @@ export default function GHO() {
           <CustomLink href="/" title="Learn more">Learn More</CustomLink>
         </div>
         <div className="mt-[72px] grid md:grid-cols-[10fr_6fr] grid-rows-2 gap-[24px]">
-          <div className="relative overflow-hidden row-span-2 rounded-[16px] bg-[#f7f6f6]">
+          <div className="relative overflow-hidden row-span-2 rounded-[16px] bg-[#fafafa]">
             <GHObubbles />
           </div>
           <div className="p-[32px] overflow-hidden bg-[#f7f6f6] rounded-[16px] relative">
             <p className="mb-[8px] font-inter text-[24px] font-[600] leading-[105%] tracking-[-0.48px] text-[#221d1d]  text-nowrap">
               <span className="inline-flex justify-end w-[42px]">
-                <span>245</span>
+              <NumberTicker value={245}  />
               </span>
               %
             </p>
@@ -55,7 +56,7 @@ export default function GHO() {
             <p className="mb-[8px] font-inter text-[24px] font-[600] leading-[105%] tracking-[-0.48px] text-[#221d1d]  text-nowrap">
               +&nbsp;
               <span className="inline-flex justify-end w-[135px]">
-                <span>163,544,600</span>
+                <NumberTicker value={170217240} />
               </span>
             </p>
             <p>

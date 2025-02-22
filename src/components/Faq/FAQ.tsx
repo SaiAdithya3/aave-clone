@@ -29,7 +29,7 @@ const faqData = [
 
 export default function FAQ() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.2 });
+  const isInView = useInView(ref, { amount: 0.3, once: true });
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
@@ -39,7 +39,11 @@ export default function FAQ() {
         <div className="relative w-full max-w-[986px] pt-[100px] pb-[100px] px-5 ">
           <div className="w-full grid md:grid-cols-[1fr_2fr] gap-[10px] md:gap-[72px]">
             <AnimatedText text="FAQs" isInView={isInView} />
-            <div className="flex flex-col ">
+            <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isInView? 1 : 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="flex flex-col ">
               {faqData.map((faq, index) => (
                 <div
                   key={index}
@@ -103,9 +107,9 @@ export default function FAQ() {
                 </div>
               ))}
               <div className="w-full flex items-start my-[32px]">
-                <CustomLink title="See More" color="#1a88f8"/>
+                <CustomLink title="See More" color="#1a88f8" />
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

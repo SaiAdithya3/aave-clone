@@ -1,6 +1,29 @@
 import { motion } from "framer-motion";
 
 const GHObubbles = () => {
+  const mainLogoVariants = {
+    hidden: { scale: 0 },
+    visible: { 
+      scale: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const bubbleVariants = {
+    hidden: { scale: 0 },
+    visible: (i: number) => ({
+      scale: 1,
+      transition: {
+        duration: 0.8,
+        delay: 0.1 * i + 0.5,
+        ease: "easeOut"
+      }
+    })
+  };
+
   return (
     <svg
       className="w-full h-full"
@@ -12,8 +35,13 @@ const GHObubbles = () => {
         initial={{ transform: "none" }}
         style={{ transformOrigin: "324.413px 249px" }}
       >
-        <motion.g style={{ transformOrigin: "325px 250px" }}>
-          {/* Main GHO circle and logo */}
+        {/* Main GHO circle and logo */}
+        <motion.g 
+          style={{ transformOrigin: "325px 250px" }}
+          variants={mainLogoVariants}
+          initial="hidden"
+          animate="visible"
+        >
           <circle cx="325" cy="250" r="73" fill="#28D358" />
           <clipPath id="clip0_3123_123010">
             <circle cx="325" cy="250" r="73" fill="white" />
@@ -63,22 +91,29 @@ const GHObubbles = () => {
           <motion.g
             key={index}
             style={{ transformOrigin: `${bubble.cx}px ${bubble.cy}px` }}
-            animate={{
-              y: [bubble.y, -bubble.y],
-            }}
-            transition={{
-              duration: 1,
-              repeat: Infinity,
-              repeatType: "reverse",
-              ease: "easeInOut",
-            }}
+            variants={bubbleVariants}
+            initial="hidden"
+            animate="visible"
+            custom={index}
           >
-            <circle
+            <motion.circle
               cx={bubble.cx}
               cy={bubble.cy}
               r={bubble.r}
               fill={bubble.fill}
               fillOpacity={bubble.opacity}
+              animate={{
+                y: [bubble.y, -bubble.y],
+              }}
+              transition={{
+                y: {
+                  duration: 1,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                  ease: "easeInOut",
+                  delay: 0.1 * index + 1 // Start floating after entrance animation
+                }
+              }}
             />
           </motion.g>
         ))}

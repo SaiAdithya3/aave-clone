@@ -7,7 +7,7 @@ type Props = {
 
 export const AnimatedText: React.FC<Props> = ({ text }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.4 });
+  const isInView = useInView(ref, { amount: 0.4, once: true });
   const words = text.split(" ");
 
   return (

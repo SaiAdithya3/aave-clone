@@ -7,7 +7,7 @@ import { useInView } from "framer-motion";
 
 export default function AaveEverywhere() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.2 });
+  const isInView = useInView(ref, { amount: 0.2 , once: true});
   return (
     <div ref={ref} className="w-full pt-[100px] pb-[100px] px-[48px] flex items-center flex-col">
       <div className="w-full max-w-[986px]">
