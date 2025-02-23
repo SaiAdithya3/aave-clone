@@ -25,7 +25,7 @@ export default function GHO() {
           <div className="relative overflow-hidden row-span-2 rounded-[16px] bg-[#fafafa]">
             <GHObubbles />
           </div>
-          <div className="p-[32px] overflow-hidden bg-[#f7f6f6] rounded-[16px] relative">
+          <div className="p-[32px] overflow-hidden bg-[#fafafa] rounded-[16px] relative">
             <p className="mb-[8px] font-inter text-[24px] font-[600] leading-[105%] tracking-[-0.48px] text-[#221d1d]  text-nowrap">
               <span className="inline-flex justify-end w-[42px]">
               <NumberTicker value={245}  />
@@ -52,7 +52,7 @@ export default function GHO() {
             </p>
             <Collateral />
           </div>
-          <div className="p-[32px] overflow-hidden bg-[#f7f6f6] rounded-[16px] relative">
+          <div className="p-[32px] overflow-hidden bg-[#fafafa] rounded-[16px] relative">
             <p className="mb-[8px] font-inter text-[24px] font-[600] leading-[105%] tracking-[-0.48px] text-[#221d1d]  text-nowrap">
               +&nbsp;
               <span className="inline-flex justify-end w-[135px]">

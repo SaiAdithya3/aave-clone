@@ -7,7 +7,7 @@ import { AnimatedText } from "../utils/AnimatedText";
 export default function MeetAave() {
   const [activeState, setActiveState] = useState("supply");
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.4 });
+  const isInView = useInView(ref, { amount: 0.4, once: true });
 
   const tabVariants = {
     inactive: {
