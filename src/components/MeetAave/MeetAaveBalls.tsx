@@ -1,889 +1,235 @@
 "use client";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
-const MeetAaveBalls = () => {
-    return (
-        <svg
-          width="986"
-          height="450"
-          viewBox="0 0 986 450"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-full rounded-[16px]"
-        >
-          <g id="2">
-            <rect width="986" height="450" fill="#F7F6F6"></rect>
-            <rect width="986" height="225" fill="#FCFCFB"></rect>
-            <g id="gray-masked" clipPath="url(#clip1_3066_1499)">
-              <g>
-                <g
-                  opacity="1"
-                  // style="transform: none; // // transformOrigin: 223px 237px;"
-                  style={{
-                    transform: "none",
-                    transformOrigin: "223px 237px",
-                  }}
-                  // // transformOrigin="223px 237px"
-                >
-                  <g transform="translate(0 0)">
-                    <g
-                      // style="transform: translateY(7.63134px); // // transformOrigin: 223px 237px;"
-                      style={{
-                        transform: "translateY(7.63134px)",
-                        transformOrigin: "223px 237px",
-                      }}
-                      // // transformOrigin="223px 237px"
-                    >
-                      <g
-                        // style="transform: translateY(-184px); // // transformOrigin: 223px 237px;"
-                        style={{
-                          transform: "translateY(-184px)",
-                          transformOrigin: "223px 237px",
-                        }}
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:Rplotq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#1A88F8"
-                          // style="fill:color(display-p3 0.102 0.5333 0.9725)"
-                        ></circle>
-                        <mask id=":Rplotq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:Rplotq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#48ABFF"
-                          // style="fill:color(display-p3 0.2824 0.6706 1)"
-                        ></circle>
-                        <mask id=":Rplotq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                      <g
-                        // style="transform: none; // // transformOrigin: 223px 237px;"
-                        style={{
-                          transform: "none",
-                          transformOrigin: "223px 237px",
-                        }}
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:Rplotq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#1A88F8"
-                          // style="fill:color(display-p3 0.102 0.5333 0.9725)"
-                        ></circle>
-                        <mask id=":Rplotq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:Rplotq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#48ABFF"
-                          // style="fill:color(display-p3 0.2824 0.6706 1)"
-                        ></circle>
-                        <mask id=":Rplotq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-                <g
-                  opacity="1"
-                  // style="transform: none; // // transformOrigin: 405px 201px;"
-                  style={{
-                    transform: "none",
-                    transformOrigin: "405px 201px",
-                  }}
-                  // // transformOrigin="405px 201px"
-                >
-                  <g transform="translate(182 -36)">
-                    <g
-                      // style="transform: translateY(16.0092px); // // transformOrigin: 223px 237px;"
-                      style={{
-                        transform: "translateY(16.0092px)",
-                        transformOrigin: "223px 237px",
-                      }}
-                      // // transformOrigin="223px 237px"
-                    >
-                      <g
-                        // style="transform: translateY(-184px); // // transformOrigin: 223px 237px;"
-                        style={{
-                          transform: "translateY(-184px)",
-                          transformOrigin: "223px 237px",
-                        }}
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:R19lotq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#1A88F8"
-                          // style="fill:color(display-p3 0.102 0.5333 0.9725)"
-                        ></circle>
-                        <mask id=":R19lotq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:R19lotq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#48ABFF"
-                          // style="fill:color(display-p3 0.2824 0.6706 1)"
-                        ></circle>
-                        <mask id=":R19lotq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                      <g
-                        // style="transform: none; // // transformOrigin: 223px 237px;"
-                        style={{
-                          transform: "none",
-                          transformOrigin: "223px 237px",
-                        }}
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:R19lotq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#1A88F8"
-                          // style="fill:color(display-p3 0.102 0.5333 0.9725)"
-                        ></circle>
-                        <mask id=":R19lotq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:R19lotq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#48ABFF"
-                          // style="fill:color(display-p3 0.2824 0.6706 1)"
-                        ></circle>
-                        <mask id=":R19lotq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-                <g
-                  opacity="1"
-                  // style="transform: none; // // transformOrigin: 587px 237px;"
-                  style={{
-                    transform: "none",
-                    transformOrigin: "587px 237px",
-                  }}
-                  // // transformOrigin="587px 237px"
-                >
-                  <g transform="translate(364 0)">
-                    <g
-                      // style="transform: translateY(19.7626px); // // transformOrigin: 223px 237px;"
-                      style={{
-                        transform: "translateY(19.7626px)",
-                        transformOrigin: "223px 237px",
-                      }}
-                      // // transformOrigin="223px 237px"
-                    >
-                      <g
-                        // style="transform: translateY(-184px); // // transformOrigin: 223px 237px;"
-                        style={{
-                          transform: "translateY(-184px)",
-                          transformOrigin: "223px 237px",
-                        }}
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:R1plotq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#1A88F8"
-                          // style="fill:color(display-p3 0.102 0.5333 0.9725)"
-                        ></circle>
-                        <mask id=":R1plotq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:R1plotq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#48ABFF"
-                          // style="fill:color(display-p3 0.2824 0.6706 1)"
-                        ></circle>
-                        <mask id=":R1plotq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                      <g
-                        // style="transform: none; // // transformOrigin: 223px 237px;"
-                        style={{
-                          transform: "none",
-                          transformOrigin: "223px 237px",
-                        }}
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:R1plotq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#1A88F8"
-                          // style="fill:color(display-p3 0.102 0.5333 0.9725)"
-                        ></circle>
-                        <mask id=":R1plotq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:R1plotq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#48ABFF"
-                          // style="fill:color(display-p3 0.2824 0.6706 1)"
-                        ></circle>
-                        <mask id=":R1plotq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-                <g
-                  opacity="1"
-                  // style="transform: none; // // transformOrigin: 769px 201px;"
-                  style={{
-                    transform: "none",
-                    transformOrigin: "769px 201px",
-                  }}
-                  // // transformOrigin="769px 201px"
-                >
-                  <g transform="translate(546 -36)">
-                    <g
-                      // style="transform: translateY(18.8072px); // // transformOrigin: 223px 237px;"
-                      style={{
-                        transform: "translateY(18.8072px)",
-                        transformOrigin: "223px 237px",
-                      }}
-                      // // transformOrigin="223px 237px"
-                    >
-                      <g
-                        // style="transform: translateY(-184px); // // transformOrigin: 223px 237px;"
-                        style={{
-                          transform: "translateY(-184px)",
-                          transformOrigin: "223px 237px",
-                        }}
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:R29lotq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#1A88F8"
-                          // style="fill:color(display-p3 0.102 0.5333 0.9725)"
-                        ></circle>
-                        <mask id=":R29lotq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:R29lotq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#48ABFF"
-                          // style="fill:color(display-p3 0.2824 0.6706 1)"
-                        ></circle>
-                        <mask id=":R29lotq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                      <g
-                        // style="transform: none; // // transformOrigin: 223px 237px;"
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:R29lotq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#1A88F8"
-                          // style="fill:color(display-p3 0.102 0.5333 0.9725)"
-                        ></circle>
-                        <mask id=":R29lotq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:R29lotq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#48ABFF"
-                          // style="fill:color(display-p3 0.2824 0.6706 1)"
-                        ></circle>
-                        <mask id=":R29lotq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </g>
-            <g id="blue-masked" clipPath="url(#clip0_3066_1499)">
-              <g>
-                <g
-                  opacity="1"
-                  // style="transform: none; // // transformOrigin: 223px 237px;"
-                  style={{
-                    transform: "none",
-                    transformOrigin: "223px 237px",
-                  }}
-                  // // transformOrigin="223px 237px"
-                >
-                  <g transform="translate(0 0)">
-                    <g
-                      // style="transform: translateY(7.63134px); // // transformOrigin: 223px 237px;"
-                      style={{
-                        transform: "translateY(7.63134px)",
-                        transformOrigin: "223px 237px",
-                      }}
-                      // // transformOrigin="223px 237px"
-                    >
-                      <g
-                        // style="transform: translateY(-184px); // // transformOrigin: 223px 237px;"
-                        style={{
-                          transform: "translateY(-184px)",
-                          transformOrigin: "223px 237px",
-                        }}
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:Rq5otq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#6BCEF5"
-                          // style="fill:color(display-p3 0.4196 0.8078 0.9608)"
-                        ></circle>
-                        <mask id=":Rq5otq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:Rq5otq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#B5E7FA"
-                          // style="fill:color(display-p3 0.7098 0.9059 0.9804)"
-                        ></circle>
-                        <mask id=":Rq5otq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                      <g
-                        // style="transform: none; // // transformOrigin: 223px 237px;"
-                        style={{
-                          transform: "none",
-                          transformOrigin: "223px 237px",
-                        }}
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:Rq5otq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#6BCEF5"
-                          // style="fill:color(display-p3 0.4196 0.8078 0.9608)"
-                        ></circle>
-                        <mask id=":Rq5otq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:Rq5otq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#B5E7FA"
-                          // style="fill:color(display-p3 0.7098 0.9059 0.9804)"
-                        ></circle>
-                        <mask id=":Rq5otq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-                <g
-                  opacity="1"
-                  // style="transform: none; // // transformOrigin: 405px 201px;"
-                  style={{
-                    transform: "none",
-                    transformOrigin: "405px 201px",
-                  }}
-                  // // transformOrigin="405px 201px"
-                >
-                  <g transform="translate(182 -36)">
-                    <g
-                      // style="transform: translateY(16.0092px); // // transformOrigin: 223px 237px;"
-                      style={{
-                        transform: "translateY(16.0092px)",
-                        transformOrigin: "223px 237px",
-                      }}
-                      // // transformOrigin="223px 237px"
-                    >
-                      <g
-                        // style="transform: translateY(-184px); // // transformOrigin: 223px 237px;"
-                        style={{
-                          transform: "translateY(-184px)",
-                          transformOrigin: "223px 237px",
-                        }}
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:R1a5otq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#6BCEF5"
-                          // style="fill:color(display-p3 0.4196 0.8078 0.9608)"
-                        ></circle>
-                        <mask id=":R1a5otq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:R1a5otq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#B5E7FA"
-                          // style="fill:color(display-p3 0.7098 0.9059 0.9804)"
-                        ></circle>
-                        <mask id=":R1a5otq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                      <g
-                        // style="transform: none; // // transformOrigin: 223px 237px;"
-                        style={{
-                          transform: "none",
-                          transformOrigin: "223px 237px",
-                        }}
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:R1a5otq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#6BCEF5"
-                          // style="fill:color(display-p3 0.4196 0.8078 0.9608)"
-                        ></circle>
-                        <mask id=":R1a5otq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:R1a5otq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#B5E7FA"
-                          // style="fill:color(display-p3 0.7098 0.9059 0.9804)"
-                        ></circle>
-                        <mask id=":R1a5otq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-                <g
-                  opacity="1"
-                  // style="transform: none; // // transformOrigin: 587px 237px;"
-                  style={{
-                    transform: "none",
-                    transformOrigin: "587px 237px",
-                  }}
-                  // // transformOrigin="587px 237px"
-                >
-                  <g transform="translate(364 0)">
-                    <g
-                      // style="transform: translateY(19.7626px); // // transformOrigin: 223px 237px;"
-                      style={{
-                        transform: "translateY(19.7626px)",
-                        transformOrigin: "223px 237px",
-                      }}
-                      // // transformOrigin="223px 237px"
-                    >
-                      <g
-                        // style="transform: translateY(-184px); // // transformOrigin: 223px 237px;"
-                        style={{
-                          transform: "translateY(-184px)",
-                          transformOrigin: "223px 237px",
-                        }}
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:R1q5otq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#6BCEF5"
-                          // style="fill:color(display-p3 0.4196 0.8078 0.9608)"
-                        ></circle>
-                        <mask id=":R1q5otq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:R1q5otq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#B5E7FA"
-                          // style="fill:color(display-p3 0.7098 0.9059 0.9804)"
-                        ></circle>
-                        <mask id=":R1q5otq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                      <g
-                        // style="transform: none; // // transformOrigin: 223px 237px;"
-                        style={{
-                          transform: "none",
-                          transformOrigin: "223px 237px",
-                        }}
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:R1q5otq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#6BCEF5"
-                          // style="fill:color(display-p3 0.4196 0.8078 0.9608)"
-                        ></circle>
-                        <mask id=":R1q5otq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:R1q5otq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#B5E7FA"
-                          // style="fill:color(display-p3 0.7098 0.9059 0.9804)"
-                        ></circle>
-                        <mask id=":R1q5otq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-                <g
-                  opacity="1"
-                  // style="transform: none; // // transformOrigin: 769px 201px;"
-                  style={{
-                    transform: "none",
-                    transformOrigin: "769px 201px",
-                  }}
-                  // // transformOrigin="769px 201px"
-                >
-                  <g transform="translate(546 -36)">
-                    <g
-                      // style="transform: translateY(18.8072px); // // transformOrigin: 223px 237px;"
-                      style={{
-                        transform: "translateY(18.8072px)",
-                        transformOrigin: "223px 237px",
-                      }}
-                      // // transformOrigin="223px 237px"
-                    >
-                      <g
-                        // style="transform: translateY(-184px); // // transformOrigin: 223px 237px;"
-                        style={{
-                          transform: "translateY(-184px)",
-                          transformOrigin: "223px 237px",
-                        }}
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:R2a5otq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#6BCEF5"
-                          // style="fill:color(display-p3 0.4196 0.8078 0.9608)"
-                        ></circle>
-                        <mask id=":R2a5otq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:R2a5otq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#B5E7FA"
-                          // style="fill:color(display-p3 0.7098 0.9059 0.9804)"
-                        ></circle>
-                        <mask id=":R2a5otq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                      <g
-                        // style="transform: none; // // transformOrigin: 223px 237px;"
-                        style={{
-                          transform: "none",
-                          transformOrigin: "223px 237px",
-                        }}
-                        // // transformOrigin="223px 237px"
-                      >
-                        <circle
-                          mask="url(#:R2a5otq6:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#6BCEF5"
-                          // style="fill:color(display-p3 0.4196 0.8078 0.9608)"
-                        ></circle>
-                        <mask id=":R2a5otq6:">
-                          <rect
-                            x="223"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                        <circle
-                          mask="url(#:R2a5otq6H1:)"
-                          cx="223"
-                          cy="237"
-                          r="90"
-                          fill="#B5E7FA"
-                          // style="fill:color(display-p3 0.7098 0.9059 0.9804)"
-                        ></circle>
-                        <mask id=":R2a5otq6H1:">
-                          <rect
-                            x="133"
-                            y="147"
-                            width="90"
-                            height="180"
-                            fill="white"
-                          ></rect>
-                        </mask>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </g>
-          </g>
-          <defs>
-            <clipPath id="clip0_3066_1499">
-              <rect width="986" height="225" fill="white"></rect>
-            </clipPath>
-            <clipPath id="clip1_3066_1499">
-              <rect width="986" height="225" y="225" fill="white"></rect>
-            </clipPath>
-          </defs>
-        </svg>
-    )
+interface AaveInteractionProps {
+  isSupply: boolean | null;
+  isBorrow: boolean | null;
 }
 
-export default MeetAaveBalls
+const AaveInteractionBalls = ({ isSupply, isBorrow }: AaveInteractionProps) => {
+  const animationRef = useRef(null);
+  const elementInView = useInView(animationRef, { once: true, amount: 0.5 });
+
+  const balls = [
+    { 
+      x: 223, 
+      y: 237, 
+      colors: {
+        light: ["#6BCEF5", "#B5E7FA"],
+        dark: ["#1A88F8", "#48ABFF"]
+      }, 
+      delay: 0 
+    },
+    { x: 405, y: 201,colors: {
+      light: ["#6BCEF5", "#B5E7FA"],
+      dark: ["#1A88F8", "#48ABFF"]
+    }, delay: 0.1 },
+    { x: 587, y: 237, colors: {
+      light: ["#6BCEF5", "#B5E7FA"],
+      dark: ["#1A88F8", "#48ABFF"]
+    }, delay: 0.2 },
+    { x: 769, y: 201, colors: {
+      light: ["#6BCEF5", "#B5E7FA"],
+      dark: ["#1A88F8", "#48ABFF"]
+    },  delay: 0.3 },
+  ];
+
+  const entranceAnimation = {
+    initial: { y: -400 },
+    animate: {
+      y: elementInView ? 0 : -400,
+      transition: { duration: 0.5, ease: "easeOut", delay: 0, once: true },
+    },
+  };
+
+  const borrowTopAnimation = {
+    hidden: { translateY: -184, visibility: "hidden" as const },
+    show: {
+      translateY: 0,
+      visibility: "visible" as const,
+      transition: { duration: 0.5, ease: "easeInOut", delay: 0 },
+    },
+  };
+
+  const borrowBottomAnimation = {
+    hidden: { translateY: 0, visibility: "hidden" as const },
+    show: {
+      translateY: 400,
+      visibility: "visible" as const,
+      transition: { duration: 0.5, ease: "easeInOut", delay: 0 },
+    },
+  };
+
+  const supplyTopAnimation = {
+    hidden: { translateY: 0, visibility: "hidden" as const },
+    show: {
+      translateY: -184,
+      visibility: "visible" as const,
+      transition: { duration: 0.5, ease: "easeInOut", delay: 0 },
+    },
+  };
+
+  const supplyBottomAnimation = {
+    hidden: { translateY: 400, visibility: "hidden" as const },
+    show: {
+      translateY: 0,
+      visibility: "visible" as const,
+      transition: { duration: 0.5, ease: "easeInOut", delay: 0 },
+    },
+  };
+
+  const floatAnimation = {
+    hidden: { translateY: -30 },
+    show: {
+      translateY: [-30, 30, -30],
+      transition: { duration: 4, ease: "easeInOut", repeat: Infinity },
+    },
+  };
+
+  return (
+    <motion.svg
+      ref={animationRef}
+      width="986"
+      height="450"
+      viewBox="0 0 986 450"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-full rounded-[16px]"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
+      <defs>
+        <clipPath id="upperHalf">
+          <rect width="986" height="225" fill="white" />
+        </clipPath>
+        <clipPath id="lowerHalf">
+          <rect width="986" height="225" y="225" fill="white" />
+        </clipPath>
+      </defs>
+
+      <rect width="986" height="450" fill="#F7F6F6" />
+      <rect width="986" height="225" fill="#FCFCFB" />
+
+      {balls.map((ball, idx) => (
+        <motion.g
+          key={idx}
+          initial="initial"
+          animate={{
+            ...entranceAnimation.animate,
+            transition: {
+              ...entranceAnimation.animate.transition,
+              delay: ball.delay,
+            },
+          }}
+          variants={entranceAnimation}
+          className={`origin-[${ball.x}px_${ball.y}px]`}
+        >
+          <motion.g
+            initial="hidden"
+            animate={{
+              ...floatAnimation.show,
+              transition: {
+                ...floatAnimation.show.transition,
+                delay: ball.delay,
+              },
+            }}
+            variants={floatAnimation}
+          >
+            <motion.g
+              initial="hidden"
+              variants={isBorrow ? borrowTopAnimation : supplyTopAnimation}
+              animate={
+                isBorrow
+                  ? {
+                      ...borrowTopAnimation.show,
+                      transition: {
+                        ...borrowTopAnimation.show.transition,
+                        delay: ball.delay,
+                      },
+                    }
+                  : {
+                      ...supplyTopAnimation.show,
+                      transition: {
+                        ...supplyTopAnimation.show.transition,
+                        delay: ball.delay,
+                      },
+                    }
+              }
+            >
+              <circle cx={ball.x} cy={ball.y} r="90" fill={ball.colors.light[0]} />
+                <circle
+                  cx={ball.x}
+                  cy={ball.y}
+                  r="90"
+                  fill={ball.colors.light[1]}
+                  mask={`url(#ballMask${idx})`}
+                />
+              <mask id={`ballMask${idx}`}>
+                <rect
+                  x={ball.x - 90}
+                  y={ball.y - 90}
+                  width="90"
+                  height="180"
+                  fill="white"
+                />
+              </mask>
+            </motion.g>
+            <motion.g
+              initial="hidden"
+              variants={
+                isSupply
+                  ? supplyBottomAnimation
+                  : isBorrow
+                  ? borrowBottomAnimation
+                  : {}
+              }
+              animate={
+                isSupply
+                  ? {
+                      ...supplyBottomAnimation.show,
+                      transition: {
+                        ...supplyBottomAnimation.show.transition,
+                        delay: ball.delay,
+                      },
+                    }
+                  : isBorrow
+                  ? {
+                      ...borrowBottomAnimation.show,
+                      transition: {
+                        ...borrowBottomAnimation.show.transition,
+                        delay: ball.delay,
+                      },
+                    }
+                  : {}
+              }
+            >
+              <circle cx={ball.x} cy={ball.y} r="90" fill={ball.colors.dark[0]} />
+                <circle
+                  cx={ball.x}
+                  cy={ball.y}
+                  r="90"
+                  fill={ball.colors.dark[1]}
+                  mask={`url(#ballMask${idx})`}
+                />
+              <mask id={`ballMask${idx}_lower`}>
+                <rect
+                  x={ball.x - 90}
+                  y={ball.y - 90}
+                  width="90"
+                  height="180"
+                  fill="white"
+                />
+              </mask>
+            </motion.g>
+          </motion.g>
+        </motion.g>
+      ))}
+
+    
+    </motion.svg>
+  );
+};
+
+export default AaveInteractionBalls;

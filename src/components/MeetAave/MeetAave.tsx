@@ -7,7 +7,7 @@ import { AnimatedText } from "../utils/AnimatedText";
 export default function MeetAave() {
   const [activeState, setActiveState] = useState("supply");
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.4, once: true });
+  const isInView = useInView(ref, { amount: 0.2, once: true });
 
   const tabVariants = {
     inactive: {
@@ -75,7 +75,7 @@ export default function MeetAave() {
           Earn interest and borrow assets.
         </p>
         <div className="relative overflow-hidden rounded-[16px]  md:mt-[48px]">
-          <MeetAaveBalls />
+          <MeetAaveBalls isBorrow={activeState === "borrow"? true : false} isSupply={activeState === "borrow"? false : true}/>
         </div>
         <div className="md:mt-[48px] w-full h-auto ">
           <div className="w-full flex gap-[24px] ">
