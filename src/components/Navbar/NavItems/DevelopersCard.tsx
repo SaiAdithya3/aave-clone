@@ -8,7 +8,7 @@ import {
 } from "./ResourcesCard/ResourceIcons";
 import { ResourceIllustration } from "./ResourcesCard/ResourceIllustration";
 
-const ResourcesCard = () => {
+const DevelopersCard = () => {
   const [activeItem, setActiveItem] = useState(1);
   const defaultColors = ["#636161", "#8F8E8E"];
 
@@ -36,19 +36,11 @@ const ResourcesCard = () => {
       description: "Assets, examples and guides.",
       colors: ["#ff0000", "#ff8130"],
       defaultColors,
-    },
-    {
-      id: 4,
-      icon: GovernanceIcon,
-      title: "Governance",
-      description: "Assets, examples and guides.",
-      colors: ["#5589c5", "#00498b"],
-      defaultColors,
-    },
+    }
   ];
 
   return (
-    <div className="flex gap-2 justify-between  w-[575.531px] h-[277.59px] rounded-[16px] p-2 overflow-hidden relative bg-white">
+    <div className="flex gap-2 justify-between  w-[615.7px] h-[212px] rounded-[16px] p-2 overflow-hidden relative bg-white">
       <div className="w-[50%] flex flex-col gap-2">
         {data.map((item) => (
           <motion.div
@@ -100,4 +92,4 @@ const ResourcesCard = () => {
   );
 };
 
-export default ResourcesCard;
+export default DevelopersCard;

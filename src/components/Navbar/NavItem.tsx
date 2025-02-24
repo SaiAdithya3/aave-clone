@@ -1,56 +1,42 @@
-import { useState, useRef, useEffect } from "react";
+import { useRef } from "react";
+import { motion } from "framer-motion";
 
 interface NavItemProps {
   title: string;
-  content: React.ReactNode;
+  onHover: (position: number) => void;
+  onLeave: () => void;
+  isActive: boolean;
 }
 
-export default function NavItem({ title, content }: NavItemProps) {
-  const [isHovered, setIsHovered] = useState(false);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+export default function NavItem({ title, onHover, onLeave, isActive }: NavItemProps) {
+  const itemRef = useRef<HTMLDivElement>(null);
 
   const handleMouseEnter = () => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
+    if (itemRef.current) {
+      const rect = itemRef.current.getBoundingClientRect();
+      onHover(rect.left + rect.width / 2);
     }
-    setIsHovered(true);
   };
-
-  const handleMouseLeave = () => {
-    timeoutRef.current = setTimeout(() => {
-      setIsHovered(false);
-    }, 100);
-  };
-
-  useEffect(() => {
-    return () => {
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
-    };
-  }, []);
 
   return (
-    <div
+    <motion.div
+      ref={itemRef}
       className="relative"
       onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      onMouseLeave={onLeave}
     >
-      <h1 className="font-inter px-[16px] py-[9px] text-sm font-[500] leading-[105%] text-[#221d1d] bg-transparent hover:bg-[#221d1d08] rounded-[50px] cursor-default">
+      <motion.h1 
+        className={`font-inter px-[16px] py-[9px] text-sm font-[500] leading-[105%] text-[#221d1d] rounded-[50px] cursor-default`}
+        animate={{
+          backgroundColor: isActive ? "rgba(34, 29, 29, 0.03)" : "transparent"
+        }}
+        whileHover={{
+          backgroundColor: "rgba(34, 29, 29, 0.03)"
+        }}
+        transition={{ duration: 0.2 }}
+      >
         {title}
-      </h1>
-      {isHovered && (
-        <div
-          className="absolute left-1/2 -translate-x-1/2 min-w-max"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div className="absolute left-1/2 -translate-x-1/2 top-[7.5px] w-4 h-4 rotate-45 z-[10] bg-white border-t border-l border-[#00000010]" />
-          <div className="mt-4 opacity-0 animate-dropdown">
-            {content}
-          </div>
-        </div>
-      )}
-    </div>
+      </motion.h1>
+    </motion.div>
   );
 }

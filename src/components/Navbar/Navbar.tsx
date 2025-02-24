@@ -1,11 +1,17 @@
 import SearchIcon from "@/assets/icons/SearchIcon";
 import Aavelogo from "@/assets/logos/aavelogo";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import NavItem from "./NavItem";
 import ProductsCard from "./NavItems/Products";
 import ResourcesCard from "./NavItems/ResourcesCard";
+import { motion, AnimatePresence } from "framer-motion";
+import DevelopersCard from "./NavItems/DevelopersCard";
 
 export default function Navbar() {
+  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+  const [dropdownPosition, setDropdownPosition] = useState(0);
+  const arrowRef = useRef<HTMLDivElement>(null);
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -17,33 +23,89 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const developersContent = (
-    <div className="grid grid-cols-2 gap-4 p-4">
-      <div>
-        <h3 className="font-semibold mb-2">API</h3>
-        <p className="text-sm text-gray-600">Integration guides</p>
-      </div>
-      <div>
-        <h3 className="font-semibold mb-2">Github</h3>
-        <p className="text-sm text-gray-600">View source code</p>
-      </div>
-    </div>
-  );
+  const handleItemHover = (title: string, position: number, width: number) => {
+    setHoveredItem(title);
+    const arrowWidth = 16; // Adjust based on your actual arrow size
+    setDropdownPosition(position + width / 2 - arrowWidth / 2);
+  };
+
+  const handleItemLeave = () => {
+    setHoveredItem(null);
+  };
+
+  const dropdownVariants = {
+    initial: { opacity: 0, y: -8 },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.2, ease: [0.4, 0, 0.2, 1] },
+    },
+    exit: {
+      opacity: 0,
+      y: -8,
+      transition: { duration: 0.2, ease: [0.4, 0, 1, 1] },
+    },
+  };
 
   return (
     <div className="w-full fixed top-0 z-50">
       <nav
-        className={`flex mx-auto items-center px-6 md:px-12  justify-between bg-white w-full max-w-[1082px] transition-all duration-300 ${
+        className={`flex mx-auto items-center px-6 md:px-12 justify-between bg-white w-full max-w-[1082px] transition-all duration-300 ${
           isScrolled ? "border-b border-[#00000010]" : "md:pt-6"
         }`}
       >
         <div className="w-1/2 py-5">
           <Aavelogo />
         </div>
-        <div className="w-1/2 flex gap-2 items-center px-2">
-          <NavItem title="Products" content={<ProductsCard />} />
-          <NavItem title="Resources" content={<ResourcesCard />}/>
-          <NavItem title="Developers" content={developersContent} />
+        <div className="w-1/2 flex gap-2 items-center px-2 relative">
+          {["Products", "Resources", "Developers"].map((item) => (
+            <NavItem
+              key={item}
+              title={item}
+              onHover={(position) => handleItemHover(item, position, 0)}
+              onLeave={handleItemLeave}
+              isActive={hoveredItem === item}
+            />
+          ))}
+
+          <AnimatePresence mode="wait">
+            {hoveredItem && (
+              <motion.div
+                className="absolute top-full -left-1/3 min-w-max"
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                variants={dropdownVariants}
+                onMouseEnter={() => setHoveredItem(hoveredItem)}
+                onMouseLeave={handleItemLeave}
+              >
+                {/* <div className="relative"> */}
+                  <motion.div
+                    ref={arrowRef}
+                    className="-mb-6 w-4 h-4 z-[30] translate-x-[100px] rotate-45 bg-white border-t border-l border-[#00000010]"
+                    // style={{
+                    //   left: `${dropdownPosition}px`,
+                    //   top: "6px",
+                    //   transform: "translateX(-50%)",
+                    //   zIndex: 1,
+                    // }}
+                    layoutId="arrow"
+                    transition={{
+                      type: "spring",
+                      stiffness: 400,
+                      damping: 30,
+                      mass: 0.8,
+                    }}
+                  />
+                  <div className="relative mt-4 bg-white rounded-xl border border-[#00000010] shadow-lg overflow-hidden z-[2]">
+                    {hoveredItem === "Products" && <ProductsCard />}
+                    {hoveredItem === "Resources" && <ResourcesCard />}
+                    {hoveredItem === "Developers" && <DevelopersCard />}
+                  </div>
+                {/* </div> */}
+              </motion.div>
+            )}
+          </AnimatePresence>
           <div className="button">
             <button className="font-inter px-4 py-[9px] whitespace-nowrap text-sm font-[500] leading-[105%] text-white bg-[#221d1d] hover:bg-[#3d3b3b] rounded-[50px] cursor-pointer">
               Open App

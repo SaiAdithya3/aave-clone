@@ -4,7 +4,7 @@ const ProductsCard = (  ) => {
   const [hoveredCard, setHoveredCard] = useState<null | 'app' | 'gho'>(null);
 
   return (
-    <div className="flex flex-col gap-2 justify-between border border-opacity-65 w-[376px] h-[277.59px] rounded-[16px] p-2 overflow-hidden relative bg-white">
+    <div className="flex flex-col gap-2 justify-between w-[376px] h-[277.59px] rounded-[16px] p-2 overflow-hidden relative bg-white">
       <div 
         className={`app z-50 relative flex cursor-pointer overflow-hidden flex-col gap-2 bg-[#9896ff] p-3.5 px-4 rounded-xl transition-all duration-200 group ${
           hoveredCard === 'gho' ? 'opacity-50' : ''
