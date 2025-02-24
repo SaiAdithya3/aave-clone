@@ -1,6 +1,6 @@
 import React from "react";
 
-const Community = () => {
+const Community = ({ isInView }: { isInView: boolean }) => {
   return (
     <svg
       width="32"

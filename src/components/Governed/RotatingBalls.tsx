@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const RotatingBalls = () => {
-  const isInView = true;
+const RotatingBalls = ({ isInView }: { isInView: boolean }) => {
+  // const isInView = true;
   const reveal = {
     hidden: { scale: 0.9, opacity: 0 },
     animate: {

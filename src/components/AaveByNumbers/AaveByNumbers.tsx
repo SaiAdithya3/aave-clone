@@ -10,6 +10,8 @@ import { motion, useInView } from "framer-motion";
 export default function AaveByNumbers() {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.2, once: true });
+  const isInView2 = useInView(ref, { amount: 0.3, once: true });
+  const isInView3 = useInView(ref, { amount: 0.4, once: true });
   return (
     <div
       ref={ref}
@@ -35,25 +37,25 @@ export default function AaveByNumbers() {
           <NumberCards
             amount={31.59}
             description="Net deposits supplied across 13 networks."
-            svg={<NetDeposits />}
+            svg={<NetDeposits isInView={isInView2}/>}
             percentage={false}
           />
           <NumberCards
             amount={173.12}
             description="Volume, past 30 days."
-            svg={<Volume />}
+            svg={<Volume/>}
             percentage={false}
           />
           <NumberCards
             amount={6.98}
             description="Average stablecoin supply APY Ethereum network, past year."
-            svg={<Average />}
+            svg={<Average isInView2={isInView2}/>}
             percentage
           />
           <NumberCards
             amount={9.86}
             description="Average stablecoin borrow APR Ethereum network, past year."
-            svg={<AverageTwo />}
+            svg={<AverageTwo isInView2={isInView3}/>}
             percentage
           />
         </motion.div>

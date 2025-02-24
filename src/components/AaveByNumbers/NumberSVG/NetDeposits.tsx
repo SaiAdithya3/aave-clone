@@ -1,6 +1,28 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-const NetDeposits = () => {
+const NetDeposits = ({ isInView }: { isInView: boolean }) => {
+  const inView = {
+    initial: { y: 220 },
+    animate: {
+      y: isInView ? 0 : 220,
+      transition: { duration: 0.5, ease: "easeOut", delay: 0, once: true },
+    },
+  };
+
+  const toFro = {
+    initial: { y: -10 },
+    animate: {
+      y: [-10, 0, -10],
+      transition: {
+        duration: 3,
+        ease: "easeInOut",
+        delay: 0,
+        repeat: Infinity,
+      },
+    },
+  };
+
   return (
     <>
       <svg
@@ -15,32 +37,38 @@ const NetDeposits = () => {
             <path
               d="M0 16C0 7.16345 7.16344 0 16 0H441C449.837 0 457 7.16345 457 16V234C457 242.837 449.837 250 441 250H16C7.16344 250 0 242.837 0 234V16Z"
               fill="#9896FF"
-            //   style="fill:color(display-p3 0.5951 0.5870 1.0000)"
             ></path>
-            <rect
-              id="left"
-              width="229"
-              height="250"
-              fill="#BCBBFF"
-            //   style="fill:color(display-p3 0.7391 0.7337 1.0000)"
-            ></rect>
-            <g
-            //   style="transform: translateY(-4.82059px); // transformOrigin: 229px 186px;"
+            <rect id="left" width="229" height="250" fill="#BCBBFF"></rect>
+            <motion.g
+              initial="initial"
+              animate={{
+                ...toFro.animate,
+                transition: {
+                  ...toFro.animate.transition,
+                  delay: 0.8,
+                },
+              }}
+              variants={toFro}
               style={{
                 transform: "translateY(-4.82059px)",
                 transformOrigin: "229px 186px",
               }}
-              // transformOrigin="229px 186px"
             >
-              <g
+              <motion.g
+                initial="initial"
+                animate={{
+                  ...inView.animate,
+                  transition: {
+                    ...inView.animate.transition,
+                    delay: 0.2,
+                  },
+                }}
                 clipPath="url(#clip1_2915_1498)"
                 id="1"
-                // style="transform: none; // transformOrigin: 229px 186px;"
                 style={{
                   transform: "none",
                   transformOrigin: "229px 186px",
                 }}
-                // transformOrigin="229px 186px"
               >
                 <g>
                   <rect
@@ -71,22 +99,39 @@ const NetDeposits = () => {
                     // style="fill:color(display-p3 0.5951 0.5870 1.0000)"
                   ></rect>
                 </g>
-              </g>
-            </g>
-            <g
-            //   style="transform: translateY(-3.89848px); // transformOrigin: 165px 250px;"
+              </motion.g>
+            </motion.g>
+            <motion.g
+              initial="initial"
+              animate={{
+                ...toFro.animate,
+                transition: {
+                  ...toFro.animate.transition,
+                  delay: 0.6,
+                },
+              }}
+              variants={toFro}
+              //   style="transform: translateY(-3.89848px); // transformOrigin: 165px 250px;"
               style={{
                 transform: "translateY(-3.89848px)",
                 transformOrigin: "165px 250px",
               }}
               // transformOrigin="165px 250px"
             >
-              <g
+              <motion.g
+                initial="initial"
+                animate={{
+                  ...inView.animate,
+                  transition: {
+                    ...inView.animate.transition,
+                    delay: 0.1,
+                  },
+                }}
                 id="2"
                 // style="transform: none; // transformOrigin: 165px 250px;"
                 style={{
-                    transform: "none",
-                    transformOrigin: "165px 250px",
+                  transform: "none",
+                  transformOrigin: "165px 250px",
                 }}
                 // transformOrigin="165px 250px"
               >
@@ -119,22 +164,39 @@ const NetDeposits = () => {
                     // style="fill:color(display-p3 0.5951 0.5870 1.0000)"
                   ></rect>
                 </g>
-              </g>
-            </g>
-            <g
-            //   style="transform: translateY(-2.70944px); // transformOrigin: 101px 314px;"
+              </motion.g>
+            </motion.g>
+            <motion.g
+              initial="initial"
+              animate={{
+                ...toFro.animate,
+                transition: {
+                  ...toFro.animate.transition,
+                  delay: 0.4,
+                },
+              }}
+              variants={toFro}
+              //   style="transform: translateY(-2.70944px); // transformOrigin: 101px 314px;"
               style={{
                 transform: "translateY(-2.70944px)",
                 transformOrigin: "101px 314px",
               }}
               // transformOrigin="101px 314px"
             >
-              <g
+              <motion.g
+                initial="initial"
+                animate={{
+                  ...inView.animate,
+                  transition: {
+                    ...inView.animate.transition,
+                    delay: 0.1,
+                  },
+                }}
                 id="4"
                 // style="transform: none; // transformOrigin: 101px 314px;"
                 style={{
-                    transform: "none",
-                    transformOrigin: "101px 314px",
+                  transform: "none",
+                  transformOrigin: "101px 314px",
                 }}
                 // transformOrigin="101px 314px"
               >
@@ -167,17 +229,34 @@ const NetDeposits = () => {
                     // style="fill:color(display-p3 0.5951 0.5870 1.0000)"
                   ></rect>
                 </g>
-              </g>
-            </g>
-            <g
-            //   style="transform: translateY(-1.69353px); // transformOrigin: 293px 250px;"
+              </motion.g>
+            </motion.g>
+            <motion.g
+              initial="initial"
+              animate={{
+                ...toFro.animate,
+                transition: {
+                  ...toFro.animate.transition,
+                  delay: 0.6,
+                },
+              }}
+              variants={toFro}
+              //   style="transform: translateY(-1.69353px); // transformOrigin: 293px 250px;"
               style={{
                 transform: "translateY(-1.69353px)",
                 transformOrigin: "293px 250px",
               }}
               // transformOrigin="293px 250px"
             >
-              <g
+              <motion.g
+                initial="initial"
+                animate={{
+                  ...inView.animate,
+                  transition: {
+                    ...inView.animate.transition,
+                    delay: 0,
+                  },
+                }}
                 id="3"
                 // style="transform: none; // transformOrigin: 293px 250px;"
                 style={{
@@ -215,17 +294,34 @@ const NetDeposits = () => {
                     // style="fill:color(display-p3 0.5951 0.5870 1.0000)"
                   ></rect>
                 </g>
-              </g>
-            </g>
-            <g
-            //   style="transform: translateY(-0.907285px); // transformOrigin: 357px 314px;"
+              </motion.g>
+            </motion.g>
+            <motion.g
+              initial="initial"
+              animate={{
+                ...toFro.animate,
+                transition: {
+                  ...toFro.animate.transition,
+                  delay: 0.5,
+                },
+              }}
+              variants={toFro}
+              //   style="transform: translateY(-0.907285px); // transformOrigin: 357px 314px;"
               style={{
                 transform: "translateY(-0.907285px)",
                 transformOrigin: "357px 314px",
               }}
               // transformOrigin="357px 314px"
             >
-              <g
+              <motion.g
+                initial="initial"
+                animate={{
+                  ...inView.animate,
+                  transition: {
+                    ...inView.animate.transition,
+                    delay: 0,
+                  },
+                }}
                 id="6"
                 // style="transform: none; // transformOrigin: 357px 314px;"
                 style={{
@@ -263,17 +359,34 @@ const NetDeposits = () => {
                     // style="fill:color(display-p3 0.5951 0.5870 1.0000)"
                   ></rect>
                 </g>
-              </g>
-            </g>
-            <g
-            //   style="transform: translateY(-0.366273px); // transformOrigin: 229px 314px;"
+              </motion.g>
+            </motion.g>
+            <motion.g
+              initial="initial"
+              animate={{
+                ...toFro.animate,
+                transition: {
+                  ...toFro.animate.transition,
+                  delay: 0.5,
+                },
+              }}
+              variants={toFro}
+              //   style="transform: translateY(-0.366273px); // transformOrigin: 229px 314px;"
               style={{
                 transform: "translateY(-0.366273px)",
                 transformOrigin: "229px 314px",
               }}
               // transformOrigin="229px 314px"
             >
-              <g
+              <motion.g
+                initial="initial"
+                animate={{
+                  ...inView.animate,
+                  transition: {
+                    ...inView.animate.transition,
+                    delay: 0,
+                  },
+                }}
                 id="5"
                 // style="transform: none; // transformOrigin: 229px 314px;"
                 style={{
@@ -311,8 +424,8 @@ const NetDeposits = () => {
                     // style="fill:color(display-p3 0.5951 0.5870 1.0000)"
                   ></rect>
                 </g>
-              </g>
-            </g>
+              </motion.g>
+            </motion.g>
           </g>
         </g>
         <defs>
@@ -320,7 +433,7 @@ const NetDeposits = () => {
             <path
               d="M0 16C0 7.16345 7.16344 0 16 0H441C449.837 0 457 7.16345 457 16V234C457 242.837 449.837 250 441 250H16C7.16344 250 0 242.837 0 234V16Z"
               fill="white"
-            //   style="fill:white"
+              //   style="fill:white"
             ></path>
           </clipPath>
           <clipPath id="clip1_2915_1498">
@@ -331,7 +444,7 @@ const NetDeposits = () => {
               height="256"
               rx="64"
               fill="white"
-            //   style="fill:white"
+              //   style="fill:white"
             ></rect>
           </clipPath>
           <clipPath id="clip2_2915_1498">
@@ -342,7 +455,7 @@ const NetDeposits = () => {
               height="256"
               rx="64"
               fill="white"
-            //   style="fill:white"
+              //   style="fill:white"
             ></rect>
           </clipPath>
           <clipPath id="clip3_2915_1498">
@@ -353,7 +466,7 @@ const NetDeposits = () => {
               height="256"
               rx="64"
               fill="white"
-            //   style="fill:white"
+              //   style="fill:white"
             ></rect>
           </clipPath>
           <clipPath id="clip4_2915_1498">
@@ -364,7 +477,7 @@ const NetDeposits = () => {
               height="256"
               rx="64"
               fill="white"
-            //   style="fill:white"
+              //   style="fill:white"
             ></rect>
           </clipPath>
           <clipPath id="clip5_2915_1498">
@@ -375,7 +488,7 @@ const NetDeposits = () => {
               height="256"
               rx="64"
               fill="white"
-            //   style="fill:white"
+              //   style="fill:white"
             ></rect>
           </clipPath>
           <clipPath id="clip6_2915_1498">
@@ -386,7 +499,7 @@ const NetDeposits = () => {
               height="256"
               rx="64"
               fill="white"
-            //   style="fill:white"
+              //   style="fill:white"
             ></rect>
           </clipPath>
         </defs>

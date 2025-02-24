@@ -1,6 +1,6 @@
 import React from "react";
 
-const Transparent = () => {
+const Transparent = ({ isInView }: { isInView: boolean }) => {
   return (
     <svg
       width="32"

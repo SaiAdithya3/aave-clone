@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const GHOMinted = () => {
+const GHOMinted = ({ isInView }: { isInView: boolean }) => {
   return (
     <motion.svg
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{ opacity: isInView ? 1 : 0 }}
       transition={{ duration: 0.5 }}
       overflow="visible"
       width="417"
@@ -33,13 +33,13 @@ const GHOMinted = () => {
         strokeLinejoin="round"
         style={{ vectorEffect: 'non-scaling-stroke' }}
         initial={{ pathLength: 0 }}
-        animate={{ pathLength: 1 }}
+        animate={{ pathLength: isInView ? 1 : 0 }}
         transition={{ duration: 1.5, ease: "easeInOut" }}
       />
 
       <motion.g
         initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
+        animate={{ scale: isInView ? 1 : 0 }}
         transition={{ duration: 0.5, delay: 1.2 }}
         style={{ transformOrigin: '414.5px 2px' }}
       >
@@ -50,15 +50,15 @@ const GHOMinted = () => {
           stroke="#00d742"
           strokeWidth="8"
           initial={{ opacity: 0 }}
-          animate={{ 
+          animate={isInView ? { 
             opacity: [0.2, 0.3, 0, 0],
             scale: [1, 1.5, 1]
-          }}
+          } : { opacity: 0, scale: 0 }}
           transition={{
             duration: 2,
-            repeat: Infinity,
+            repeat: isInView ? Infinity : 0,
             ease: "easeInOut",
-            delay: 1.5 // Start after path animation
+            delay: 1.5
           }}
           style={{ transformOrigin: '414.5px 2px' }}
         />
@@ -79,7 +79,7 @@ const GHOMinted = () => {
             duration: 2,
             repeat: Infinity,
             ease: "easeInOut",
-            delay: 1.5 // Start after path animation
+            delay: 1.5 
           }}
           style={{ transformOrigin: '414.5px 2px' }}
         />

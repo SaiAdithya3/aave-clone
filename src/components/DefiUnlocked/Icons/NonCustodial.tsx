@@ -1,6 +1,6 @@
 import React from "react";
 
-const NonCustodial = () => {
+const NonCustodial = ({ isInView }: { isInView: boolean }) => {
   return (
     <svg
       width="32"

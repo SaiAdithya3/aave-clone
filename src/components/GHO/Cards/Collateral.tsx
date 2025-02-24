@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Collateral = () => {
+const Collateral = ({ isInView }: { isInView: boolean }) => {
   return (
     <motion.svg
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{ opacity: isInView ? 1 : 0 }}
       transition={{  }}
       viewBox="0 0 320 150"
       fill="none"
@@ -62,7 +62,7 @@ const Collateral = () => {
           >
             <motion.g
               animate={{ 
-                rotate: [0, 2, 0]
+                rotate: isInView ? [0, 2, 0] : [0, 0, 0],
               }}
               transition={{
                 duration: 3,

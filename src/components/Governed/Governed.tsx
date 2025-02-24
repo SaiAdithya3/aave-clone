@@ -1,8 +1,12 @@
+import { useRef } from "react";
 import RotatingBalls from "./RotatingBalls";
+import { useInView } from "framer-motion";
 
 export default function Governed() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.4, once: true });
   return (
-    <div className="w-full flex items-center flex-col pt-[100px] pb-[100px] px-5 md:px-[48px]">
+    <div ref={ref} className="w-full flex items-center flex-col pt-[100px] pb-[100px] px-5 md:px-[48px]">
       <div className="relative w-full max-w-[986px] flex justify-center items-center flex-col z-0 h-[400px] md:h-auto rounded-2xl aspect-[986/480] bg-[#00498b] text-center overflow-hidden p-[1rem_4rem]">
         <h1 className="mt-4 mb-4 text-white text-[40px] font-regola font-[600] leading-[135%] tracking-[-0.33px]">
           <span>Governed by you & </span>
@@ -31,7 +35,7 @@ export default function Governed() {
             />
           </svg>
         </button>
-        <RotatingBalls />
+        <RotatingBalls isInView={isInView}/>
       </div>
     </div>
   );

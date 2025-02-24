@@ -10,12 +10,14 @@ import { NumberTicker } from "../utils/NumberTicker";
 export default function GHO() {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.2 , once: true});
+  const isInView2 = useInView(ref, { amount: 0.5 , once: true});
+  const isInView3 = useInView(ref, { amount: 0.7 , once: true});
   return (
     <div ref={ref} className="w-full flex items-center flex-col pt-[100px] pb-[100px] px-5 md:px-[48px]">
       <div className="relative w-full max-w-[986px]">
         <div className="w-full px-2 md:p-[24px]">
           <AnimatedText text="GHO" isInView={isInView}/>
-          <p className="mt-[12px] text-[14px] md:text-[20px] mb-8 md:mb-0  max-w-[24em] font-[500] tracking-[-0.33px] leading-[135%] font-inter text-[#636161]">
+          <p className="mt-[12px] text-[14px] md:text-[20px] mb-8 md:mb-4  max-w-[24em] font-[500] tracking-[-0.33px] leading-[135%] font-inter text-[#636161]">
             GHO is the only decentralised, overcollateralised stablecoin native
             to the Aave Protocol.
           </p>
@@ -50,7 +52,7 @@ export default function GHO() {
                 30 Day Avg
               </span>
             </p>
-            <Collateral />
+            <Collateral isInView={isInView2}/>
           </div>
           <div className="p-[32px] overflow-hidden bg-[#fafafa] rounded-[16px] relative">
             <p className="mb-[8px] font-inter text-[24px] font-[600] leading-[105%] tracking-[-0.48px] text-[#221d1d]  text-nowrap">
@@ -77,7 +79,7 @@ export default function GHO() {
                 1 Yr
               </span>
             </p>
-            <GHOMinted />
+            <GHOMinted isInView={isInView3}/>
           </div>
         </div>
       </div>
