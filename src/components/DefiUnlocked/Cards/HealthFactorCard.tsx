@@ -11,7 +11,8 @@ const HealthFactorCard = ({ isInView }: { isInView: boolean }) => {
       transition: {
         duration: 8,
         ease: "easeInOut",
-        repeat: isInView ? Infinity : 0
+        repeat: isInView ? Infinity : 0,
+        stiffness: 150,
       }
     }
   };
@@ -49,7 +50,7 @@ const HealthFactorCard = ({ isInView }: { isInView: boolean }) => {
   const toAndFro = {
     initial: { rotate: 0 },
     animate: {
-      rotate: isInView ? [0, 40, 0] : 0,
+      rotate: isInView ? [-40, 0, -40] : 0,
       transition: {
         duration: 8,
         ease: "easeInOut",
@@ -98,6 +99,12 @@ const HealthFactorCard = ({ isInView }: { isInView: boolean }) => {
           }}
           style={{ transformOrigin: "201px 201px" }}
         >
+           <motion.g
+            variants={toAndFro}
+            initial="initial"
+            animate="animate"
+            style={{ transform: 'rotate(0deg)',transformOrigin: "201px 201px" }}
+          >
           <motion.circle
             cx="201"
             cy="201"
@@ -108,12 +115,7 @@ const HealthFactorCard = ({ isInView }: { isInView: boolean }) => {
             animate="show"
           />
           
-          <motion.g
-            variants={toAndFro}
-            initial="initial"
-            animate="animate"
-            style={{ transformOrigin: "201px 201px" }}
-          >
+         
             <motion.circle
               cx="201"
               cy="91.5"

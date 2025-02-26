@@ -43,13 +43,13 @@ export default function AaveByNumbers() {
           <NumberCards
             amount={173.12}
             description="Volume, past 30 days."
-            svg={<Volume/>}
+            svg={<Volume isInView={isInView}/>}
             percentage={false}
           />
           <NumberCards
             amount={6.98}
             description="Average stablecoin supply APY Ethereum network, past year."
-            svg={<Average isInView2={isInView2}/>}
+            svg={<Average />}
             percentage
           />
           <NumberCards

@@ -1,41 +1,55 @@
 import { motion } from "framer-motion";
 
 export const GradientButton = () => {
-  const gradientVariants = {
-    initial: {
-      opacity: 0,
-      scale: 0.95,
-      rotate: 0,
-    },
+  const gradientRotate = {
+    initial: { rotate: 0 },
     hover: {
-      opacity: 1,
-      scale: 1.05,
       rotate: 360,
+      transition: {
+        duration: 3,
+        ease: "easeInOut",
+      },
     },
   };
 
+  const gradientScale = {
+    initial: { scaleX: 0.95, scaleY: 0.8 },
+    hover: {
+      scaleX: [0.95, 1, 1, 0.95, 0.95],
+      scaleY: [0.8, 1, 1, 0.8, 0.8],
+      transition: {
+        duration: 3,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  const buttonStyle = {
+    initial: { 
+      backgroundColor: '#ffffff', 
+      boxShadow: '0 0 0 1.5px rgba(0,0,0,.06)' 
+    },
+    hover: {
+      backgroundColor: '#fcfcfb',
+      boxShadow: '0 0 0 1.5px rgba(0,0,0,.1)',
+      transition: {
+        duration: 0.15,
+        ease: "easeInOut"
+      }
+    }
+  };
+
   return (
-    <motion.button
-      className="relative group cursor-pointer rounded-full border border-zinc-200"
-      whileHover="hover"
-      animate="initial"
+    <motion.div
       initial="initial"
+      animate="initial"
+      whileHover="hover"
+      className="relative inline-flex cursor-pointer items-center"
     >
-      <motion.div
-        className="absolute w-full scale-90 inset-0 group-hover:rotate-[10deg] transition-transform group-hover:scale-110 rounded-full"
-        // variants={gradientVariants}
-        style={{
-          background: 'conic-gradient(from 0deg at 50% 50%, #ff8947 0deg, #b5e7fa 124.43deg, #9896ff 179.13deg, #63bbb6 233.53deg, #ffd631 308.53deg, #ff8947 364.52deg)',
-        }}
-        transition={{
-          duration: 2,
-          ease: "linear",
-        }}
-      />
-      {/* <motion.div
-        className="absolute inset-[0px] rounded-full w-full bg-white"
-      /> */}
-      <span className="relative z-10 py-2 px-3 rounded-full font-inter bg-white w-full h-full flex items-center gap-2 font-[500] text-black">
+      <motion.span
+        variants={buttonStyle}
+        className="relative z-10 py-[9px] px-5 rounded-full font-inter bg-white flex items-center gap-2 font-[500] text-[#221d1d] leading-[125%] tracking-[-0.18px]"
+      >
         Get Started
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -52,11 +66,23 @@ export const GradientButton = () => {
             strokeLinejoin="round"
           />
         </svg>
-      </span>
-    </motion.button>
+      </motion.span>
+
+      <motion.span
+        variants={gradientScale}
+        className="absolute -inset-[3px] rounded-full overflow-hidden"
+      >
+        <motion.span 
+          variants={gradientRotate}
+          className="absolute -inset-y-[200%] -inset-x-[25%]"
+          style={{
+            background: 'conic-gradient(from 0deg at 50% 50%, #ff8947 0deg, #b5e7fa 124.43deg, #9896ff 179.13deg, #63bbb6 233.53deg, #ffd631 308.53deg, #ff8947 364.52deg)',
+          }}
+        />
+      </motion.span>
+    </motion.div>
   );
 };
-
 
     /* transform: scaleX(0.95) scaleY(0.8); */
     /* will-change: transform; */

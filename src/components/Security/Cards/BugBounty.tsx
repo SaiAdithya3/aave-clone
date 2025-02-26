@@ -7,12 +7,24 @@ type BugBountyProps = {
 
 const BugBounty = ({ isInView = true }: BugBountyProps) => {
   const rows = [
-    { y: 255, count: 5, duration: 10, delay: 0, size: 21 },
-    { y: 215, count: 4, duration: 12, delay: 1, size: 21 },
-    { y: 175, count: 3, duration: 8, delay: 2, size: 21 },
-    { y: 135, count: 2, duration: 15, delay: 3, size: 21 },
-    { y: 88, count: 1, duration: 10, delay: 4, size: 28 }
+    { y: 255, count: 5, duration: 0.5, delay: 1, size: 21, repeatDelay: 2 },
+    { y: 215, count: 4, duration: 0.5, delay: 1, size: 21, repeatDelay: 2 },
+    { y: 175, count: 3, duration: 0.5, delay: 1, size: 21, repeatDelay: 2 },
+    { y: 135, count: 2, duration: 0.5, delay: 1, size: 21, repeatDelay: 2 },
+    { y: 88, count: 1, duration: 0.5, delay: 1, size: 28, repeatDelay: 2 }
   ];
+
+  const rotate = {
+    initial: { rotate: 0 },
+    animate: {
+      rotate: isInView? [0, 360] : 0,
+      transition: {
+        duration: 1,
+        repeat: Infinity,
+        ease: "linear"
+      }
+    }
+  };
 
   const createCircle = (x: number, y: number, size: number) => (
     <motion.g style={{ transformOrigin: `${x}px ${y}px` }}>
@@ -45,7 +57,8 @@ const BugBounty = ({ isInView = true }: BugBountyProps) => {
             duration: row.duration,
             repeat: Infinity,
             ease: "linear",
-            delay: row.delay
+            delay: row.delay,
+            repeatDelay: row.repeatDelay
           }}
           style={{ transformOrigin: `246px ${row.y}px` }}
         >
@@ -59,6 +72,17 @@ const BugBounty = ({ isInView = true }: BugBountyProps) => {
                 key={index}
                 style={{
                   transformOrigin: `${x}px ${row.y}px`
+                }}
+                initial={{ rotate: 0 }}
+                animate={{
+                  rotate: 360
+                }}
+                transition={{
+                  duration: row.duration,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: row.delay,
+                  repeatDelay: row.repeatDelay
                 }}
               >
                 {createCircle(x, row.y, row.size)}
