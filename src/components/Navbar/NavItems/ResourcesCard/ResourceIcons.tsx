@@ -4,7 +4,6 @@ type IconProps = {
 };
 
 export const BrandIcon = ({
-  isActive,
   colors = ["#9896ff", "#bdbbff"],
 }: IconProps) => (
   <svg
@@ -20,7 +19,7 @@ export const BrandIcon = ({
       width="47"
       height="47"
       rx="3.5"
-      // stroke={isActive ? colors[0] : "#F1F1F0"}
+      stroke="#F1F1F0"
       fill="#fff"
     />
     <path
@@ -35,7 +34,6 @@ export const BrandIcon = ({
 );
 
 export const ResourceIcon = ({
-  isActive,
   colors = ["#9896ff", "#bdbbff"],
 }: IconProps) => (
   <svg
@@ -67,7 +65,6 @@ export const ResourceIcon = ({
 );
 
 export const HelpIcon = ({
-  isActive,
   colors = ["#9896ff", "#bdbbff"],
 }: IconProps) => (
   <svg
@@ -99,7 +96,6 @@ export const HelpIcon = ({
 );
 
 export const GovernanceIcon = ({
-  isActive,
   colors = ["#9896ff", "#bdbbff"],
 }: IconProps) => (
   <svg

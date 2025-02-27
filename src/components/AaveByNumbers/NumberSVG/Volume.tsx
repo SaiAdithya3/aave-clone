@@ -1,9 +1,9 @@
 import React from "react";
-import { AnimatePresence, motion, Variants } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Volume = ({ isInView }: { isInView: boolean }) => {
-  const end = "707.117px";
-  const start = "0";
+  // const end = "707.117px";
+  // const start = "0";
   const slideInLeft = {
     initial: { x: -177, opacity: 0 },
     animate: {

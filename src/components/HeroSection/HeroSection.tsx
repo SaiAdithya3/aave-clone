@@ -35,7 +35,7 @@ export default function HeroSection() {
           }}
           className="bg-gray-100 text-xs font-inter cursor-pointer hover:bg-gray-200/70 transition-all flex gap-2 rounded-full px-4 items-center py-1.5"
         >
-          <motion.span>Introducing Aave's new visual identity</motion.span>
+          <motion.span>Introducing Aave&apos;s new visual identity</motion.span>
           <motion.span
             className="p-0.5 bg-zinc-400 rounded-full"
             initial={{ scale: 0 }}

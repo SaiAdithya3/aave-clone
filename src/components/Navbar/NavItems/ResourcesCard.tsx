@@ -48,8 +48,8 @@ const ResourcesCard = () => {
   ];
 
   return (
-    <div className="flex gap-2 justify-between  w-[575.531px] h-[277.59px] rounded-[16px] p-2 overflow-hidden relative bg-white">
-      <div className="w-[50%] flex flex-col gap-2">
+    <div className="flex gap-2 justify-between w-[575.531px] h-[277.59px] rounded-[16px] p-2 overflow-hidden relative bg-white">
+      <div className="flex flex-col gap-2">
         {data.map((item) => (
           <motion.div
             key={item.id}
@@ -90,10 +90,9 @@ const ResourcesCard = () => {
           </motion.div>
         ))}
       </div>
-      <div className="w-[50%]">
+      <div className="hidden md:flex">
         <ResourceIllustration
-          colors={data.find((item) => item.id === activeItem)?.colors}
-          defaultColors={defaultColors}
+          isActive={activeItem - 1}
         />
       </div>
     </div>

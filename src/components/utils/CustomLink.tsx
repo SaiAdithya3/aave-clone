@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 interface CustomLinkProps {
   title?: string;
   href?: string;
@@ -7,7 +5,12 @@ interface CustomLinkProps {
   children?: React.ReactNode;
 }
 
-export const CustomLink = ({ title, href, children, color }: CustomLinkProps) => {
+export const CustomLink = ({
+  title,
+  href,
+  children,
+  color,
+}: CustomLinkProps) => {
   return (
     <a
       className={`text-[${color}] font-[500] relative inline-flex items-center gap-1 group
@@ -26,7 +29,7 @@ export const CustomLink = ({ title, href, children, color }: CustomLinkProps) =>
         height="16"
         viewBox="0 0 16 16"
         fill="none"
-        className="transition-transform duration-300 group-hover:translate-x-1"
+        className=""
       >
         <path
           d="M3 8.5H12.5M12.5 8.5L8.5 4.5M12.5 8.5L8.5 12.5"

@@ -1,11 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-type ShortFallProps = {
-  isInView?: boolean;
-}
-
-const ShortFall = ({ isInView = true }: ShortFallProps) => {
+const ShortFall = () => {
   const outerCircles = [
     { x: 248, y: 60 },
     { x: 296.083, y: 79.9167 },

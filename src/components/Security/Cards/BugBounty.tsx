@@ -14,17 +14,6 @@ const BugBounty = ({ isInView = true }: BugBountyProps) => {
     { y: 88, count: 1, duration: 0.5, delay: 1, size: 28, repeatDelay: 2 }
   ];
 
-  const rotate = {
-    initial: { rotate: 0 },
-    animate: {
-      rotate: isInView? [0, 360] : 0,
-      transition: {
-        duration: 1,
-        repeat: Infinity,
-        ease: "linear"
-      }
-    }
-  };
 
   const createCircle = (x: number, y: number, size: number) => (
     <motion.g style={{ transformOrigin: `${x}px ${y}px` }}>

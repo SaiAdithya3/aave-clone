@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import {
-  BrandIcon,
-  GovernanceIcon,
-  HelpIcon,
-  ResourceIcon,
-} from "./ResourcesCard/ResourceIcons";
-import { ResourceIllustration } from "./ResourcesCard/ResourceIllustration";
+import {BugBounty, DocumentationIcon, SecurityIcon} from "./DevelopersCard/DeveloperIcons";
+import { DeveloperIllustration } from "./DevelopersCard/DevelopersIllustration";
 
 const DevelopersCard = () => {
   const [activeItem, setActiveItem] = useState(1);
@@ -15,33 +10,33 @@ const DevelopersCard = () => {
   const data = [
     {
       id: 1,
-      icon: BrandIcon,
-      title: "Brand",
-      description: "Assets, examples and guides.",
-      colors: ["#9896ff", "#bdbbff"],
+      icon: DocumentationIcon,
+      title: "Documentation",
+      description: "Technical guides for developers.",
+      colors: ["#a7e9fd", "#39d1f9"],
       defaultColors,
     },
     {
       id: 2,
-      icon: ResourceIcon,
-      title: "FAQ",
-      description: "Assets, examples and guides.",
-      colors: ["#39beb7", "#00827b"],
+      icon: SecurityIcon,
+      title: "Security",
+      description: "Audit reports and information.",
+      colors: ["#63bbb6", "#00827b"],
       defaultColors,
     },
     {
       id: 3,
-      icon: HelpIcon,
-      title: "Help",
-      description: "Assets, examples and guides.",
-      colors: ["#ff0000", "#ff8130"],
+      icon: BugBounty,
+      title: "Bug Bounty",
+      description: "Report responsibly and get rewarded.",
+      colors: ["#ffd400", "#ffb000"],
       defaultColors,
     }
   ];
 
   return (
     <div className="flex gap-2 justify-between  w-[615.7px] h-[212px] rounded-[16px] p-2 overflow-hidden relative bg-white">
-      <div className="w-[50%] flex flex-col gap-2">
+      <div className="flex flex-col gap-2">
         {data.map((item) => (
           <motion.div
             key={item.id}
@@ -82,10 +77,9 @@ const DevelopersCard = () => {
           </motion.div>
         ))}
       </div>
-      <div className="w-[50%]">
-        <ResourceIllustration
-          colors={data.find((item) => item.id === activeItem)?.colors}
-          defaultColors={defaultColors}
+      <div className="">
+        <DeveloperIllustration
+          isActive={activeItem}
         />
       </div>
     </div>

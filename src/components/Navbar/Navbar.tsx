@@ -6,8 +6,11 @@ import ProductsCard from "./NavItems/Products";
 import ResourcesCard from "./NavItems/ResourcesCard";
 import { motion, AnimatePresence } from "framer-motion";
 import DevelopersCard from "./NavItems/DevelopersCard";
+import HamburgerIcon from "./HamburgerIcon";
+import MobileMenu from "./MobileMenu";
 
 export default function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [dropdownPosition, setDropdownPosition] = useState(0);
   const arrowRef = useRef<HTMLDivElement>(null);
@@ -50,14 +53,18 @@ export default function Navbar() {
   return (
     <div className="w-full fixed top-0 z-50">
       <nav
-        className={`flex mx-auto items-center px-6 md:px-12 justify-between bg-white w-full max-w-[1082px] transition-all duration-300 ${
-          isScrolled ? "border-b border-[#00000010]" : "md:pt-6"
+        className={`flex mx-auto items-center z-50 px-6 md:px-12 justify-between bg-white w-full max-w-[1082px] transition-all duration-300 ${
+          isScrolled
+            ? "border-b border-[#00000010] pt-1 md:pt-0"
+            : "pt-1 md:pt-6"
         }`}
       >
-        <div className="w-1/2 py-5">
+        <div className="w-1/2 py-5 z-[100]">
           <Aavelogo />
         </div>
-        <div className="w-1/2 flex gap-2 items-center px-2 relative">
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex w-1/2 gap-2 items-center px-2 relative">
           {["Products", "Resources", "Developers"].map((item) => (
             <NavItem
               key={item}
@@ -80,28 +87,28 @@ export default function Navbar() {
                 onMouseLeave={handleItemLeave}
               >
                 {/* <div className="relative"> */}
-                  <motion.div
-                    ref={arrowRef}
-                    className="-mb-6 w-4 h-4 z-[30] translate-x-[100px] rotate-45 bg-white border-t border-l border-[#00000010]"
-                    // style={{
-                    //   left: `${dropdownPosition}px`,
-                    //   top: "6px",
-                    //   transform: "translateX(-50%)",
-                    //   zIndex: 1,
-                    // }}
-                    layoutId="arrow"
-                    transition={{
-                      type: "spring",
-                      stiffness: 400,
-                      damping: 30,
-                      mass: 0.8,
-                    }}
-                  />
-                  <div className="relative mt-4 bg-white rounded-xl border border-[#00000010] shadow-lg overflow-hidden z-[2]">
-                    {hoveredItem === "Products" && <ProductsCard />}
-                    {hoveredItem === "Resources" && <ResourcesCard />}
-                    {hoveredItem === "Developers" && <DevelopersCard />}
-                  </div>
+                <motion.div
+                  ref={arrowRef}
+                  className="-mb-6 w-4 h-4 z-[30] translate-x-[100px] rotate-45 bg-white border-t border-l border-[#00000010]"
+                  // style={{
+                  //   left: `${dropdownPosition}px`,
+                  //   top: "6px",
+                  //   transform: "translateX(-50%)",
+                  //   zIndex: 1,
+                  // }}
+                  layoutId="arrow"
+                  transition={{
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 30,
+                    mass: 0.8,
+                  }}
+                />
+                <div className="relative mt-4 bg-white rounded-xl border border-[#00000010] shadow-lg overflow-hidden z-[2]">
+                  {hoveredItem === "Products" && <ProductsCard />}
+                  {hoveredItem === "Resources" && <ResourcesCard />}
+                  {hoveredItem === "Developers" && <DevelopersCard />}
+                </div>
                 {/* </div> */}
               </motion.div>
             )}
@@ -117,7 +124,22 @@ export default function Navbar() {
             </button>
           </div>
         </div>
+
+        {/* Mobile Menu Button */}
+        <div className="md:hidden flex items-center gap-4">
+          <HamburgerIcon
+            isOpen={isMobileMenuOpen}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          />
+        </div>
       </nav>
+
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <MobileMenu />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

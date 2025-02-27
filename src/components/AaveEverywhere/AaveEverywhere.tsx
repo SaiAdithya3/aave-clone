@@ -4,6 +4,7 @@ import { Logo } from "./Logo";
 import MiddleIcon from "./MiddleIcon";
 import { logos } from "./data/logos";
 import { useInView } from "framer-motion";
+import { logosright } from "./data/logosright";
 
 export default function AaveEverywhere() {
   const ref = useRef(null);
@@ -14,7 +15,7 @@ export default function AaveEverywhere() {
         <div className="w-full pl-[24px] pr-[24px]">
           <AnimatedText text="Aave everywhere." isInView={isInView}/>
           <p className="mt-[12px] text-[20px] max-w-[24em] font-[500] tracking-[-0.33px] leading-[135%] font-inter text-[#636161]">
-            Join Aave's growing constellation of builders.
+            Join Aave&apos;s growing constellation of builders.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-[9px] mt-[72px]">
@@ -27,7 +28,7 @@ export default function AaveEverywhere() {
             <MiddleIcon />
           </div>
           <div className="grid grid-cols-3 gap-[9px]">
-            {logos.slice(0, 9).map((logo) => (
+            {logosright.slice(0, 9).map((logo) => (
               <Logo key={logo.id} logo={logo} />
             ))}
           </div>

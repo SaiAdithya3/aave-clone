@@ -48,7 +48,7 @@ const TableData = [
     title: "Transparent",
     description:
       "The Aave Protocol is open source and transactions are visible to anyone.",
-    svg: (isInView: boolean) => <Transparent isInView={isInView} />,
+    svg: (isInView: boolean) => <Transparent />,
   },
   {
     title: "Community Governed",
