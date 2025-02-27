@@ -95,7 +95,7 @@ const AaveInteractionBalls = ({ isSupply, isBorrow }: AaveInteractionProps) => {
       viewBox="0 0 986 450"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-full rounded-[16px]"
+      className="w-full rounded-[16px] overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}

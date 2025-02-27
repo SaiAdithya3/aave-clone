@@ -11,7 +11,7 @@ export const logos: LogoData[] = [
   {
     id: 1,
     name: "Aave Chan Initiative",
-    url: "https://www.aavechan.com",
+    url: "https://www.aave.com",
     svg: (
       <svg viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -27,11 +27,11 @@ export const logos: LogoData[] = [
   {
     id: 2,
     name: "Paladin",
-    url: "https://www.aavechan.com",
+    url: "https://www.aave.com",
     svg: (
       <svg
-        width="101"
-        height="101"
+        // width="101"
+        // height="101"
         viewBox="0 0 101 101"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -57,12 +57,12 @@ export const logos: LogoData[] = [
   {
     id: 3,
     name: "TokenLogic",
-    url: "https://www.aavechan.com",
+    url: "https://www.aave.com",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="101"
-        height="101"
+        // width="101"
+        // height="101"
         viewBox="0 0 101 101"
         fill="none"
       >
@@ -144,7 +144,7 @@ export const logos: LogoData[] = [
   {
     id: 4,
     name: "Token Terminal",
-    url: "https://www.aavechan.com",
+    url: "https://www.aave.com",
     svg: (
       <svg viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -163,7 +163,7 @@ export const logos: LogoData[] = [
   {
     id: 5,
     name: "Instadapp",
-    url: "https://www.aavechan.com",
+    url: "https://www.aave.com",
     svg: (
       <svg viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -177,7 +177,7 @@ export const logos: LogoData[] = [
   {
     id: 6,
     name: "Stake",
-    url: "https://www.aavechan.com",
+    url: "https://www.aave.com",
     svg: (
       <svg viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -191,7 +191,7 @@ export const logos: LogoData[] = [
   {
     id: 7,
     name: "Messari",
-    url: "https://www.aavechan.com",
+    url: "https://www.aave.com",
     svg: (
       <svg viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -215,7 +215,7 @@ export const logos: LogoData[] = [
   {
     id: 8,
     name: "Dune",
-    url: "https://www.aavechan.com",
+    url: "https://www.aave.com",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -241,7 +241,7 @@ export const logos: LogoData[] = [
   {
     id: 9,
     name: "Notional",
-    url: "https://www.aavechan.com",
+    url: "https://www.aave.com",
     svg: (
       <svg viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path

@@ -51,7 +51,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-full fixed top-0 z-50">
+    <div className="w-full fixed top-0 z-50 ">
       <nav
         className={`flex mx-auto items-center z-50 px-6 md:px-12 justify-between bg-white w-full max-w-[1082px] transition-all duration-300 ${
           isScrolled

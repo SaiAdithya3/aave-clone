@@ -13,11 +13,11 @@ export default function Trusted() {
     },
   };
   return (
-    <div ref={ref} className="w-full flex items-center flex-col pt-[100px] pb-[100px] px-[48px]">
+    <div ref={ref} className="w-full flex items-center flex-col pt-[100px] pb-[50px] md:pb-[100px] px-5 md:px-[48px]">
       <div className="relative w-full max-w-[986px]">
-        <div className="w-full pl-[24px] pr-[24px]">
+        <div className="w-full md:px-[24px]">
           <AnimatedText text="Trusted by the best." isInView={isInView}/>
-          <h2 className="text-[20px]  font-[500] tracking-[-0.33px] leading-[135%] font-inter text-[#636161]">
+          <h2 className="text-lg md:text-[20px] font-[500] tracking-[-0.33px] leading-[135%] font-inter text-[#636161]">
             Aave Protocol has been trusted by leading institutions and
             companies.
           </h2>

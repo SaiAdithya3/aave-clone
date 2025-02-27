@@ -19,8 +19,8 @@ export default function HeroSection() {
     },
   };
   return (
-    <div className="relative w-full  flex flex-col items-center mt-20 md:mt-36 p-4 md:p-0 justify-start">
-      <div className="w-full max-w-[1024px] flex flex-col items-start gap-5 px-4">
+    <div className="relative w-full  flex flex-col items-center mt-20 md:mt-36 py-4 md:p-0 justify-start md:px-[48px]">
+      <div className="w-full max-w-[1024px] flex flex-col items-start gap-5 px-5 ">
         <motion.div
           initial={{ opacity: 0, y: 25, transform: "translateY(25%)" }}
           animate={{ opacity: 1, y: 0, transform: "translateY(0%)" }}
@@ -66,7 +66,7 @@ export default function HeroSection() {
           <AnimatedText text="Access the full power of DeFi."/>
         </h1>
         <motion.p
-          className="font-inter mt-1 flex text-[20px] leading-[150%] tracking-[-.47px] flex-col text-[#636161] items-start font-[500] text-lg"
+          className="font-inter mt-1 flex text-xl md:text-[20px] leading-[150%] tracking-[-.47px] flex-col text-[#636161] items-start font-[500]"
           initial={{ opacity: 0, y: 25, transform: "translateY(25%)" }}
           animate={{ opacity: 1, y: 0, transform: "translateY(0%)" }}
           transition={{
@@ -122,7 +122,7 @@ export default function HeroSection() {
           of liquidity currently supplied in Aave.
         </motion.div>
       </div>
-      <div className="block mt-[-110px] -z-[10] w-[90%] md:w-full max-w-[1024px] items-center gap-5">
+      <div className="block md:mt-[-110px] -z-[10] w-[90%] md:w-full items-center gap-5">
         <HeroRings />
       </div>
     </div>

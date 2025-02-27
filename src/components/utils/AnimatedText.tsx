@@ -10,7 +10,7 @@ export const AnimatedText: React.FC<Props> = ({ text, isInView }) => {
 
   return (
     <div 
-      className="font-regola font-[600] text-[#221d1d] tracking-[-0.8px] md:leading-[55px] text-[2rem] md:text-[40px] flex flex-wrap gap-2"
+      className="font-regola font-[600] text-[#221d1d] tracking-[-0.8px] md:leading-[55px] text-[40px] flex flex-wrap gap-2"
     >
       {words.map((word, i) => (
         <motion.span
