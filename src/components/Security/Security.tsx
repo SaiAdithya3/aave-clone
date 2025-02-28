@@ -13,7 +13,7 @@ export default function Security() {
   return (
     <div
       ref={ref}
-      className="w-full flex items-center flex-col pt-[100px] pb-[100px] px-[48px]"
+      className="w-full flex items-center flex-col pt-[100px] pb-[100px] px-5 md:px-[48px]"
     >
       <div className="relative w-full max-w-[986px]">
         <div className="w-full pl-[24px] pr-[24px]">

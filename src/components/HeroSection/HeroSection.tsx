@@ -63,7 +63,7 @@ export default function HeroSection() {
           </motion.span>
         </motion.div>
         <h1 className="font-regola mt-1 font-[500] text-5xl">
-          <AnimatedText text="Access the full power of DeFi."/>
+          <AnimatedText text="Access the full power of DeFi." />
         </h1>
         <motion.p
           className="font-inter mt-1 flex text-xl md:text-[20px] leading-[150%] tracking-[-.47px] flex-col text-[#636161] items-start font-[500]"
@@ -118,8 +118,12 @@ export default function HeroSection() {
               variants={circleIn}
             ></motion.circle>
           </svg>
-          <span className="text-[#636161] font-normal">$ 31.44 billion</span>
-          of liquidity currently supplied in Aave.
+          <span>
+            <span className="text-[#636161] inline font-normal">
+              $ 31.44 billion&nbsp;
+            </span>
+            of liquidity currently supplied in Aave.
+          </span>
         </motion.div>
       </div>
       <div className="block md:mt-[-110px] -z-[10] w-[90%] md:w-full items-center gap-5">

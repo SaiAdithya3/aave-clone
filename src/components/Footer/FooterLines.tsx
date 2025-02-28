@@ -26,7 +26,7 @@ const FooterLines = ({ isInView }: FooterLinesProps) => {
       </motion.div>
       
       <motion.div 
-        className="mx-[64px] relative h-[12px] transition-opacity duration-100 ease-in hover:opacity-100 opacity-50"
+        className="mx-8 md:mx-[64px] relative h-[12px] transition-opacity duration-100 ease-in hover:opacity-100 opacity-50"
         variants={lineVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -36,7 +36,7 @@ const FooterLines = ({ isInView }: FooterLinesProps) => {
       </motion.div>
       
       <motion.div 
-        className="mx-[114px] relative h-[12px] transition-opacity duration-100 ease-in hover:opacity-100 opacity-20"
+        className="mx-10 md:mx-[114px] relative h-[12px] transition-opacity duration-100 ease-in hover:opacity-100 opacity-20"
         variants={lineVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -46,7 +46,7 @@ const FooterLines = ({ isInView }: FooterLinesProps) => {
       </motion.div>
       
       <motion.div 
-        className="mx-[164px] relative h-[12px] transition-opacity duration-100 ease-in hover:opacity-100 opacity-10"
+        className="mx-14 md:mx-[164px] relative h-[12px] transition-opacity duration-100 ease-in hover:opacity-100 opacity-10"
         variants={lineVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
