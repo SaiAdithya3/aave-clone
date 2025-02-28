@@ -56,12 +56,12 @@ export default function Security() {
               </span>
             </div>
             <div className="flex max-w-full h-full align-top bg-[#f7f7f6]">
-              <BugBounty isInView={isInView} />
+              <BugBounty />
             </div>
           </div>
           <div className="md:grid md:grid-cols-2 md:grid-rows-[257px] flex flex-col rounded-2xl bg-[#fcfcfb] overflow-hidden">
             <div className="flex max-w-full h-full align-top bg-[#f7f7f6]">
-              <ShortFall isInView={isInView} />
+              <ShortFall />
             </div>
             <div className="flex flex-col gap-y-6 md:py-10 md:px-12 p-8">
               <h3 className="font-regola text-2xl leading-[135%] -tracking-[.48px] ">

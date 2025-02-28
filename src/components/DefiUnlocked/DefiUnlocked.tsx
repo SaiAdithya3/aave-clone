@@ -1,3 +1,4 @@
+"use client";
 import { AnimatedText } from "@/components/utils/AnimatedText";
 import SwapCard from "./Cards/SwapCard";
 import StakeCard from "./Cards/StakeCard";
@@ -14,25 +15,25 @@ const cardData = [
   {
     title: "Swap",
     description: "Swap any ERC-20, even those borrowed or supplied.",
-    svg: (isInView: boolean) => <SwapCard isInView={isInView} />,
+    Component: SwapCard,  
     amount: 0.3, 
   },
   {
     title: "Stake",
     description: "Earn rewards for securing the protocol.",
-    svg: (isInView: boolean) => <StakeCard isInView={isInView} />,
+    Component: StakeCard,
     amount: 0.4, 
   },
   {
     title: "Health Factor",
     description: "Easily track the risk level of your borrow positions.",
-    svg: (isInView: boolean) => <HealthFactorCard isInView={isInView} />,
+    Component: HealthFactorCard,
     amount: 0.5, 
   },
   {
     title: "Multi-Network",
     description: "Deployable on any EVM compatible network.",
-    svg: (isInView: boolean) => <MultinetworkCard isInView={isInView} />,
+    Component: MultinetworkCard,
     amount: 0.6, 
   },
 ];
@@ -66,23 +67,24 @@ const TableData = [
 
 export default function DefiUnlocked() {
   const ref = useRef(null);
-  const cardRefs = useRef(cardData.map(() => React.createRef()));
-
-  // Create separate isInView states for each card
-  const cardInViews = cardData.map((card, index) =>
-    useInView(cardRefs.current[index] as React.RefObject<HTMLDivElement>, {
-      amount: card.amount,
-      once: true,
-    })
-  );
-
   const isInView = useInView(ref, { amount: 0.2, once: true });
 
+  const refs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null)
+  ];
+
+  const inView0 = useInView(refs[0], { amount: 0.3, once: true });
+  const inView1 = useInView(refs[1], { amount: 0.4, once: true });
+  const inView2 = useInView(refs[2], { amount: 0.5, once: true });
+  const inView3 = useInView(refs[3], { amount: 0.6, once: true });
+
+  const cardInViews = [inView0, inView1, inView2, inView3];
+
   return (
-    <div
-      ref={ref}
-      className="w-full flex flex-col items-center justify-center pt-[100px] px-5 md:px-[48px]"
-    >
+    <div ref={ref} className="w-full flex flex-col items-center justify-center pt-[100px] px-5 md:px-[48px]">
       <div className="w-full max-w-[986px] gap-[72px] items-start pb-[100px]">
         <h2 className="px-[24px] text-[40px] leading-[135%] tracking-[-0.8px] font-[600] text-[#221d1d]">
           <AnimatedText text="DeFi, unlocked." isInView={isInView} />
@@ -91,7 +93,7 @@ export default function DefiUnlocked() {
           {cardData.map((card, index) => (
             <div
               key={index}
-              ref={cardRefs.current[index] as React.RefObject<HTMLDivElement>}
+              ref={refs[index]}
               className="h-[300px] flex justify-end flex-col z-0 overflow-hidden bg-[#fafafa] rounded-[16px] px-[40px] py-[32px] relative"
             >
               <h3 className="mb-[16px] font-inter text-[24px] tracking-[-0.48px] font-[600] leading-[135%] text-[#221d1d]">
@@ -100,7 +102,7 @@ export default function DefiUnlocked() {
               <p className="text-[16px] font-inter font-[400] leading-[150%] tracking-[-0.18px] text-[#636161]">
                 {card.description}
               </p>
-              {card.svg(cardInViews[index])}
+              <card.Component isInView={cardInViews[index]} />
             </div>
           ))}
         </div>

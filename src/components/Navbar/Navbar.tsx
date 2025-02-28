@@ -12,7 +12,6 @@ import MobileMenu from "./MobileMenu";
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
-  const [_dropdownPosition, setDropdownPosition] = useState(0);
   const arrowRef = useRef<HTMLDivElement>(null);
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,10 +25,8 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleItemHover = (title: string, position: number, width: number) => {
+  const handleItemHover = (title: string) => {
     setHoveredItem(title);
-    const arrowWidth = 16; // Adjust based on your actual arrow size
-    setDropdownPosition(position + width / 2 - arrowWidth / 2);
   };
 
   const handleItemLeave = () => {
@@ -69,7 +66,7 @@ export default function Navbar() {
             <NavItem
               key={item}
               title={item}
-              onHover={(position) => handleItemHover(item, position, 0)}
+              onHover={() => handleItemHover(item)}
               onLeave={handleItemLeave}
               isActive={hoveredItem === item}
             />

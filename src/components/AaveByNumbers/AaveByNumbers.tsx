@@ -11,7 +11,7 @@ export default function AaveByNumbers() {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.2, once: true });
   const isInView2 = useInView(ref, { amount: 0.3, once: true });
-  const isInView3 = useInView(ref, { amount: 0.4, once: true });
+  // const isInView3 = useInView(ref, { amount: 0.4, once: true });
   return (
     <div
       ref={ref}
@@ -55,7 +55,7 @@ export default function AaveByNumbers() {
           <NumberCards
             amount={9.86}
             description="Average stablecoin borrow APR Ethereum network, past year."
-            svg={<AverageTwo isInView2={isInView3}/>}
+            svg={<AverageTwo/>}
             percentage
           />
         </motion.div>
