@@ -90,12 +90,10 @@ const AaveInteractionBalls = ({ isSupply, isBorrow }: AaveInteractionProps) => {
   return (
     <motion.svg
       ref={animationRef}
-      width="986"
-      height="450"
       viewBox="0 0 986 450"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-full rounded-[16px] overflow-hidden"
+      className="w-full rounded-[16px] overflow-hidden h-[200px] md:h-[450px] md:w-[986px]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
@@ -104,7 +102,7 @@ const AaveInteractionBalls = ({ isSupply, isBorrow }: AaveInteractionProps) => {
         <clipPath id="upperHalf">
           <rect width="986" height="225" fill="white" />
         </clipPath>
-        <clipPath id="lowerHalf">
+        <clipPath id="lowerHalf" className="h-[225px] w-[986px]">
           <rect width="986" height="225" y="225" fill="white" />
         </clipPath>
       </defs>
@@ -225,9 +223,7 @@ const AaveInteractionBalls = ({ isSupply, isBorrow }: AaveInteractionProps) => {
             </motion.g>
           </motion.g>
         </motion.g>
-      ))}
-
-    
+      ))}    
     </motion.svg>
   );
 };

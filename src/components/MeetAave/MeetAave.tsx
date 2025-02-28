@@ -74,7 +74,7 @@ export default function MeetAave() {
         <p className="font-inter text-[20px] mt-[12px] font-[500] tracking-[-0.33px] text-[#636161]">
           Earn interest and borrow assets.
         </p>
-        <div className="relative overflow-hidden rounded-[16px]  md:mt-[48px]">
+        <div className="relative overflow-hidden rounded-[16px] my-12 md:mt-[48px]">
           <MeetAaveBalls isBorrow={activeState === "borrow"? true : false} isSupply={activeState === "borrow"? false : true}/>
         </div>
         <div className="md:mt-[48px] w-full h-auto ">

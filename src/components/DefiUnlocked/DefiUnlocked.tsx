@@ -42,25 +42,25 @@ const TableData = [
     title: "Non-Custodial",
     description:
       "Users maintain control over their own funds throughout the supplying and borrowing process.",
-    svg: (isInView: boolean) => <NonCustodial isInView={isInView} />,
+    svg:<NonCustodial />,
   },
   {
     title: "Transparent",
     description:
       "The Aave Protocol is open source and transactions are visible to anyone.",
-    svg: (isInView: boolean) => <Transparent />,
+    svg: <Transparent />,
   },
   {
     title: "Community Governed",
     description:
       "AAVE token holders decide which assets are listed and steer protocol development.",
-    svg: (isInView: boolean) => <Community isInView={isInView} />,
+    svg:<Community />,
   },
   {
     title: "Composability",
     description:
       "Integrating Aave's liquidity pools and interest rate mechanisms enables the creation of diverse products and applications.",
-    svg: (isInView: boolean) => <Composability isInView={isInView} />,
+    svg: <Composability />,
   },
 ];
 
@@ -114,7 +114,7 @@ export default function DefiUnlocked() {
               }`}
             >
               <div className="flex items-center gap-[16px]">
-                {card.svg(isInView)}
+                {card.svg}
                 <h3 className="font-inter text-[16px] tracking-[-0.33px] font-[600] leading-[135%] text-[#221d1d]">
                   {card.title}
                 </h3>

@@ -1,11 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-type BugBountyProps = {
-  isInView?: boolean;
-}
 
-const BugBounty = ({ isInView = true }: BugBountyProps) => {
+const BugBounty = () => {
   const rows = [
     { y: 255, count: 5, duration: 0.5, delay: 1, size: 21, repeatDelay: 2 },
     { y: 215, count: 4, duration: 0.5, delay: 1, size: 21, repeatDelay: 2 },

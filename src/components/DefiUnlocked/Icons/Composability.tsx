@@ -1,6 +1,6 @@
 import React from "react";
 
-const Composability = ({ isInView }: { isInView: boolean }) => {
+const Composability = () => {
   return (
     <svg
       width="32"

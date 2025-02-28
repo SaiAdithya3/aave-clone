@@ -1,6 +1,16 @@
 import { motion, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
 
+type AnimationVariant = {
+  x: number;
+  y: number;
+  transition?: {
+    duration?: number;
+    ease?: string | number[];
+    delay?: number;
+  };
+}
+
 interface RingProps {
   colors: {
     stroke: string;
@@ -8,12 +18,11 @@ interface RingProps {
     secondary: string;
   };
   animation: {
-    hidden: any;
-    visible: any;
+    hidden: AnimationVariant;
+    visible: AnimationVariant;
   };
   rotation: number;
 }
-
 const Ring = ({ colors, animation, rotation }: RingProps) => {
   const rotateSpring = useSpring(0, {
     stiffness: 100,
@@ -54,7 +63,7 @@ const Ring = ({ colors, animation, rotation }: RingProps) => {
 
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
+  }, [rotateSpring]);
 
   return (
     <motion.g

@@ -7,8 +7,6 @@ interface CustomLinkProps {
 
 export const CustomLink = ({
   title,
-  href,
-  children,
   color,
 }: CustomLinkProps) => {
   return (

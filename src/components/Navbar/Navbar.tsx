@@ -12,7 +12,7 @@ import MobileMenu from "./MobileMenu";
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
-  const [dropdownPosition, setDropdownPosition] = useState(0);
+  const [_dropdownPosition, setDropdownPosition] = useState(0);
   const arrowRef = useRef<HTMLDivElement>(null);
 
   const [isScrolled, setIsScrolled] = useState(false);

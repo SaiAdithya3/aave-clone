@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-const AverageTwo = ({ isInView2 }: { isInView2: boolean }) => {
-  console.log(isInView2);
+const AverageTwo = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.4, once: true });
   const circleVariants = {
