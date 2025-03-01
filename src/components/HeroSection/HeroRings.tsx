@@ -114,7 +114,7 @@ const HeroRings = () => {
         fill="none"
         viewBox="0 0 985 438"
         style={{ width: "100%", pointerEvents: "auto" }}
-        className="lg:w-[985px] lg:h-[438px] px-2 md:px-[48px]"
+        className="xl:w-[985px] xl:h-[438px] px-2 md:px-[48px]"
       >
         <g clipPath="url(#hero-animation-mask)">
           <motion.g transform="scale(1.08)">

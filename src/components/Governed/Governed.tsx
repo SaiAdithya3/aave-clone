@@ -7,7 +7,7 @@ export default function Governed() {
   const isInView = useInView(ref, { amount: 0.4, once: true });
   return (
     <div ref={ref} className="w-full flex items-center flex-col pt-[100px] pb-16 md:pb-[100px] px-5 md:px-[48px]">
-      <div className="relative w-full max-w-[986px] flex justify-center items-center flex-col z-0 h-[400px] md:h-auto rounded-2xl bg-[#00498b] text-center overflow-hidden px-14 md:p-[1rem_4rem]">
+      <div className="relative w-full max-w-[986px] flex justify-center items-center flex-col z-0 h-[400px] md:h-[480px] rounded-2xl bg-[#00498b] text-center overflow-hidden px-14 md:p-[1rem_4rem]">
         <h1 className="mt-4 mb-4 text-white text-3xl md:text-[40px] font-regola font-[600] leading-[135%] tracking-[-0.33px]">
           <span>Governed by you & </span>
           <span className="text-[#90caff]">202,497</span>

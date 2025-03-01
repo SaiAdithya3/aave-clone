@@ -32,8 +32,7 @@ const Average = () => {
   return (
     <motion.svg
       ref={ref}
-      width="457"
-      height="250"
+      className="w-full lg::w-[457px] lg:h-[250px]"
       viewBox="0 0 457 250"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

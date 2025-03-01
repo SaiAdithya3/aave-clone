@@ -67,7 +67,7 @@ export default function MeetAave() {
 
   return (
     <div ref={ref} className="w-full flex items-center flex-col ">
-      <div className="w-full max-w-[1024px] flex-col flex pt-[150px] pb-[100px] px-5 md:px-[48px] items-center">
+      <div className="w-full max-w-[1024px] flex-col flex pt-[50px] md:pt-[150px] pb-[100px] px-5 md:px-[48px] items-center">
         {/* <h1 className="text-[40px] text-center font-[600] leading-[135%] tracking-[-0.8px] text-[#211d1d] w-full font-regola"> */}
           <AnimatedText text="Meet Aave." isInView={isInView} />
         {/* </h1> */}

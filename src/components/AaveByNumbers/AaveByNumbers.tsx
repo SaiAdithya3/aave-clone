@@ -21,29 +21,32 @@ export default function AaveByNumbers() {
         <div className="w-full md:w-1/2 md:sticky top-[150px] md:ml-[24px] pb-[17px]">
           {/* <h1 className="text-[#221d1d] font-inter text-[40px] font-[600] tracking-[-0.8px] leading-[135%]">Aave By Numbers</h1> */}
           <AnimatedText text="Aave by the numbers." isInView={isInView} />
-          <motion.p 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: isInView ? 1 : 0 }}
-          transition={{ duration: 0.5}} className="mt-[12px] text-[20px] font-[500] font-inter leading-[135%] tracking-[-0.33px] text-[#636161]">
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isInView ? 1 : 0 }}
+            transition={{ duration: 0.5 }}
+            className="mt-[12px] text-[20px] font-[500] font-inter leading-[135%] tracking-[-0.33px] text-[#636161]"
+          >
             Aave is one of the largest DeFi protocols with billions of dollars
             in weekly volume across Ethereum and 12+ networks.
           </motion.p>
         </div>
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: isInView ? 1 : 0 }}
-          transition={{ duration: 0.5}}
-        className="w-full md:w-1/2 flex flex-col items-center gap-[48px]">
+          transition={{ duration: 0.5 }}
+          className="w-full md:w-1/2 flex flex-col items-center gap-[48px]"
+        >
           <NumberCards
             amount={31.59}
             description="Net deposits supplied across 13 networks."
-            svg={<NetDeposits isInView={isInView2}/>}
+            svg={<NetDeposits isInView={isInView2} />}
             percentage={false}
           />
           <NumberCards
             amount={173.12}
             description="Volume, past 30 days."
-            svg={<Volume isInView={isInView}/>}
+            svg={<Volume isInView={isInView} />}
             percentage={false}
           />
           <NumberCards
@@ -55,7 +58,7 @@ export default function AaveByNumbers() {
           <NumberCards
             amount={9.86}
             description="Average stablecoin borrow APR Ethereum network, past year."
-            svg={<AverageTwo/>}
+            svg={<AverageTwo />}
             percentage
           />
         </motion.div>

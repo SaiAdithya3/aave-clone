@@ -32,12 +32,12 @@ const MiddleIcon = () => {
 
   return (
     <svg
-      width="324"
-      height="324"
+      // width="324"
+      // height="324"
       viewBox="0 0 324 324"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="invert"
+      className="invert h-auto lg:w-[324px] lg:h-[324px]"
     >
       <motion.g
         style={{ transformOrigin: "161.415px 180.84px" }}

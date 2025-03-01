@@ -26,9 +26,8 @@ const NetDeposits = ({ isInView }: { isInView: boolean }) => {
   return (
     <>
       <svg
-        width="457"
-        height="250"
         viewBox="0 0 457 250"
+        className="w-full lg::w-[457px] lg:h-[250px]"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >

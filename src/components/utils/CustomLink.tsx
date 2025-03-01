@@ -5,10 +5,7 @@ interface CustomLinkProps {
   children?: React.ReactNode;
 }
 
-export const CustomLink = ({
-  title,
-  color,
-}: CustomLinkProps) => {
+export const CustomLink = ({ title, color }: CustomLinkProps) => {
   return (
     <a
       className={`text-[${color}] font-[500] relative inline-flex items-center gap-1 group

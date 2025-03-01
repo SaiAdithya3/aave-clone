@@ -5,7 +5,7 @@ const AverageTwo = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.4, once: true });
   const circleVariants = {
-    hidden: { y: -150},
+    hidden: { y: -150 },
     visible: (custom: number) => ({
       y: 0,
       transition: {
@@ -30,9 +30,8 @@ const AverageTwo = () => {
 
   return (
     <motion.svg
-    ref={ref}
-      width="457"
-      height="250"
+      ref={ref}
+      className="w-full lg::w-[457px] lg:h-[250px]"
       viewBox="0 0 457 250"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +56,13 @@ const AverageTwo = () => {
             fill="#A9E7FF"
           />
           <mask id="borrow-circle-outer-mask-1">
-            <rect x="228.5" y="-228.5" width="228.5" height="457" fill="white" />
+            <rect
+              x="228.5"
+              y="-228.5"
+              width="228.5"
+              height="457"
+              fill="white"
+            />
           </mask>
           <motion.circle
             variants={circleVariants}

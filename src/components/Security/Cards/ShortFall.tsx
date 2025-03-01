@@ -37,6 +37,18 @@ const ShortFall = () => {
     }
   };
 
+  const outerCircleRotate = {
+    hidden: { rotate: 0 },
+    animate: {
+      rotate: [0, 360],
+      transition: {
+        duration: 50,
+        repeat: Infinity,
+        ease: "linear"
+      }
+    }
+  };
+
   return (
     <svg
       className="w-full h-full"
@@ -53,7 +65,11 @@ const ShortFall = () => {
         style={{ transformOrigin: "248px 128px" }}
       >
         {outerCircles.map((circle, index) => (
-          <motion.g key={index} style={{ transformOrigin: `${circle.x}px ${circle.y}px` }}>
+          <motion.g key={index}
+            initial="hidden"
+            animate="animate"
+            variants= {outerCircleRotate}
+          style={{ transformOrigin: `${circle.x}px ${circle.y}px` }}>
             {index % 2 === 0 ? (
               // Regular circles
               <>
